@@ -48,8 +48,10 @@
         "xloctime": "cpp",
         "xmemory": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "vector": "cpp"
     },
     "makefile.makefilePath": "Makefile",
-    "cSpell.language": "en,pt-BR,pt"
+    "cSpell.language": "en,pt-BR,pt",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools"
 }
