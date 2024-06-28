@@ -15,9 +15,6 @@ EXE = $(BIN)/main
 all: $(BIN)/tp.out
 
 debug: $(BIN)/tp_teste.out
-	
-
-#colocar -pg para debugar
 
 $(BIN)/tp_teste.out: $(OBJS)
 	$(CC) -o $(BIN)/tp_teste.out $(OBJS) $(LIBS)
