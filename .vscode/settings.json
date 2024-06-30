@@ -1,6 +1,5 @@
 {
     "files.associations": {
-        "xstring": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
         "cctype": "cpp",
@@ -49,9 +48,11 @@
         "xmemory": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "fstream": "cpp",
+        "xstring": "cpp"
     },
     "makefile.makefilePath": "Makefile",
     "cSpell.language": "en,pt-BR,pt",
-    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools"
+    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
 }

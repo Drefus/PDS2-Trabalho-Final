@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
+#include "playersManagement.hpp"
 
 int main(){
     bool isLoop = true;
@@ -16,9 +17,12 @@ int main(){
         std::cin >> input;
         switch (input)
         {
-        case '1':
-            /* code */
+        case '1':{
+            playersManagement p = playersManagement();
+            std::cout << p.addPlayer("test2","test2");
+            p.saveData();
             break;
+        }
         case 'E':
             isLoop = false;
             break;
