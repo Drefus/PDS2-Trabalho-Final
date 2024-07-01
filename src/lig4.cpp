@@ -50,10 +50,10 @@ class Lig4
             }
             else
                 linha--;
-        }
+        };
     }
 
-    bool VerificarAdjacente(int linha, int coluna, char time)
+    bool(int linha, int coluna, char time)
     {
 
         int sequencia = 1;
