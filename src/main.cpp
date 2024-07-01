@@ -4,21 +4,24 @@
 #include "playersManagement.hpp"
 #include <playersMenu.hpp>
 
-int main(){
+int main()
+{
     bool isLoop = true;
-        std::cout << "------------------------------" << std::endl;
-        std::cout << "-----------Menu---------------" << std::endl;
-        std::cout << "------------------------------" << std::endl;
-        std::cout << "Opções" << std::endl;
-        std::cout << "1. Cadastrar Usuário" << std::endl;
-        std::cout << "E. Sair" << std::endl;
+
     while (isLoop)
     {
+        std::cout << "╔═══════════════════════════════╗" << std::endl;
+        std::cout << "║             Menu              ║" << std::endl;
+        std::cout << "╠═══════════════════════════════╣" << std::endl;
+        std::cout << "║ 1. Gerenciamento de jogadores ║" << std::endl;
+        std::cout << "║ E. Sair                       ║" << std::endl;
+        std::cout << "╚═══════════════════════════════╝" << std::endl;
         char input;
         std::cin >> input;
         switch (input)
         {
-        case '1':{
+        case '1':
+        {
             playersMenu();
             break;
         }
@@ -29,6 +32,4 @@ int main(){
             std::cout << "Opção Invalida" << std::endl;
         }
     }
-    
-    
 };

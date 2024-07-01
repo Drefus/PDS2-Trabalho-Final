@@ -5,33 +5,30 @@
 playersMenu::playersMenu()
 {
     bool isLoop = true;
-    std::cout << "------------------------------" << std::endl;
-    std::cout << "-----------Menu---------------" << std::endl;
-    std::cout << "------------------------------" << std::endl;
-    std::cout << "Opções" << std::endl;
-    std::cout << "1. Adicionar Jogador" << std::endl;
-    std::cout << "2. Remover Jogador" << std::endl;
-    std::cout << "3. Ver estatísticas de jogador" << std::endl;
-    std::cout << "4. Ver todas as estatísticas" << std::endl;
-    std::cout << "E. Sair" << std::endl;
+
     while (isLoop)
     {
+        std::cout << "╔════════════════════════════════╗" << std::endl;
+        std::cout << "║       Menu de Jogadores        ║" << std::endl;
+        std::cout << "╠════════════════════════════════╣" << std::endl;
+        std::cout << "║ 1. Adicionar Jogador           ║" << std::endl;
+        std::cout << "║ 2. Remover Jogador             ║" << std::endl;
+        std::cout << "║ 3. Ver estatísticas de jogador ║" << std::endl;
+        std::cout << "║ 4. Ver todas as estatísticas   ║" << std::endl;
+        std::cout << "║ E. Sair                        ║" << std::endl;
+        std::cout << "╚════════════════════════════════╝" << std::endl;
         char input;
         std::cin >> input;
         switch (input)
         {
         case '1':
         {
-            int loop;
             std::string name, nick;
-            do
-            {
-                std::cout << "Digite o nome do jogador:" << std::endl;
-                std::cin >> name;
-                std::cout << "Digite o apelido do jogador:" << std::endl;
-                std::cin >> nick;
-                loop = this->management.addPlayer(name, nick);
-            } while (loop != 0);
+            std::cout << "Digite o nome do jogador:" << std::endl;
+            std::cin >> name;
+            std::cout << "Digite o apelido do jogador:" << std::endl;
+            std::cin >> nick;
+            this->management.addPlayer(name, nick);
             std::cout << "Jogador adicionado com sucesso" << std::endl;
             break;
         }
@@ -57,8 +54,10 @@ playersMenu::playersMenu()
             break;
         }
         case 'E':
+        {
             isLoop = false;
             break;
+        }
         default:
             std::cout << "Opção Invalida" << std::endl;
         }

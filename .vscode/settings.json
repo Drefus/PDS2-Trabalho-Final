@@ -54,7 +54,8 @@
         "algorithm": "cpp",
         "optional": "cpp",
         "set": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "iomanip": "cpp"
     },
     "makefile.makefilePath": "Makefile",
     "cSpell.language": "en,pt-BR,pt",
