@@ -3,6 +3,7 @@
 #include <string>
 #include "playersManagement.hpp"
 #include <playersMenu.hpp>
+#include <lig4.hpp>
 
 int main()
 {
@@ -23,6 +24,11 @@ int main()
         case '1':
         {
             playersMenu();
+            break;
+        }
+        case '2':
+        {
+            Lig4();
             break;
         }
         case 'E':
