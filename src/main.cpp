@@ -28,7 +28,6 @@ int main()
         }
         case '2':
         {
-            Lig4();
             break;
         }
         case 'E':

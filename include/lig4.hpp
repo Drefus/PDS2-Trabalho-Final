@@ -4,10 +4,11 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <game.hpp>
 
 using namespace std;
 
-class Lig4
+class Lig4 : public game
 {
     char tabuleiro[6][7];
     int turno;

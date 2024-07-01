@@ -25,9 +25,17 @@ playersMenu::playersMenu()
         {
             std::string name, nick;
             std::cout << "Digite o nome do jogador:" << std::endl;
-            std::cin >> name;
+            while (std::getline(std::cin, name))
+                if (name != "")
+                {
+                    break;
+                }
             std::cout << "Digite o apelido do jogador:" << std::endl;
-            std::cin >> nick;
+            while (std::getline(std::cin, nick))
+                if (nick != "")
+                {
+                    break;
+                }
             this->management.addPlayer(name, nick);
             std::cout << "Jogador adicionado com sucesso" << std::endl;
             break;
@@ -36,7 +44,11 @@ playersMenu::playersMenu()
         {
             std::string name;
             std::cout << "Digite o nome ou apelido do jogador:" << std::endl;
-            std::cin >> name;
+            while (std::getline(std::cin, name))
+                if (name != "")
+                {
+                    break;
+                }
             this->management.removePlayer(name);
             break;
         }
@@ -44,7 +56,11 @@ playersMenu::playersMenu()
         {
             std::string name;
             std::cout << "Digite o nome ou apelido do jogador:" << std::endl;
-            std::cin >> name;
+            while (std::getline(std::cin, name))
+                if (name != "")
+                {
+                    break;
+                }
             this->management.listPlayers(name);
             break;
         }

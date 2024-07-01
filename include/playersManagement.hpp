@@ -7,18 +7,19 @@ class playersManagement
 {
 private:
     std::vector<player> players;
+
 public:
     playersManagement();
     ~playersManagement();
     void loadData();
     void saveData();
-    int addPlayer(std::string name,std::string nickname);
+    int addPlayer(std::string name, std::string nickname);
     int removePlayer(std::string name);
     void listPlayers();
     void listPlayers(std::string name);
-    int addLose(std::string game,std::string nickname);
-    int addWin(std::string game,std::string nickname);
+    int addLose(std::string game, std::string nickname);
+    int addWin(std::string game, std::string nickname);
+    int existPlayer(std::string nick);
 };
-
 
 #endif

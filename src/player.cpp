@@ -5,77 +5,72 @@
 #include <gameStatus.hpp>
 #include <player.hpp>
 #include <iostream>
-
+/// @brief Create the player class based by player string line.
+/// @param playerLine
 player::player(std::string playerLine)
 {
-    std::vector<std::string> infos =  stringUtils::split(playerLine,';');
-    for(auto it : infos){
-      std::vector<std::string> data = stringUtils::splitInTwo(it,':');
-        if(data[0] == "name"){
+    std::vector<std::string> infos = stringUtils::split(playerLine, ';');
+    for (auto it : infos)
+    {
+        std::vector<std::string> data = stringUtils::splitInTwo(it, ':');
+        if (data[0] == "name")
+        {
             this->name = data[1];
             continue;
         }
-        if(data[0] == "nickname"){
+        if (data[0] == "nickname")
+        {
             this->nickname = data[1];
             continue;
         }
-       std::vector<std::string> statics =  stringUtils::splitInTwo(data[1],',');
-       this->gameStatics.push_back(gameStatus(data[0],std::stoi(statics[0]),std::stoi(statics[1])));
+        std::vector<std::string> statics = stringUtils::splitInTwo(data[1], ',');
+        this->gameStatics.push_back(gameStatus(data[0], std::stoi(statics[0]), std::stoi(statics[1])));
     }
-
 }
-
+/// @brief Create a player based in the name and nickname;
+/// @param name
+/// @param nickname
 player::player(std::string name, std::string nickname)
 {
     this->name = name;
     this->nickname = nickname;
     std::vector<gameStatus> temp;
 }
-
+/// @brief Deconstructor
 player::~player()
 {
 }
-
-void player::printPlayer()
-{
-}
-
-void player::globalWinRate()
-{
-}
-
-void player::win()
-{
-}
-
-void player::lose()
-{
-}
-
+/// @brief Player to string;
+/// @return Stringify the player data.
 std::string player::playerToString()
 {
     std::string gameStaticsString = "name:" + this->name + ";" + "nickname:" + this->nickname + ";";
-    for(auto it:this->gameStatics){
+    for (auto it : this->gameStatics)
+    {
         gameStaticsString += it.getName() + ":" + it.winsAndLoses() + ";";
     }
     return gameStaticsString;
 }
-
+/// @brief Get Name
+/// @return Player name
 std::string player::getName()
 {
     return this->name;
 }
-
+/// @brief Get Nick
+/// @return Player nickname.
 std::string player::getNick()
 {
     return this->nickname;
 }
-
+/// @brief Get Game Statics
+/// @return Getter of the player game statics.
 std::vector<gameStatus> player::getGameStatics()
 {
     return this->gameStatics;
 }
-
+/// @brief Setter game statics
+/// @param newVector
 void player::setGameStatics(std::vector<gameStatus> newVector)
 {
     this->gameStatics = newVector;

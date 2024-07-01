@@ -2,16 +2,16 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-
+/// @brief Constructor and load data
 playersManagement::playersManagement()
 {
     this->loadData();
 }
-
+/// @brief Destructor
 playersManagement::~playersManagement()
 {
 }
-
+/// @brief Load the player data from playersStatics.txt
 void playersManagement::loadData()
 {
     try
@@ -30,7 +30,7 @@ void playersManagement::loadData()
         std::cout << "ERRO: Arquivo corrompido" << '\n';
     }
 }
-
+/// @brief Save the players data in the playersStatics.txt
 void playersManagement::saveData()
 {
     std::ofstream out("./data/playersStatics.txt", std::fstream::out);
@@ -40,7 +40,9 @@ void playersManagement::saveData()
     }
     out.close();
 }
-
+/// @brief Add a player by the name or nickname.
+/// @param name
+/// @return Return 0 if success and -1 if fail.
 int playersManagement::addPlayer(std::string name, std::string nickname)
 {
     for (auto it : this->players)
@@ -60,7 +62,9 @@ int playersManagement::addPlayer(std::string name, std::string nickname)
     this->saveData();
     return 0;
 }
-
+/// @brief Remove a player by the name or nickname.
+/// @param name
+/// @return Return 0 if success and -1 if fail.
 int playersManagement::removePlayer(std::string name)
 {
     int index = 0;
@@ -78,19 +82,21 @@ int playersManagement::removePlayer(std::string name)
     std::cout << "ERRO: Não foi encontrado nenhum jogador com esse nome ou nickname." << std::endl;
     return -1;
 }
-
+/// @brief List all the player and them statics
 void playersManagement::listPlayers()
 {
     for (auto it : this->players)
     {
-        std::cout << it.getNick() << ":" << std::endl;
+        std::cout << it.getNick() << ":";
         for (auto game : it.getGameStatics())
         {
-             game.gameStatics();
+            game.gameStatics();
         }
+        std::cout << std::endl;
     }
 }
-
+/// @brief List the player by the name or nickname and his statics.
+/// @param name
 void playersManagement::listPlayers(std::string name)
 {
     for (auto it : this->players)
@@ -100,12 +106,15 @@ void playersManagement::listPlayers(std::string name)
             std::cout << it.getNick() << ":" << std::endl;
             for (auto game : it.getGameStatics())
             {
-                 game.gameStatics();
+                game.gameStatics();
             }
         }
     }
 }
-
+/// @brief Add a lose in the game for the player nick passed
+/// @param game
+/// @param nickname
+/// @return If the game already exists return 0, if not create and return 1.
 int playersManagement::addLose(std::string game, std::string nickname)
 {
     for (auto &it : this->players)
@@ -132,7 +141,10 @@ int playersManagement::addLose(std::string game, std::string nickname)
     std::cout << "ERRO: Não foi encontrado nenhum jogador com esse nickname." << std::endl;
     return -1;
 }
-
+/// @brief Add a win in the game for the player nick passed
+/// @param game
+/// @param nickname
+/// @return If the game already exists return 0, if not create and return 1.
 int playersManagement::addWin(std::string game, std::string nickname)
 {
     for (auto &it : this->players)
@@ -153,6 +165,23 @@ int playersManagement::addWin(std::string game, std::string nickname)
             temp.push_back(gameStatus(game, 1, 0));
             it.setGameStatics(temp);
             this->saveData();
+            return 1;
+        }
+    }
+    std::cout << "ERRO: Não foi encontrado nenhum jogador com esse nickname." << std::endl;
+    return -1;
+}
+
+/// @brief Verify the player nick exists in the players
+/// @param nick
+/// @return if exist return 1 , if not return -1
+int playersManagement::existPlayer(std::string nick)
+{
+    this->loadData();
+    for (auto &it : this->players)
+    {
+        if (it.getNick() == nick)
+        {
             return 1;
         }
     }
