@@ -14,7 +14,7 @@ public:
     ~gameStatus();
     double winRate();
     double loseRate();
-    std::string gameStatics();
+    void gameStatics();
     std::string winsAndLoses();
     std::string getName();
     void addWin();

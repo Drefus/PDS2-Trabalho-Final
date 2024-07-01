@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string>
 #include "playersManagement.hpp"
+#include <playersMenu.hpp>
 
 int main(){
     bool isLoop = true;
@@ -18,8 +19,7 @@ int main(){
         switch (input)
         {
         case '1':{
-            playersManagement p = playersManagement();
-            p.addWin("LIG4","test");
+            playersMenu();
             break;
         }
         case 'E':

@@ -1,6 +1,8 @@
 #include <gameStatus.hpp>
+#include <iostream>
+#include <iomanip>
 
-gameStatus::gameStatus(std::string _name, int _wins, int _loses): name(_name), wins(_wins), loses(_loses) 
+gameStatus::gameStatus(std::string _name, int _wins, int _loses) : name(_name), wins(_wins), loses(_loses)
 {
 }
 
@@ -10,17 +12,19 @@ gameStatus::~gameStatus()
 
 double gameStatus::winRate()
 {
-    return this->wins / (this->wins + this->loses);
+    double media = static_cast<double>(this->wins) / (this->wins + this->loses);
+    return media * 100;
 }
 
 double gameStatus::loseRate()
 {
-    return this->loses / (this->wins + this->loses);
+    double media = static_cast<double>(this->loses) / (this->wins + this->loses);
+    return media * 100;
 }
 
-std::string gameStatus::gameStatics()
+void gameStatus::gameStatics()
 {
-    return this->name + " wins: %" + std::to_string(this->winRate()) + '|'+std::to_string(this->wins) + " loses: %" + std::to_string(this->loseRate()) + '|'+std::to_string(this->loses);
+    std::cout << this->name << " wins: %" << std::fixed << std::setprecision(2) << this->winRate() << '|' << std::to_string(this->wins) << " loses: %" << std::fixed << std::setprecision(2) << this->loseRate() << '|' << std::to_string(this->loses) << std::endl;
 }
 
 std::string gameStatus::winsAndLoses()

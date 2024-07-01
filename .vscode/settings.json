@@ -50,7 +50,11 @@
         "xutility": "cpp",
         "vector": "cpp",
         "fstream": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "algorithm": "cpp",
+        "optional": "cpp",
+        "set": "cpp",
+        "xtree": "cpp"
     },
     "makefile.makefilePath": "Makefile",
     "cSpell.language": "en,pt-BR,pt",
