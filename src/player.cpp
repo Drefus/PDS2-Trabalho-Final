@@ -70,3 +70,13 @@ std::string player::getNick()
 {
     return this->nickname;
 }
+
+std::vector<gameStatus> player::getGameStatics()
+{
+    return this->gameStatics;
+}
+
+void player::setGameStatics(std::vector<gameStatus> newVector)
+{
+    this->gameStatics = newVector;
+}

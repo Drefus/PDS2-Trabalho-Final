@@ -32,3 +32,13 @@ std::string gameStatus::getName()
 {
     return this->name;
 }
+
+void gameStatus::addWin()
+{
+    this->wins++;
+}
+
+void gameStatus::addLose()
+{
+    this->loses++;
+}

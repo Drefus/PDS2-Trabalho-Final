@@ -17,6 +17,8 @@ public:
     std::string gameStatics();
     std::string winsAndLoses();
     std::string getName();
+    void addWin();
+    void addLose();
 };
 
 #endif

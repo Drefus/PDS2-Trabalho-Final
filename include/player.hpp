@@ -21,6 +21,8 @@ public:
     std::string playerToString();
     std::string getName();
     std::string getNick();
+    std::vector<gameStatus> getGameStatics();
+    void setGameStatics(std::vector<gameStatus> newVector);
 };
 
 

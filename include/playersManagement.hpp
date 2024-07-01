@@ -14,6 +14,8 @@ public:
     void saveData();
     int addPlayer(std::string name,std::string nickname);
     std::string listPlayers();
+    int addLose(std::string game,std::string nickname);
+    int addWin(std::string game,std::string nickname);
 };
 
 

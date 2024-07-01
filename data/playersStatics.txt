@@ -1,2 +1,2 @@
-name:test;nickname:test;
+name:test;nickname:test;LIG4:3,1;
 name:test2;nickname:test2;

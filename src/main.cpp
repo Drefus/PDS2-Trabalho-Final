@@ -19,8 +19,7 @@ int main(){
         {
         case '1':{
             playersManagement p = playersManagement();
-            std::cout << p.addPlayer("test2","test2");
-            p.saveData();
+            p.addWin("LIG4","test");
             break;
         }
         case 'E':

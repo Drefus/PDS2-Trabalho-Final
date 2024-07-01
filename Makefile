@@ -4,8 +4,8 @@ SRC = src
 OBJ = obj
 INC = include
 BIN = bin
-OBJS = $(OBJ)/main.o $(OBJ)/game.o $(OBJ)/gameStatus.o $(OBJ)/player.o $(OBJ)/playersManagement.o $(OBJ)/stringUtils.o
-HDRS = $(INC)/game.hpp $(INC)/gameStatus.hpp $(INC)/player.hpp $(INC)/playersManagement.hpp $(INC)/stringUtils.hpp
+OBJS = $(OBJ)/main.o $(OBJ)/game.o $(OBJ)/gameStatus.o $(OBJ)/player.o $(OBJ)/playersManagement.o $(OBJ)/stringUtils.o $(OBJ)/playersMenu.o
+HDRS = $(INC)/game.hpp $(INC)/gameStatus.hpp $(INC)/player.hpp $(INC)/playersManagement.hpp $(INC)/stringUtils.hpp $(INC)/playersMenu.hpp
 CFLAGS = -Wall -c -g -I$(INC)
 
 EXE = $(BIN)/main
@@ -25,6 +25,9 @@ $(BIN)/tp.out: $(OBJS)
 
 $(OBJ)/main.o:$(HDRS) $(SRC)/main.cpp
 	$(CC) $(CFLAGS) -o $(OBJ)/main.o $(SRC)/main.cpp
+
+$(OBJ)/playersMenu.o: $(HDRS) $(SRC)/playersMenu.cpp
+	$(CC) $(CFLAGS) -o $(OBJ)/playersMenu.o $(SRC)/playersMenu.cpp
 	
 $(OBJ)/playersManagement.o: $(HDRS) $(SRC)/playersManagement.cpp
 	$(CC) $(CFLAGS) -o $(OBJ)/playersManagement.o $(SRC)/playersManagement.cpp
