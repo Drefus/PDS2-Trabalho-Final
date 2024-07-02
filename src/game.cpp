@@ -5,7 +5,7 @@
 /// @param _cols
 game::game(int _rows, int _cols) : rows(_rows), cols(_cols)
 {
-    tabuleiro.resize(rows, std::vector<char>(cols, ' '));
+    tabuleiro.resize(rows, std::vector<char>(cols, '-'));
 }
 /// @brief Destructor
 game::~game()

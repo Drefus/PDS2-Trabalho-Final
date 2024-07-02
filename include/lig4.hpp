@@ -8,18 +8,19 @@
 
 using namespace std;
 
-class Lig4 : public game
+class lig4 : public game
 {
-    char tabuleiro[6][7];
+private:
     int turno;
 
-    void InicializarTabuleiro() {}
+public:
+    lig4();
 
-    void MostrarTabuleiro() {}
+    void mostrarTabuleiro();
 
-    void Jogada(int posicao) {}
+    void jogada(int posicao);
 
-    bool VerificarAdjacente(int linha, int coluna, char time) {}
+    bool verificarAdjacente(int linha, int coluna, char time);
 };
 
 #endif

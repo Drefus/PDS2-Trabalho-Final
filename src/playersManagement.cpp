@@ -178,7 +178,7 @@ int playersManagement::addWin(std::string game, std::string nickname)
 int playersManagement::existPlayer(std::string nick)
 {
     this->loadData();
-    for (auto &it : this->players)
+    for (auto it : this->players)
     {
         if (it.getNick() == nick)
         {
