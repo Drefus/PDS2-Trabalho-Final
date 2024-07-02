@@ -1,5 +1,5 @@
 <map id="Tabuleiro::realizar_movimento_O" name="Tabuleiro::realizar_movimento_O">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,129,48"/>
-<area shape="rect" id="Node000002" href="$class_tabuleiro.html#a74b6f6861e98f2f5d7b812fc27aec594" title=" " alt="" coords="177,5,321,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,24,161,24,161,29,129,29"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,151,52"/>
+<area shape="rect" id="Node000002" href="$class_tabuleiro.html#a74b6f6861e98f2f5d7b812fc27aec594" title=" " alt="" coords="199,5,370,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,26,183,26,183,31,151,31"/>
 </map>

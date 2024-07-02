@@ -1,20 +1,20 @@
 <map id="src/playersManagement.cpp" name="src/playersManagement.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="232,5,418,32"/>
-<area shape="rect" id="Node000002" href="$players_management_8hpp.html" title=" " alt="" coords="30,80,193,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,35,164,77,162,72,287,30"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="168,304,221,331"/>
-<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="325,33,303,147,286,212,267,257,249,279,229,297,225,293,246,276,263,255,281,210,298,145,320,32"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="328,80,392,107"/>
-<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="333,31,350,65,345,67,329,34"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="416,80,487,107"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="348,30,418,70,415,74,346,35"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,229,61,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,109,79,130,61,156,48,185,40,215,35,213,43,184,56,153,75,126,96,105"/>
-<area shape="rect" id="Node000004" href="$player_8hpp.html" title=" " alt="" coords="71,155,152,181"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="114,107,114,139,109,139,109,107"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="100,184,60,221,56,217,96,180"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,182,115,216,119,236,126,255,142,276,162,293,158,297,138,279,121,257,113,238,109,217,108,182"/>
-<area shape="rect" id="Node000006" href="$game_status_8hpp.html" title=" " alt="" coords="136,229,253,256"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="128,180,170,217,167,221,124,184"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="197,257,197,288,192,288,192,257"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="246,5,463,34"/>
+<area shape="rect" id="Node000002" href="$players_management_8hpp.html" title=" " alt="" coords="25,82,217,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,37,179,79,178,74,311,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="182,312,241,341"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="355,35,331,152,314,219,294,265,274,288,252,306,248,301,271,284,289,263,308,217,326,150,350,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="355,82,428,111"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="364,33,381,67,376,69,359,36"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="452,82,534,111"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="381,32,456,72,453,77,379,37"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,235,69,264"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,113,84,134,65,160,52,190,44,220,39,219,47,189,60,157,80,130,102,109"/>
+<area shape="rect" id="Node000004" href="$player_8hpp.html" title=" " alt="" coords="74,159,168,187"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="124,111,124,143,118,143,118,111"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="107,190,65,227,62,223,104,186"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="122,187,123,223,126,244,134,263,151,284,173,301,170,306,147,288,129,265,121,245,117,224,117,188"/>
+<area shape="rect" id="Node000006" href="$game_status_8hpp.html" title=" " alt="" coords="144,235,279,264"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="139,186,185,223,182,227,136,190"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="214,265,214,296,209,296,209,265"/>
 </map>

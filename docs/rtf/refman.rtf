@@ -1919,31 +1919,31 @@ Retorna\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \s
 If the game already exists return 0, if not create and return 1. \par
 }}}{
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 119 \{\par
-120     {\cf19 for} ({\cf17 auto} &it : this->players)\par
-121     \{\par
-122         {\cf19 if} (it.getNick() == nickname)\par
-123         \{\par
-124             std::vector<gameStatus> temp = it.getGameStatics();\par
-125             {\cf19 for} ({\cf17 auto} &gameStatus : temp)\par
-126             \{\par
-127                 {\cf19 if} (gameStatus.getName() == game)\par
-128                 \{\par
-129                     gameStatus.addLose();\par
-130                     it.setGameStatics(temp);\par
-131                     this->saveData();\par
-132                     {\cf19 return} 0;\par
-133                 \}\par
-134             \}\par
-135             temp.push_back(gameStatus(game, 0, 1));\par
-136             it.setGameStatics(temp);\par
-137             this->saveData();\par
-138             {\cf19 return} 1;\par
-139         \}\par
-140     \}\par
-141     std::cout << {\cf22 "ERRO: N\'E3o foi encontrado nenhum jogador com esse nickname."} << std::endl;\par
-142     {\cf19 return} -1;\par
-143 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 120 \{\par
+121     {\cf19 for} ({\cf17 auto} &it : this->players)\par
+122     \{\par
+123         {\cf19 if} (it.getNick() == nickname)\par
+124         \{\par
+125             std::vector<gameStatus> temp = it.getGameStatics();\par
+126             {\cf19 for} ({\cf17 auto} &gameStatus : temp)\par
+127             \{\par
+128                 {\cf19 if} (gameStatus.getName() == game)\par
+129                 \{\par
+130                     gameStatus.addLose();\par
+131                     it.setGameStatics(temp);\par
+132                     this->saveData();\par
+133                     {\cf19 return} 0;\par
+134                 \}\par
+135             \}\par
+136             temp.push_back(gameStatus(game, 0, 1));\par
+137             it.setGameStatics(temp);\par
+138             this->saveData();\par
+139             {\cf19 return} 1;\par
+140         \}\par
+141     \}\par
+142     std::cout << {\cf22 "ERRO: N\'E3o foi encontrado nenhum jogador com esse nickname."} << std::endl;\par
+143     {\cf19 return} -1;\par
+144 \}\par
 }
 Este \'E9 o diagrama das fun\'E7\'F5es utilizadas por essa fun\'E7\'E3o:{
 \pard\plain 
@@ -1984,24 +1984,24 @@ Retorna\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \s
 Return 0 if success and -1 if fail. \par
 }}}{
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 47 \{\par
-48     {\cf19 for} ({\cf17 auto} it : this->players)\par
-49     \{\par
-50         {\cf19 if} (it.getName() == name)\par
-51         \{\par
-52             std::cout << {\cf22 "ERRO : nome de jogador ja esta em uso."} << std::endl;\par
-53             {\cf19 return} -1;\par
-54         \}\par
-55         {\cf19 if} (it.getNick() == nickname)\par
-56         \{\par
-57             std::cout << {\cf22 "ERRO : nickname de jogador ja esta em uso."} << std::endl;\par
-58             {\cf19 return} -2;\par
-59         \}\par
-60     \}\par
-61     this->players.push_back(player(name, nickname));\par
-62     this->saveData();\par
-63     {\cf19 return} 0;\par
-64 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 48 \{\par
+49     {\cf19 for} ({\cf17 auto} it : this->players)\par
+50     \{\par
+51         {\cf19 if} (it.getName() == name)\par
+52         \{\par
+53             std::cout << {\cf22 "ERRO : nome de jogador ja esta em uso."} << std::endl;\par
+54             {\cf19 return} -1;\par
+55         \}\par
+56         {\cf19 if} (it.getNick() == nickname)\par
+57         \{\par
+58             std::cout << {\cf22 "ERRO : nickname de jogador ja esta em uso."} << std::endl;\par
+59             {\cf19 return} -2;\par
+60         \}\par
+61     \}\par
+62     this->players.push_back(player(name, nickname));\par
+63     this->saveData();\par
+64     {\cf19 return} 0;\par
+65 \}\par
 }
 Este \'E9 o diagrama das fun\'E7\'F5es utilizadas por essa fun\'E7\'E3o:{
 \pard\plain 
@@ -2048,31 +2048,31 @@ Retorna\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \s
 If the game already exists return 0, if not create and return 1. \par
 }}}{
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 149 \{\par
-150     {\cf19 for} ({\cf17 auto} &it : this->players)\par
-151     \{\par
-152         {\cf19 if} (it.getNick() == nickname)\par
-153         \{\par
-154             std::vector<gameStatus> temp = it.getGameStatics();\par
-155             {\cf19 for} ({\cf17 auto} &gameStatus : temp)\par
-156             \{\par
-157                 {\cf19 if} (gameStatus.getName() == game)\par
-158                 \{\par
-159                     gameStatus.addWin();\par
-160                     it.setGameStatics(temp);\par
-161                     this->saveData();\par
-162                     {\cf19 return} 0;\par
-163                 \}\par
-164             \}\par
-165             temp.push_back(gameStatus(game, 1, 0));\par
-166             it.setGameStatics(temp);\par
-167             this->saveData();\par
-168             {\cf19 return} 1;\par
-169         \}\par
-170     \}\par
-171     std::cout << {\cf22 "ERRO: N\'E3o foi encontrado nenhum jogador com esse nickname."} << std::endl;\par
-172     {\cf19 return} -1;\par
-173 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 150 \{\par
+151     {\cf19 for} ({\cf17 auto} &it : this->players)\par
+152     \{\par
+153         {\cf19 if} (it.getNick() == nickname)\par
+154         \{\par
+155             std::vector<gameStatus> temp = it.getGameStatics();\par
+156             {\cf19 for} ({\cf17 auto} &gameStatus : temp)\par
+157             \{\par
+158                 {\cf19 if} (gameStatus.getName() == game)\par
+159                 \{\par
+160                     gameStatus.addWin();\par
+161                     it.setGameStatics(temp);\par
+162                     this->saveData();\par
+163                     {\cf19 return} 0;\par
+164                 \}\par
+165             \}\par
+166             temp.push_back(gameStatus(game, 1, 0));\par
+167             it.setGameStatics(temp);\par
+168             this->saveData();\par
+169             {\cf19 return} 1;\par
+170         \}\par
+171     \}\par
+172     std::cout << {\cf22 "ERRO: N\'E3o foi encontrado nenhum jogador com esse nickname."} << std::endl;\par
+173     {\cf19 return} -1;\par
+174 \}\par
 }
 Este \'E9 o diagrama das fun\'E7\'F5es utilizadas por essa fun\'E7\'E3o:{
 \pard\plain 
@@ -2113,8 +2113,7 @@ Retorna\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \s
 if exist return 1 , if not return -1 \par
 }}}{
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 179 \{\par
-180     this->loadData();\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 180 \{\par
 181     {\cf19 for} ({\cf17 auto} it : this->players)\par
 182     \{\par
 183         {\cf19 if} (it.getNick() == nick)\par
@@ -2125,10 +2124,6 @@ if exist return 1 , if not return -1 \par
 188     std::cout << {\cf22 "ERRO: N\'E3o foi encontrado nenhum jogador com esse nickname."} << std::endl;\par
 189     {\cf19 return} -1;\par
 190 \}\par
-}
-Este \'E9 o diagrama das fun\'E7\'F5es utilizadas por essa fun\'E7\'E3o:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classplayers_management_a5fbc67ce627de58a27992f49814036d5_cgraph.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
 Esse \'E9 o diagrama das fun\'E7\'F5es que utilizam essa fun\'E7\'E3o:{
 \pard\plain 
@@ -2151,17 +2146,17 @@ void playersManagement::listPlayers ()}}
 List all the player and them statics. }}\par
 {
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 87 \{\par
-88     {\cf19 for} ({\cf17 auto} it : this->players)\par
-89     \{\par
-90         std::cout << it.getNick() << {\cf22 ":"};\par
-91         {\cf19 for} ({\cf17 auto} game : it.getGameStatics())\par
-92         \{\par
-93             game.gameStatics();\par
-94         \}\par
-95         std::cout << std::endl;\par
-96     \}\par
-97 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 88 \{\par
+89     {\cf19 for} ({\cf17 auto} it : this->players)\par
+90     \{\par
+91         std::cout << it.getNick() << {\cf22 ":"};\par
+92         {\cf19 for} ({\cf17 auto} game : it.getGameStatics())\par
+93         \{\par
+94             game.gameStatics();\par
+95         \}\par
+96         std::cout << std::endl;\par
+97     \}\par
+98 \}\par
 }
 Esse \'E9 o diagrama das fun\'E7\'F5es que utilizam essa fun\'E7\'E3o:{
 \pard\plain 
@@ -2195,19 +2190,19 @@ Par\'E2metros\par}
 }
 }{
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 101 \{\par
-102     {\cf19 for} ({\cf17 auto} it : this->players)\par
-103     \{\par
-104         {\cf19 if} (name == it.getName() || name == it.getNick())\par
-105         \{\par
-106             std::cout << it.getNick() << {\cf22 ":"} << std::endl;\par
-107             {\cf19 for} ({\cf17 auto} game : it.getGameStatics())\par
-108             \{\par
-109                 game.gameStatics();\par
-110             \}\par
-111         \}\par
-112     \}\par
-113 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 102 \{\par
+103     {\cf19 for} ({\cf17 auto} it : this->players)\par
+104     \{\par
+105         {\cf19 if} (name == it.getName() || name == it.getNick())\par
+106         \{\par
+107             std::cout << it.getNick() << {\cf22 ":"} << std::endl;\par
+108             {\cf19 for} ({\cf17 auto} game : it.getGameStatics())\par
+109             \{\par
+110                 game.gameStatics();\par
+111             \}\par
+112         \}\par
+113     \}\par
+114 \}\par
 }
 }
 {\xe \v loadData\:playersManagement}
@@ -2229,20 +2224,21 @@ Load the player data from playersStatics.txt. }}\par
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 16 \{\par
 17     {\cf19 try}\par
 18     \{\par
-19         std::ifstream in({\cf22 "./data/playersStatics.txt"}, std::fstream::in);\par
-20         std::string playerLine;\par
-21         {\cf19 while} (std::getline(in, playerLine))\par
-22         \{\par
-23             this->players.push_back(player(playerLine));\par
-24         \}\par
-25         in.close();\par
-26     \}\par
-27     {\cf19 catch} ({\cf17 const} std::exception &e)\par
-28     \{\par
-29         std::cerr << e.what() << {\cf23 '\\n'};\par
-30         std::cout << {\cf22 "ERRO: Arquivo corrompido"} << {\cf23 '\\n'};\par
-31     \}\par
-32 \}\par
+19         this->players.clear();\par
+20         std::ifstream in({\cf22 "./data/playersStatics.txt"}, std::fstream::in);\par
+21         std::string playerLine;\par
+22         {\cf19 while} (std::getline(in, playerLine))\par
+23         \{\par
+24             this->players.push_back(player(playerLine));\par
+25         \}\par
+26         in.close();\par
+27     \}\par
+28     {\cf19 catch} ({\cf17 const} std::exception &e)\par
+29     \{\par
+30         std::cerr << e.what() << {\cf23 '\\n'};\par
+31         std::cout << {\cf22 "ERRO: Arquivo corrompido"} << {\cf23 '\\n'};\par
+32     \}\par
+33 \}\par
 }
 Esse \'E9 o diagrama das fun\'E7\'F5es que utilizam essa fun\'E7\'E3o:{
 \pard\plain 
@@ -2279,22 +2275,22 @@ Retorna\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \s
 Return 0 if success and -1 if fail. \par
 }}}{
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 69 \{\par
-70     {\cf18 int} index = 0;\par
-71     {\cf19 for} ({\cf17 auto} &it : this->players)\par
-72     \{\par
-73         {\cf19 if} (name == it.getName() || name == it.getNick())\par
-74         \{\par
-75             this->players.erase(this->players.begin() + index);\par
-76             std::cout << {\cf22 "Jogador removido com sucesso."} << std::endl;\par
-77             this->saveData();\par
-78             {\cf19 return} 0;\par
-79         \}\par
-80         index++;\par
-81     \}\par
-82     std::cout << {\cf22 "ERRO: N\'E3o foi encontrado nenhum jogador com esse nome ou nickname."} << std::endl;\par
-83     {\cf19 return} -1;\par
-84 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 70 \{\par
+71     {\cf18 int} index = 0;\par
+72     {\cf19 for} ({\cf17 auto} &it : this->players)\par
+73     \{\par
+74         {\cf19 if} (name == it.getName() || name == it.getNick())\par
+75         \{\par
+76             this->players.erase(this->players.begin() + index);\par
+77             std::cout << {\cf22 "Jogador removido com sucesso."} << std::endl;\par
+78             this->saveData();\par
+79             {\cf19 return} 0;\par
+80         \}\par
+81         index++;\par
+82     \}\par
+83     std::cout << {\cf22 "ERRO: N\'E3o foi encontrado nenhum jogador com esse nome ou nickname."} << std::endl;\par
+84     {\cf19 return} -1;\par
+85 \}\par
 }
 Este \'E9 o diagrama das fun\'E7\'F5es utilizadas por essa fun\'E7\'E3o:{
 \pard\plain 
@@ -2321,14 +2317,14 @@ void playersManagement::saveData ()}}
 Save the players data in the playersStatics.txt. }}\par
 {
 \par
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 35 \{\par
-36     std::ofstream out({\cf22 "./data/playersStatics.txt"}, std::fstream::out);\par
-37     {\cf19 for} ({\cf17 auto} it : this->players)\par
-38     \{\par
-39         out << it.playerToString() << std::endl;\par
-40     \}\par
-41     out.close();\par
-42 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 36 \{\par
+37     std::ofstream out({\cf22 "./data/playersStatics.txt"}, std::fstream::out);\par
+38     {\cf19 for} ({\cf17 auto} it : this->players)\par
+39     \{\par
+40         out << it.playerToString() << std::endl;\par
+41     \}\par
+42     out.close();\par
+43 \}\par
 }
 Esse \'E9 o diagrama das fun\'E7\'F5es que utilizam essa fun\'E7\'E3o:{
 \pard\plain 

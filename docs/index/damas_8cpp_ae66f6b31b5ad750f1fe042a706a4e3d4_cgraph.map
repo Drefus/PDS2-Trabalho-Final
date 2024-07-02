@@ -1,14 +1,14 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,113,55,140"/>
-<area shape="rect" id="Node000002" href="$class_tabuleiro.html#ade77bfdec5eb028f1ad96d5aca32bafa" title=" " alt="" coords="106,5,234,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,111,68,85,101,58,107,54,110,58,104,62,71,89,45,115"/>
-<area shape="rect" id="Node000003" href="$class_tabuleiro.html#a23df17f6abf3d5cc0e3f742e32f8dab2" title=" " alt="" coords="108,72,232,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,118,92,109,94,114,56,123"/>
-<area shape="rect" id="Node000005" href="$class_tabuleiro.html#a9772d5ccc551c898a79f09bab626e6b8" title=" " alt="" coords="108,139,232,181"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="56,130,94,139,92,144,55,135"/>
-<area shape="rect" id="Node000006" href="$class_tabuleiro.html#a5c1daf00d818ead70092b3386a670d79" title=" " alt="" coords="103,205,237,248"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="45,138,71,164,104,191,110,195,107,199,101,195,68,168,42,142"/>
-<area shape="rect" id="Node000004" href="$class_tabuleiro.html#a74b6f6861e98f2f5d7b812fc27aec594" title=" " alt="" coords="285,105,429,148"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="233,102,270,109,269,114,232,107"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="232,146,269,140,270,145,233,152"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,121,61,150"/>
+<area shape="rect" id="Node000002" href="$class_tabuleiro.html#ade77bfdec5eb028f1ad96d5aca32bafa" title=" " alt="" coords="112,5,264,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,119,72,90,107,61,113,58,116,62,110,65,76,94,49,122"/>
+<area shape="rect" id="Node000003" href="$class_tabuleiro.html#a23df17f6abf3d5cc0e3f742e32f8dab2" title=" " alt="" coords="115,76,261,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="61,126,99,117,101,122,62,132"/>
+<area shape="rect" id="Node000005" href="$class_tabuleiro.html#a9772d5ccc551c898a79f09bab626e6b8" title=" " alt="" coords="115,147,261,193"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="62,139,101,148,99,153,61,144"/>
+<area shape="rect" id="Node000006" href="$class_tabuleiro.html#a5c1daf00d818ead70092b3386a670d79" title=" " alt="" coords="109,217,267,264"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="49,148,76,175,110,203,118,207,115,212,107,207,73,179,46,152"/>
+<area shape="rect" id="Node000004" href="$class_tabuleiro.html#a74b6f6861e98f2f5d7b812fc27aec594" title=" " alt="" coords="315,112,486,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,109,300,116,299,121,260,114"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="260,156,299,149,300,154,261,161"/>
 </map>

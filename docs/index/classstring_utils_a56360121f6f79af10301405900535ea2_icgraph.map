@@ -1,5 +1,5 @@
 <map id="stringUtils::splitInTwo" name="stringUtils::splitInTwo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,297,32"/>
-<area shape="rect" id="Node000002" href="$classplayer.html#a7b5b68288707fb11bbd304eb5117ac11" title="Create the player class based by player string line." alt="" coords="5,5,105,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,21,105,21,105,16,137,16"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="167,5,332,34"/>
+<area shape="rect" id="Node000002" href="$classplayer.html#a7b5b68288707fb11bbd304eb5117ac11" title="Create the player class based by player string line." alt="" coords="5,5,119,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,22,119,22,119,17,151,17"/>
 </map>

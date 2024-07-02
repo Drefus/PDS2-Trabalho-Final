@@ -1,5 +1,5 @@
 <map id="gameStatus::winRate" name="gameStatus::winRate">
-<area shape="rect" id="Node000001" title="Win Rate at this game." alt="" coords="226,5,371,32"/>
-<area shape="rect" id="Node000002" href="$classgame_status.html#a71623837b142fe48a567a2baad302cbf" title="Show in the console the statics of the player in this game." alt="" coords="5,5,178,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,178,21,178,16,210,16"/>
+<area shape="rect" id="Node000001" title="Win Rate at this game." alt="" coords="255,5,424,34"/>
+<area shape="rect" id="Node000002" href="$classgame_status.html#a71623837b142fe48a567a2baad302cbf" title="Show in the console the statics of the player in this game." alt="" coords="5,5,207,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,22,207,22,207,17,239,17"/>
 </map>

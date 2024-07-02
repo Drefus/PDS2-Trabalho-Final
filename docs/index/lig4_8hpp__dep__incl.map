@@ -1,7 +1,7 @@
 <map id="include/lig4.hpp" name="include/lig4.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="51,5,163,32"/>
-<area shape="rect" id="Node000002" href="$lig4_8cpp.html" title=" " alt="" coords="5,80,94,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,46,61,81,57,78,85,43"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="117,80,214,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,43,157,78,153,81,125,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="55,5,185,34"/>
+<area shape="rect" id="Node000002" href="$lig4_8cpp.html" title=" " alt="" coords="5,82,107,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,48,70,83,66,80,96,44"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="130,82,241,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,44,175,80,171,83,140,48"/>
 </map>

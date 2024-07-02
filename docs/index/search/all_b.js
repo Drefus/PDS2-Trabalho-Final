@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['para_20jogar_3a_0',['Instruções para jogar:',['../md__r_e_a_d_m_e.html#autotoc_md2',1,'']]],
+  ['para_20jogar_3a_0',['Instruções para jogar:',['../md__r_e_a_d_m_e.html#instruções-para-jogar',1,'']]],
   ['pds2_1',['Trabalho Final da disciplina de PDS2',['../md__r_e_a_d_m_e.html',1,'']]],
   ['player_2',['player',['../classplayer.html',1,'player'],['../classplayer.html#a7b5b68288707fb11bbd304eb5117ac11',1,'player::player(std::string playerLine)'],['../classplayer.html#a0a8de520f7c1d2441ef82b1ef6afa9ee',1,'player::player(std::string name, std::string nickname)']]],
   ['player_2ecpp_3',['player.cpp',['../player_8cpp.html',1,'']]],

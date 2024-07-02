@@ -1,5 +1,5 @@
 <map id="game" name="game">
-<area shape="rect" id="Node000001" title="Abstract class game." alt="" coords="12,464,188,741"/>
-<area shape="rect" id="Node000002" href="$classplayers_management.html" title=" " alt="" coords="5,5,195,400"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,400,103,447,97,447,97,400"/>
+<area shape="rect" id="Node000001" title="Abstract class game." alt="" coords="11,501,219,802"/>
+<area shape="rect" id="Node000002" href="$classplayers_management.html" title=" " alt="" coords="5,5,224,435"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,434,117,484,112,484,112,434"/>
 </map>
