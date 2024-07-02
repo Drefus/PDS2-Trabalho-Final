@@ -9,9 +9,10 @@ void lig4::mostrarTabuleiro()
 {
     for (int linha = 0; linha < this->rows; linha++)
     {
+        cout << "|";
         for (int coluna = 0; coluna < this->cols; coluna++)
         {
-            cout << this->tabuleiro[linha][coluna] << " ";
+            cout << this->tabuleiro[linha][coluna] << "|";
         }
         cout << endl;
     }
@@ -21,30 +22,21 @@ void lig4::jogada(int posicao)
 {
     bool valido = false;
     int linha = this->rows - 1;
-    try
+    while (valido == false)
     {
-        while (valido == false)
+        if (this->tabuleiro[linha][posicao] == ' ')
         {
-            if (this->tabuleiro[linha][posicao] == '-')
+            if (turno % 2 == 0)
             {
-                if (turno % 2 == 0)
-                {
-                    this->tabuleiro[linha][posicao] = 'V';
-                }
-                else
-                    this->tabuleiro[linha][posicao] = 'A';
-                valido = true;
+                this->tabuleiro[linha][posicao] = 'V';
             }
             else
-                linha--;
-        };
-    }
-    catch (const std::exception &e)
-    {
-        cout << "Coluna inválida digite novamente:" << endl;
-        cin >> posicao;
-        jogada(posicao);
-    }
+                this->tabuleiro[linha][posicao] = 'A';
+            valido = true;
+        }
+        else
+            linha--;
+    };
 }
 
 bool lig4::verificarAdjacente(int linha, int coluna, char time)
