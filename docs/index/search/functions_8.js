@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['savedata_0',['saveData',['../classplayers_management.html#ae11bf55369752a338e8084f18269517a',1,'playersManagement']]],
-  ['setgamestatics_1',['setGameStatics',['../classplayer.html#aaf4bdf9df2a452855892215909bff7d6',1,'player']]],
-  ['split_2',['split',['../classstring_utils.html#a13c1603c08fd6d8e43399d0fe90d7f86',1,'stringUtils']]],
-  ['splitintwo_3',['splitInTwo',['../classstring_utils.html#a56360121f6f79af10301405900535ea2',1,'stringUtils']]],
-  ['stringutils_4',['stringUtils',['../classstring_utils.html#acf7d0a2840200ae04af45a3d47bcb168',1,'stringUtils']]]
+  ['player_0',['player',['../classplayer.html#a7b5b68288707fb11bbd304eb5117ac11',1,'player::player(std::string playerLine)'],['../classplayer.html#a0a8de520f7c1d2441ef82b1ef6afa9ee',1,'player::player(std::string name, std::string nickname)']]],
+  ['playersmanagement_1',['playersManagement',['../classplayers_management.html#ab5da98673e152322e5cc45c4d4720f72',1,'playersManagement']]],
+  ['playersmenu_2',['playersMenu',['../classplayers_menu.html#adebfb8ff936b89b3ff360585910dbd47',1,'playersMenu']]],
+  ['playertostring_3',['playerToString',['../classplayer.html#a495c9993ab19f85cd90ae6da0de253cd',1,'player']]],
+  ['printplayer_4',['printPlayer',['../classplayer.html#a196dea007776c7fc6d7a4cc953c29375',1,'player']]]
 ];

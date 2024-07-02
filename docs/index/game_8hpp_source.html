@@ -97,30 +97,36 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="players_management_8hpp.html">playersManagement.hpp</a>&quot;</span></div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classgame.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classgame.html">game</a></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    std::string name;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">int</span> rows;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">int</span> cols;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    std::vector&lt;std::vector&lt;char&gt;&gt; tabuleiro;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="classplayers_management.html">playersManagement</a> management;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_function" href="classgame.html#a9c1e7124bbf715d974dcde2b89af7a79">game</a>(<span class="keywordtype">int</span> _x, <span class="keywordtype">int</span> _y);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07">~game</a>();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classgame.html#a9e24d74d5d1823c3d2cec6be415df6ed">changeElement</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">char</span> element);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classgame.html#aa73e185d035361027c0df359d7a6c750">winAndLose</a>(std::string winner, std::string loser);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classgame.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classgame.html">game</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classgame.html#a252b06af5466a21270d4127a581e1546">   11</a></span>    std::string <a class="code hl_variable" href="classgame.html#a252b06af5466a21270d4127a581e1546">name</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classgame.html#ad29d3aa89cbc096179a5ba0905e44f05">   12</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classgame.html#ad29d3aa89cbc096179a5ba0905e44f05">rows</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classgame.html#afc61f759b9e7fc58f5bc6bd42e32f909">   13</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classgame.html#afc61f759b9e7fc58f5bc6bd42e32f909">cols</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classgame.html#af2629cfaf40a78d2041da5346be05e43">   14</a></span>    std::vector&lt;std::vector&lt;char&gt;&gt; <a class="code hl_variable" href="classgame.html#af2629cfaf40a78d2041da5346be05e43">tabuleiro</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classgame.html#a5a951c96fd9a243d5816c590e3a5fc4a">   15</a></span>    <a class="code hl_class" href="classplayers_management.html">playersManagement</a> <a class="code hl_variable" href="classgame.html#a5a951c96fd9a243d5816c590e3a5fc4a">management</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_function" href="classgame.html#aff54a28ba321224019f633f92ffd5674">game</a>(<span class="keywordtype">int</span> _rows, <span class="keywordtype">int</span> _cols);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07">~game</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classgame.html#a9e24d74d5d1823c3d2cec6be415df6ed">changeElement</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">char</span> element);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classgame.html#aa73e185d035361027c0df359d7a6c750">winAndLose</a>(std::string winner, std::string loser);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassgame_html"><div class="ttname"><a href="classgame.html">game</a></div><div class="ttdef"><b>Definição</b> game.hpp:7</div></div>
-<div class="ttc" id="aclassgame_html_a9c1e7124bbf715d974dcde2b89af7a79"><div class="ttname"><a href="classgame.html#a9c1e7124bbf715d974dcde2b89af7a79">game::game</a></div><div class="ttdeci">game(int _x, int _y)</div><div class="ttdoc">Initiate game class.</div><div class="ttdef"><b>Definição</b> game.cpp:6</div></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassgame_html"><div class="ttname"><a href="classgame.html">game</a></div><div class="ttdoc">Abstract class game.</div><div class="ttdef"><b>Definição</b> game.hpp:9</div></div>
+<div class="ttc" id="aclassgame_html_a252b06af5466a21270d4127a581e1546"><div class="ttname"><a href="classgame.html#a252b06af5466a21270d4127a581e1546">game::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definição</b> game.hpp:11</div></div>
+<div class="ttc" id="aclassgame_html_a5a951c96fd9a243d5816c590e3a5fc4a"><div class="ttname"><a href="classgame.html#a5a951c96fd9a243d5816c590e3a5fc4a">game::management</a></div><div class="ttdeci">playersManagement management</div><div class="ttdef"><b>Definição</b> game.hpp:15</div></div>
 <div class="ttc" id="aclassgame_html_a9e24d74d5d1823c3d2cec6be415df6ed"><div class="ttname"><a href="classgame.html#a9e24d74d5d1823c3d2cec6be415df6ed">game::changeElement</a></div><div class="ttdeci">virtual void changeElement(int x, int y, char element)</div><div class="ttdoc">Change the element in position x,y to the element;.</div><div class="ttdef"><b>Definição</b> game.cpp:18</div></div>
 <div class="ttc" id="aclassgame_html_aa73e185d035361027c0df359d7a6c750"><div class="ttname"><a href="classgame.html#aa73e185d035361027c0df359d7a6c750">game::winAndLose</a></div><div class="ttdeci">virtual void winAndLose(std::string winner, std::string loser)</div><div class="ttdoc">Add one win to the winner and one lose for the loser.</div><div class="ttdef"><b>Definição</b> game.cpp:24</div></div>
+<div class="ttc" id="aclassgame_html_ad29d3aa89cbc096179a5ba0905e44f05"><div class="ttname"><a href="classgame.html#ad29d3aa89cbc096179a5ba0905e44f05">game::rows</a></div><div class="ttdeci">int rows</div><div class="ttdef"><b>Definição</b> game.hpp:12</div></div>
 <div class="ttc" id="aclassgame_html_ae87abd20c4d8a7906fa48e690a5f1d07"><div class="ttname"><a href="classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07">game::~game</a></div><div class="ttdeci">~game()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definição</b> game.cpp:11</div></div>
+<div class="ttc" id="aclassgame_html_af2629cfaf40a78d2041da5346be05e43"><div class="ttname"><a href="classgame.html#af2629cfaf40a78d2041da5346be05e43">game::tabuleiro</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; char &gt; &gt; tabuleiro</div><div class="ttdef"><b>Definição</b> game.hpp:14</div></div>
+<div class="ttc" id="aclassgame_html_afc61f759b9e7fc58f5bc6bd42e32f909"><div class="ttname"><a href="classgame.html#afc61f759b9e7fc58f5bc6bd42e32f909">game::cols</a></div><div class="ttdeci">int cols</div><div class="ttdef"><b>Definição</b> game.hpp:13</div></div>
+<div class="ttc" id="aclassgame_html_aff54a28ba321224019f633f92ffd5674"><div class="ttname"><a href="classgame.html#aff54a28ba321224019f633f92ffd5674">game::game</a></div><div class="ttdeci">game(int _rows, int _cols)</div><div class="ttdoc">Initiate game class.</div><div class="ttdef"><b>Definição</b> game.cpp:6</div></div>
 <div class="ttc" id="aclassplayers_management_html"><div class="ttname"><a href="classplayers_management.html">playersManagement</a></div><div class="ttdef"><b>Definição</b> playersManagement.hpp:7</div></div>
 <div class="ttc" id="aplayers_management_8hpp_html"><div class="ttname"><a href="players_management_8hpp.html">playersManagement.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

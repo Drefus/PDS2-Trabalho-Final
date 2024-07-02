@@ -1,0 +1,7 @@
+<map id="lig4" name="lig4">
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,789,179,955"/>
+<area shape="rect" id="Node000002" href="$classgame.html" title="Abstract class game." alt="" coords="12,464,188,741"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,756,103,789,97,789,97,756"/>
+<area shape="rect" id="Node000003" href="$classplayers_management.html" title=" " alt="" coords="5,5,195,400"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,400,103,447,97,447,97,400"/>
+</map>

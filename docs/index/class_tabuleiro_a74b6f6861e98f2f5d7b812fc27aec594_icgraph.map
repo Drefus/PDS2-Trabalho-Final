@@ -1,0 +1,10 @@
+<map id="Tabuleiro::transcrever_movimento" name="Tabuleiro::transcrever_movimento">
+<area shape="rect" id="Node000001" title=" " alt="" coords="274,39,418,81"/>
+<area shape="rect" id="Node000002" href="$class_tabuleiro.html#a23df17f6abf3d5cc0e3f742e32f8dab2" title=" " alt="" coords="103,5,226,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,47,226,41,227,35,259,41"/>
+<area shape="rect" id="Node000004" href="$class_tabuleiro.html#a9772d5ccc551c898a79f09bab626e6b8" title=" " alt="" coords="103,72,226,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="259,79,227,85,226,79,258,73"/>
+<area shape="rect" id="Node000003" href="$damas_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,47,55,73"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,48,56,57,54,51,87,43"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="87,77,54,69,56,63,88,72"/>
+</map>

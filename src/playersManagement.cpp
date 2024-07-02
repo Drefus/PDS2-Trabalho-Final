@@ -16,6 +16,7 @@ void playersManagement::loadData()
 {
     try
     {
+        this->players.clear();
         std::ifstream in("./data/playersStatics.txt", std::fstream::in);
         std::string playerLine;
         while (std::getline(in, playerLine))
@@ -177,7 +178,6 @@ int playersManagement::addWin(std::string game, std::string nickname)
 /// @return if exist return 1 , if not return -1
 int playersManagement::existPlayer(std::string nick)
 {
-    this->loadData();
     for (auto it : this->players)
     {
         if (it.getNick() == nick)

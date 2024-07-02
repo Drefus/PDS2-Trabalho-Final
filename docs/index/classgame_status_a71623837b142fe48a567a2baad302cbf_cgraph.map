@@ -1,0 +1,7 @@
+<map id="gameStatus::gameStatics" name="gameStatus::gameStatics">
+<area shape="rect" id="Node000001" title="Show in the console the statics of the player in this game." alt="" coords="5,31,178,57"/>
+<area shape="rect" id="Node000002" href="$classgame_status.html#aa2bd52310e99845ad5d720038dbdb986" title="Lose Rate at this game." alt="" coords="226,5,376,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,31,209,27,210,32,178,36"/>
+<area shape="rect" id="Node000003" href="$classgame_status.html#a26d2ca02ed54983d79afc345432e0226" title="Win Rate at this game." alt="" coords="228,56,374,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,52,213,56,212,61,178,57"/>
+</map>

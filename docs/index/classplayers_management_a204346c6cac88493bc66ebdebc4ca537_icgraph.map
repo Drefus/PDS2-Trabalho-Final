@@ -1,0 +1,9 @@
+<map id="playersManagement::loadData" name="playersManagement::loadData">
+<area shape="rect" id="Node000001" title="Load the player data from playersStatics.txt." alt="" coords="317,39,463,81"/>
+<area shape="rect" id="Node000002" href="$classplayers_management.html#a5fbc67ce627de58a27992f49814036d5" title="Verify the player nick exists in the players." alt="" coords="123,5,269,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,47,269,42,270,37,302,42"/>
+<area shape="rect" id="Node000004" href="$classplayers_management.html#ab5da98673e152322e5cc45c4d4720f72" title="Constructor and load data." alt="" coords="123,72,269,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="302,78,270,83,269,78,301,73"/>
+<area shape="rect" id="Node000003" href="$classlig4.html#a412d6bbcae4077e520282b295060abe1" title=" " alt="" coords="5,13,75,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,29,75,29,75,24,107,24"/>
+</map>

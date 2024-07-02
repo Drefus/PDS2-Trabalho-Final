@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['stringutils_2ecpp_0',['stringUtils.cpp',['../string_utils_8cpp.html',1,'']]],
-  ['stringutils_2ehpp_1',['stringUtils.hpp',['../string_utils_8hpp.html',1,'']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
 ];

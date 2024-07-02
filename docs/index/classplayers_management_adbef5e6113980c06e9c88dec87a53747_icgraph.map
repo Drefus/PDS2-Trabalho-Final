@@ -1,0 +1,7 @@
+<map id="playersManagement::addWin" name="playersManagement::addWin">
+<area shape="rect" id="Node000001" title="Add a win in the game for the player nick passed." alt="" coords="302,5,448,48"/>
+<area shape="rect" id="Node000002" href="$classgame.html#aa73e185d035361027c0df359d7a6c750" title="Add one win to the winner and one lose for the loser." alt="" coords="123,13,254,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,29,255,29,255,24,286,24"/>
+<area shape="rect" id="Node000003" href="$classlig4.html#a412d6bbcae4077e520282b295060abe1" title=" " alt="" coords="5,13,75,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,29,75,29,75,24,107,24"/>
+</map>

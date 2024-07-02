@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['_7egame_0',['~game',['../classgame.html#ae87abd20c4d8a7906fa48e690a5f1d07',1,'game']]],
-  ['_7egamestatus_1',['~gameStatus',['../classgame_status.html#ac61f661961fa77f2206effd70d74862c',1,'gameStatus']]],
-  ['_7eplayer_2',['~player',['../classplayer.html#aab5d2e47b80e0481f09ca0df8b823057',1,'player']]],
-  ['_7eplayersmanagement_3',['~playersManagement',['../classplayers_management.html#a1adcaf2e97a925e65129b34a7065a016',1,'playersManagement']]],
-  ['_7eplayersmenu_4',['~playersMenu',['../classplayers_menu.html#ab343dccbd98029b8b8f123c04ef8b0dc',1,'playersMenu']]],
-  ['_7estringutils_5',['~stringUtils',['../classstring_utils.html#acaadad65b5695be5ec9873c734c1d381',1,'stringUtils']]]
+  ['savedata_0',['saveData',['../classplayers_management.html#ae11bf55369752a338e8084f18269517a',1,'playersManagement']]],
+  ['setgamestatics_1',['setGameStatics',['../classplayer.html#aaf4bdf9df2a452855892215909bff7d6',1,'player']]],
+  ['split_2',['split',['../classstring_utils.html#a13c1603c08fd6d8e43399d0fe90d7f86',1,'stringUtils']]],
+  ['splitintwo_3',['splitInTwo',['../classstring_utils.html#a56360121f6f79af10301405900535ea2',1,'stringUtils']]],
+  ['stringutils_4',['stringUtils',['../classstring_utils.html#acf7d0a2840200ae04af45a3d47bcb168',1,'stringUtils']]]
 ];

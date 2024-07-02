@@ -1,0 +1,10 @@
+<map id="include/player.hpp" name="include/player.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,132,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="63,155,117,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,34,35,67,28,86,31,106,44,126,60,143,57,147,39,129,26,108,23,86,30,64,54,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="41,80,96,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="71,33,71,64,66,64,66,33"/>
+<area shape="rect" id="Node000004" href="$game_status_8hpp.html" title=" " alt="" coords="120,80,236,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="89,30,148,69,145,74,86,35"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="164,109,118,147,115,143,161,105"/>
+</map>

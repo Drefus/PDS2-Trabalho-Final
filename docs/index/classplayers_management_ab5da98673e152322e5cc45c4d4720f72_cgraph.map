@@ -1,0 +1,5 @@
+<map id="playersManagement::playersManagement" name="playersManagement::playersManagement">
+<area shape="rect" id="Node000001" title="Constructor and load data." alt="" coords="5,5,152,48"/>
+<area shape="rect" id="Node000002" href="$classplayers_management.html#a204346c6cac88493bc66ebdebc4ca537" title="Load the player data from playersStatics.txt." alt="" coords="200,5,346,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,24,185,24,185,29,152,29"/>
+</map>

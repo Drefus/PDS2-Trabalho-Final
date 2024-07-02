@@ -1,0 +1,5 @@
+<map id="playersManagement::addPlayer" name="playersManagement::addPlayer">
+<area shape="rect" id="Node000001" title="Add a player by the name or nickname." alt="" coords="5,5,152,48"/>
+<area shape="rect" id="Node000002" href="$classplayers_management.html#ae11bf55369752a338e8084f18269517a" title="Save the players data in the playersStatics.txt." alt="" coords="200,5,346,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,24,185,24,185,29,152,29"/>
+</map>

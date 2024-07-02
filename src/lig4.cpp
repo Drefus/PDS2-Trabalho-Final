@@ -45,32 +45,14 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     int sequencia = 1;
     for (int i = 1; i < 4; i++)
     {
-        if (linha - i < 0 || time != tabuleiro[linha - i][coluna])
+        if (linha - i >= 0 && time != tabuleiro[linha - i][coluna])
             break;
         else
             sequencia++;
     }
     for (int i = 1; i < 4; i++)
     {
-        if (linha + i > 5 || time != tabuleiro[linha + i][coluna])
-            break;
-        else
-            sequencia++;
-    }
-    if (sequencia >= 4)
-        return true;
-
-    sequencia = 1;
-    for (int i = 1; i < 4; i++)
-    {
-        if (coluna - i < 0 || time != tabuleiro[linha][coluna - i])
-            break;
-        else
-            sequencia++;
-    }
-    for (int i = 1; i < 4; i++)
-    {
-        if (coluna + i > 6 || time != tabuleiro[linha][coluna + i])
+        if (linha + i <= 5 && time != tabuleiro[linha + i][coluna])
             break;
         else
             sequencia++;
@@ -81,14 +63,14 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     sequencia = 1;
     for (int i = 1; i < 4; i++)
     {
-        if (linha - i < 0 || coluna - i < 0 || time != tabuleiro[linha - i][coluna - i])
+        if (coluna - i >= 0 && time != tabuleiro[linha][coluna - i])
             break;
         else
             sequencia++;
     }
     for (int i = 1; i < 4; i++)
     {
-        if (linha + i > 5 || coluna + i > 6 || time != tabuleiro[linha + i][coluna + i])
+        if (coluna + i <= 6 && time != tabuleiro[linha][coluna + i])
             break;
         else
             sequencia++;
@@ -99,14 +81,32 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     sequencia = 1;
     for (int i = 1; i < 4; i++)
     {
-        if (linha + i > 5 || coluna - i < 0 || time != tabuleiro[linha + i][coluna - i])
+        if (linha - i >= 0 && coluna - i < 0 && time != tabuleiro[linha - i][coluna - i])
             break;
         else
             sequencia++;
     }
     for (int i = 1; i < 4; i++)
     {
-        if (linha - i < 0 || coluna + i > 6 || time != tabuleiro[linha - i][coluna + i])
+        if (linha + i <= 5 && coluna + i > 6 && time != tabuleiro[linha + i][coluna + i])
+            break;
+        else
+            sequencia++;
+    }
+    if (sequencia >= 4)
+        return true;
+
+    sequencia = 1;
+    for (int i = 1; i < 4; i++)
+    {
+        if (linha + i <= 5 && coluna - i < 0 && time != tabuleiro[linha + i][coluna - i])
+            break;
+        else
+            sequencia++;
+    }
+    for (int i = 1; i < 4; i++)
+    {
+        if (linha - i >= 0 && coluna + i > 6 && time != tabuleiro[linha - i][coluna + i])
             break;
         else
             sequencia++;

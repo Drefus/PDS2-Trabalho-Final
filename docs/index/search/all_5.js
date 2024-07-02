@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['game_0',['game',['../classgame.html',1,'game'],['../classgame.html#a9c1e7124bbf715d974dcde2b89af7a79',1,'game::game()']]],
+  ['game_0',['game',['../classgame.html',1,'game'],['../classgame.html#aff54a28ba321224019f633f92ffd5674',1,'game::game()']]],
   ['game_2ecpp_1',['game.cpp',['../game_8cpp.html',1,'']]],
   ['game_2ehpp_2',['game.hpp',['../game_8hpp.html',1,'']]],
   ['gamestatics_3',['gameStatics',['../classgame_status.html#a71623837b142fe48a567a2baad302cbf',1,'gameStatus']]],

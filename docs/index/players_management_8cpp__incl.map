@@ -1,0 +1,20 @@
+<map id="src/playersManagement.cpp" name="src/playersManagement.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,5,418,32"/>
+<area shape="rect" id="Node000002" href="$players_management_8hpp.html" title=" " alt="" coords="30,80,193,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,35,164,77,162,72,287,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="168,304,221,331"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="325,33,303,147,286,212,267,257,249,279,229,297,225,293,246,276,263,255,281,210,298,145,320,32"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="328,80,392,107"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="333,31,350,65,345,67,329,34"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="416,80,487,107"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="348,30,418,70,415,74,346,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,229,61,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,109,79,130,61,156,48,185,40,215,35,213,43,184,56,153,75,126,96,105"/>
+<area shape="rect" id="Node000004" href="$player_8hpp.html" title=" " alt="" coords="71,155,152,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="114,107,114,139,109,139,109,107"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="100,184,60,221,56,217,96,180"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,182,115,216,119,236,126,255,142,276,162,293,158,297,138,279,121,257,113,238,109,217,108,182"/>
+<area shape="rect" id="Node000006" href="$game_status_8hpp.html" title=" " alt="" coords="136,229,253,256"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="128,180,170,217,167,221,124,184"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="197,257,197,288,192,288,192,257"/>
+</map>
