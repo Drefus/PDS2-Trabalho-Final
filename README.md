@@ -18,5 +18,5 @@ Escolha uma das opções do menu,o que cada uma delas faz está citado abaixo. C
 > Caso deseje sair do menu digite **E** .
  
 ## Documentação:
-A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo docs/index/index.html em seu navegador de preferencia. Se preferir a documentação em formatato de arquivo, acesse o arquivo docs\rtf\refman.rtf.
+A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo docs/index/index.html em seu navegador de preferencia ou [Clique  aqui](https://drefus.github.io/PDS2-Trabalho-Final/index/index.html). Se preferir a documentação em formatato de arquivo, acesse o arquivo docs\rtf\refman.rtf.
 
