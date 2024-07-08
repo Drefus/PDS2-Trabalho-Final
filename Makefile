@@ -47,7 +47,8 @@ $(OBJ)/gameStatus.o: $(HDRS) $(SRC)/gamestatus.cpp
 $(OBJ)/stringUtils.o: $(HDRS) $(SRC)/stringUtils.cpp
 	$(CC) $(CFLAGS) -o $(OBJ)/stringUtils.o $(SRC)/stringUtils.cpp
 
-
+$(OBJ)/jogodavelha.o: $(HDRS) $(SRC)/jogodavelha.cpp
+	$(CC) $(CFLAGS) -o $(OBJ)/jogodavelha.o $(SRC)/jogodavelha.cpp
 	
 clean:
 	rm -f $(BIN)/*.out $(EXE) $(OBJS) gmon.out
