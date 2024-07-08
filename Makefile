@@ -41,8 +41,8 @@ $(OBJ)/game.o: $(HDRS) $(SRC)/game.cpp
 $(OBJ)/player.o: $(HDRS) $(SRC)/player.cpp
 	$(CC) $(CFLAGS) -o $(OBJ)/player.o $(SRC)/player.cpp
 
-$(OBJ)/gameStatus.o: $(HDRS) $(SRC)/gamestatus.cpp
-	$(CC) $(CFLAGS) -o $(OBJ)/gamestatus.o $(SRC)/gamestatus.cpp
+$(OBJ)/gameStatus.o: $(HDRS) $(SRC)/gameStatus.cpp
+	$(CC) $(CFLAGS) -o $(OBJ)/gameStatus.o $(SRC)/gameStatus.cpp
 
 $(OBJ)/stringUtils.o: $(HDRS) $(SRC)/stringUtils.cpp
 	$(CC) $(CFLAGS) -o $(OBJ)/stringUtils.o $(SRC)/stringUtils.cpp

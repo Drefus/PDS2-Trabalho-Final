@@ -18,25 +18,33 @@ void lig4::mostrarTabuleiro()
     }
 }
 
-void lig4::jogada(int posicao)
+int lig4::jogada(int &posicao)
 {
+    int jogada = 0;
+    while ((posicao < 1 && posicao > 7) || (tabuleiro[0][posicao - 1] != ' '))
+    {
+        cout << "posição inválida, insira uma nova posição" << endl;
+        cin >> jogada;
+        posicao = jogada;
+    }
     bool valido = false;
     int linha = this->rows - 1;
     while (valido == false)
     {
-        if (this->tabuleiro[linha][posicao] == ' ')
+        if (this->tabuleiro[linha][posicao - 1] == ' ')
         {
             if (turno % 2 == 0)
             {
-                this->tabuleiro[linha][posicao] = 'V';
+                this->tabuleiro[linha][posicao - 1] = 'V';
             }
             else
-                this->tabuleiro[linha][posicao] = 'A';
+                this->tabuleiro[linha][posicao - 1] = 'A';
             valido = true;
         }
         else
             linha--;
     };
+    return linha;
 }
 
 bool lig4::verificarAdjacente(int linha, int coluna, char time)
@@ -45,17 +53,16 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     int sequencia = 1;
     for (int i = 1; i < 4; i++)
     {
-        if (linha - i >= 0 && time != tabuleiro[linha - i][coluna])
-            break;
-        else
+        if (linha - i >= 0 && time == tabuleiro[linha - i][coluna])
             sequencia++;
+        else break;
     }
     for (int i = 1; i < 4; i++)
     {
-        if (linha + i <= 5 && time != tabuleiro[linha + i][coluna])
-            break;
-        else
+        if (linha + i <= 5 && time == tabuleiro[linha + i][coluna])
             sequencia++;
+        else
+            break;
     }
     if (sequencia >= 4)
         return true;
@@ -63,17 +70,15 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     sequencia = 1;
     for (int i = 1; i < 4; i++)
     {
-        if (coluna - i >= 0 && time != tabuleiro[linha][coluna - i])
-            break;
-        else
+        if (coluna - i >= 0 && time == tabuleiro[linha][coluna - i])
             sequencia++;
+        else break;
     }
     for (int i = 1; i < 4; i++)
     {
-        if (coluna + i <= 6 && time != tabuleiro[linha][coluna + i])
-            break;
-        else
+        if (coluna + i <= 6 && time == tabuleiro[linha][coluna + i])
             sequencia++;
+        else break;
     }
     if (sequencia >= 4)
         return true;
@@ -81,17 +86,15 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     sequencia = 1;
     for (int i = 1; i < 4; i++)
     {
-        if (linha - i >= 0 && coluna - i < 0 && time != tabuleiro[linha - i][coluna - i])
-            break;
-        else
+        if (linha - i >= 0 && coluna - i >= 0 && time == tabuleiro[linha - i][coluna - i])
             sequencia++;
+        else break;
     }
     for (int i = 1; i < 4; i++)
     {
-        if (linha + i <= 5 && coluna + i > 6 && time != tabuleiro[linha + i][coluna + i])
-            break;
-        else
+        if (linha + i <= 5 && coluna + i <= 6 && time == tabuleiro[linha + i][coluna + i])
             sequencia++;
+        else break;
     }
     if (sequencia >= 4)
         return true;
@@ -99,20 +102,19 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     sequencia = 1;
     for (int i = 1; i < 4; i++)
     {
-        if (linha + i <= 5 && coluna - i < 0 && time != tabuleiro[linha + i][coluna - i])
-            break;
-        else
+        if (linha + i <= 5 && coluna - i >= 0 && time == tabuleiro[linha + i][coluna - i])
             sequencia++;
+        else break;
     }
     for (int i = 1; i < 4; i++)
     {
-        if (linha - i >= 0 && coluna + i > 6 && time != tabuleiro[linha - i][coluna + i])
-            break;
-        else
+        if (linha - i >= 0 && coluna + i <= 6 && time == tabuleiro[linha - i][coluna + i])
             sequencia++;
+        else break;
     }
     if (sequencia >= 4)
         return true;
+
     return false;
 }
 
@@ -151,27 +153,34 @@ lig4::lig4() : game(6, 7)
     } while (true);
 
     while (true)
-    {
-        int input;
+    {   
+        int input, line;
+        vector<int> cord;
         this->mostrarTabuleiro();
         if (turno % 2 == 0)
         {
             std::cout << "Digite a jogada do jogador 1:" << std::endl;
             std::cin >> input;
-            jogada(input);
-            if (verificarAdjacente(rows, cols, 'V'))
+            line = jogada(input);
+            if (verificarAdjacente(line, input-1, 'V'))
             {
+                cout << "Jogador 1 venceu" << endl;
                 winAndLose(jogador1, jogador2);
+                this->mostrarTabuleiro();
+                break;
             }
         }
         else
         {
             std::cout << "Digite a jogada do jogador 2:" << std::endl;
             std::cin >> input;
-            jogada(input);
-            if (verificarAdjacente(rows, cols, 'A'))
-            {
+            line = jogada(input);
+            if (verificarAdjacente(line, input-1, 'A'))
+            {   
+                cout << "Jogador 2 venceu" << endl;
+                this->mostrarTabuleiro();
                 winAndLose(jogador2, jogador1);
+                break;
             }
         }
         turno++;

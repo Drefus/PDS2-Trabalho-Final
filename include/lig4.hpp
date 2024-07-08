@@ -18,7 +18,7 @@ public:
 
     void mostrarTabuleiro();
 
-    void jogada(int posicao);
+    int jogada(int &posicao);
 
     bool verificarAdjacente(int linha, int coluna, char time);
 };
