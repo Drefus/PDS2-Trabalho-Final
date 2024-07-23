@@ -1,5 +1,6 @@
-name:Henrique;nickname:Drefus;LOL:12,1;
+name:Henrique;nickname:Drefus;LOL:12,1;:0,3;
 name:Jorgin;nickname:ShalinMatadorDePorco;
 name:Henrique2;nickname:Baiano;:6,24;
 name:Henrique Castro Caetano;nickname:Maninho da 12;
 name:ab;nickname:ab;:24,6;
+name:Arthur;nickname:G12;:3,0;
