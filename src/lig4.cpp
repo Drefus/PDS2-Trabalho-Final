@@ -6,7 +6,8 @@
 using namespace std;
 
 void lig4::mostrarTabuleiro()
-{
+{   
+    cout << "_______________" << endl;
     for (int linha = 0; linha < this->rows; linha++)
     {
         cout << "|";
@@ -16,6 +17,7 @@ void lig4::mostrarTabuleiro()
         }
         cout << endl;
     }
+    cout << "|1|2|3|4|5|6|7|" << endl;
 }
 
 int lig4::jogada(int &posicao)
@@ -155,6 +157,7 @@ lig4::lig4() : game(6, 7)
     while (true)
     {   
         int input, line;
+        bool completo = true;
         vector<int> cord;
         this->mostrarTabuleiro();
         if (turno % 2 == 0)
@@ -184,5 +187,16 @@ lig4::lig4() : game(6, 7)
             }
         }
         turno++;
+
+        for (int linha = 0; linha < this->rows; linha++) {
+            for (int coluna = 0; coluna < this->cols; coluna++) {
+                if (this->tabuleiro[linha][coluna] == ' ') completo = false;
+            }
+        }
+        if (completo == true) {
+            cout << "Empate" << endl;
+            this->mostrarTabuleiro();
+            break;
+        }
     }
 }
