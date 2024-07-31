@@ -7,7 +7,6 @@ using namespace std;
 
 void lig4::mostrarTabuleiro()
 {   
-    cout << "_______________" << endl;
     for (int linha = 0; linha < this->rows; linha++)
     {
         cout << "|";
