@@ -1,0 +1,27 @@
+<map id="lig4::lig4" name="lig4::lig4">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,129,85,158"/>
+<area shape="rect" id="Node000002" href="$classplayers_management.html#a5fbc67ce627de58a27992f49814036d5" title="Verify the player nick exists in the players." alt="" coords="137,5,308,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,127,89,94,131,61,138,57,141,62,134,66,93,98,61,130"/>
+<area shape="rect" id="Node000003" href="$classlig4.html#ae4f552bdb9d881c9e65817c823f2e4ec" title=" " alt="" coords="171,76,274,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,129,132,114,156,107,158,112,133,119,86,134"/>
+<area shape="rect" id="Node000004" href="$classlig4.html#a7dd147e1e5ad2a5f263d291ea60348b9" title=" " alt="" coords="136,129,309,158"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="85,141,120,141,120,146,85,146"/>
+<area shape="rect" id="Node000005" href="$classlig4.html#a4585a1ae772b89f411210402f77335a0" title=" " alt="" coords="133,182,312,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="86,153,133,167,158,175,156,180,132,173,84,158"/>
+<area shape="rect" id="Node000006" href="$classgame.html#aa73e185d035361027c0df359d7a6c750" title="Add one win to the winner and one lose for the loser." alt="" coords="145,236,300,264"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="60,156,92,189,134,221,146,227,143,232,131,226,88,193,56,160"/>
+<area shape="rect" id="Node000007" href="$classplayers_management.html#a4f80e5e54d1cd2273b86af3345c3ece1" title="Add a lose in the game for the player nick passed." alt="" coords="360,191,530,237"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="300,235,344,228,345,233,300,240"/>
+<area shape="rect" id="Node000011" href="$classplayers_management.html#adbef5e6113980c06e9c88dec87a53747" title="Add a win in the game for the player nick passed." alt="" coords="360,261,530,308"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="300,259,345,266,344,272,300,265"/>
+<area shape="rect" id="Node000008" href="$classgame_status.html#a72e4abd5d73b95d8c5300b7e9c210579" title="Add a lose for the player in this game." alt="" coords="579,150,755,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="530,192,584,180,585,186,531,198"/>
+<area shape="rect" id="Node000009" href="$classgame_status.html#a4ab21c8ec9f2dbe1f408dbdb553e5e52" title="get Name" alt="" coords="578,204,756,232"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="531,213,563,213,563,219,531,218"/>
+<area shape="rect" id="Node000010" href="$classplayers_management.html#ae11bf55369752a338e8084f18269517a" title="Save the players data in the playersStatics.txt." alt="" coords="582,256,752,303"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="528,235,572,249,570,254,526,241"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="521,258,578,241,598,235,600,240,579,246,523,263"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="531,280,566,279,566,284,531,285"/>
+<area shape="rect" id="Node000012" href="$classgame_status.html#a8a3a06ec0e05e77736aa5994808c9311" title="Add a win for the player in this game." alt="" coords="583,326,751,355"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="531,304,593,319,592,325,530,309"/>
+</map>

@@ -94,6 +94,13 @@ $(function(){ initResizable(false); });
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="string_utils_8hpp_source.html">stringUtils.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Diagrama de colaboração para stringUtils:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstring_utils__coll__graph.svg" width="199" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Membros Públicos</h2></td></tr>
@@ -105,6 +112,7 @@ Membros Públicos</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Membros públicos estáticos</h2></td></tr>
 <tr class="memitem:a13c1603c08fd6d8e43399d0fe90d7f86" id="r_a13c1603c08fd6d8e43399d0fe90d7f86"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13c1603c08fd6d8e43399d0fe90d7f86">split</a> (std::string text, char deliminator)</td></tr>
+<tr class="memdesc:a13c1603c08fd6d8e43399d0fe90d7f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a string with end deliminator.  <br /></td></tr>
 <tr class="separator:a13c1603c08fd6d8e43399d0fe90d7f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56360121f6f79af10301405900535ea2" id="r_a56360121f6f79af10301405900535ea2"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56360121f6f79af10301405900535ea2">splitInTwo</a> (std::string text, char deliminator)</td></tr>
 <tr class="separator:a56360121f6f79af10301405900535ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,23 +183,36 @@ Membros públicos estáticos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   12</span>{</div>
-<div class="line"><span class="lineno">   13</span>    std::vector&lt;std::string&gt; tokens;</div>
-<div class="line"><span class="lineno">   14</span>    <span class="keywordtype">size_t</span> pos = 0;</div>
-<div class="line"><span class="lineno">   15</span>    std::string token;</div>
-<div class="line"><span class="lineno">   16</span> </div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">while</span> ((pos = text.find(deliminator)) != std::string::npos) {</div>
-<div class="line"><span class="lineno">   18</span>        token = text.substr(0, pos);</div>
-<div class="line"><span class="lineno">   19</span>        tokens.push_back(token);</div>
-<div class="line"><span class="lineno">   20</span>        text.erase(0, pos + 1);</div>
-<div class="line"><span class="lineno">   21</span>    }</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> tokens;</div>
-<div class="line"><span class="lineno">   24</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Esse é o diagrama das funções que utilizam essa função:</div>
-<div class="dyncontent">
-<div class="center"><img src="classstring_utils_a13c1603c08fd6d8e43399d0fe90d7f86_icgraph.png" border="0" usemap="#aclassstring_utils_a13c1603c08fd6d8e43399d0fe90d7f86_icgraph" alt=""/></div>
+
+<p>Split a string with end deliminator. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+    <tr><td class="paramname">deliminator</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A vector of all split strings. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    std::vector&lt;std::string&gt; tokens;</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordtype">size_t</span> pos = 0;</div>
+<div class="line"><span class="lineno">   18</span>    std::string token;</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">while</span> ((pos = text.find(deliminator)) != std::string::npos)</div>
+<div class="line"><span class="lineno">   21</span>    {</div>
+<div class="line"><span class="lineno">   22</span>        token = text.substr(0, pos);</div>
+<div class="line"><span class="lineno">   23</span>        tokens.push_back(token);</div>
+<div class="line"><span class="lineno">   24</span>        text.erase(0, pos + 1);</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> tokens;</div>
+<div class="line"><span class="lineno">   28</span>}</div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Esse é o diagrama das funções que utilizam essa função:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstring_utils_a13c1603c08fd6d8e43399d0fe90d7f86_icgraph.svg" width="298" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -222,23 +243,25 @@ Esse é o diagrama das funções que utilizam essa função:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
-<div class="line"><span class="lineno">   28</span>    std::vector&lt;std::string&gt; tokens;</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">size_t</span> pos = 0;</div>
-<div class="line"><span class="lineno">   30</span>    std::string token;</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>    pos = text.find(deliminator);</div>
-<div class="line"><span class="lineno">   33</span>    token = text.substr(0, pos);</div>
-<div class="line"><span class="lineno">   34</span>    tokens.push_back(token);</div>
-<div class="line"><span class="lineno">   35</span>    text.erase(0, pos + 1);</div>
-<div class="line"><span class="lineno">   36</span>    tokens.push_back(text);</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> tokens;</div>
-<div class="line"><span class="lineno">   39</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Esse é o diagrama das funções que utilizam essa função:</div>
-<div class="dyncontent">
-<div class="center"><img src="classstring_utils_a56360121f6f79af10301405900535ea2_icgraph.png" border="0" usemap="#aclassstring_utils_a56360121f6f79af10301405900535ea2_icgraph" alt=""/></div>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{</div>
+<div class="line"><span class="lineno">   32</span>    std::vector&lt;std::string&gt; tokens;</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">size_t</span> pos = 0;</div>
+<div class="line"><span class="lineno">   34</span>    std::string token;</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    pos = text.find(deliminator);</div>
+<div class="line"><span class="lineno">   37</span>    token = text.substr(0, pos);</div>
+<div class="line"><span class="lineno">   38</span>    tokens.push_back(token);</div>
+<div class="line"><span class="lineno">   39</span>    text.erase(0, pos + 1);</div>
+<div class="line"><span class="lineno">   40</span>    tokens.push_back(text);</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> tokens;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Esse é o diagrama das funções que utilizam essa função:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classstring_utils_a56360121f6f79af10301405900535ea2_icgraph.svg" width="338" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

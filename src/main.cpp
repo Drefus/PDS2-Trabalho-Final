@@ -4,6 +4,7 @@
 #include "playersManagement.hpp"
 #include <playersMenu.hpp>
 #include <lig4.hpp>
+#include <reversi.hpp>
 
 int main()
 {
@@ -15,6 +16,8 @@ int main()
         std::cout << "║             Menu              ║" << std::endl;
         std::cout << "╠═══════════════════════════════╣" << std::endl;
         std::cout << "║ 1. Gerenciamento de jogadores ║" << std::endl;
+        std::cout << "║ 2. Ligue 4                    ║" << std::endl;
+        std::cout << "║ 3. Reversi                    ║" << std::endl;
         std::cout << "║ E. Sair                       ║" << std::endl;
         std::cout << "╚═══════════════════════════════╝" << std::endl;
         char input;
@@ -28,6 +31,12 @@ int main()
         }
         case '2':
         {
+            lig4();
+            break;
+        }
+        case '3':
+        {
+            reversi();
             break;
         }
         case 'E':

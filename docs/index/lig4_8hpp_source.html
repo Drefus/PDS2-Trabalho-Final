@@ -103,24 +103,29 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using namespace </span>std;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_lig4.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_lig4.html">Lig4</a> : <span class="keyword">public</span> <a class="code hl_class" href="classgame.html">game</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classlig4.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classlig4.html">lig4</a> : <span class="keyword">public</span> <a class="code hl_class" href="classgame.html">game</a></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">char</span> tabuleiro[6][7];</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> turno;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> InicializarTabuleiro() {}</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> MostrarTabuleiro() {}</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> Jogada(<span class="keywordtype">int</span> posicao) {}</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> VerificarAdjacente(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">char</span> time) {}</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="classlig4.html#a412d6bbcae4077e520282b295060abe1">lig4</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlig4.html#a7dd147e1e5ad2a5f263d291ea60348b9">mostrarTabuleiro</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlig4.html#ae4f552bdb9d881c9e65817c823f2e4ec">jogada</a>(<span class="keywordtype">int</span> posicao);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classlig4.html#a4585a1ae772b89f411210402f77335a0">verificarAdjacente</a>(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">char</span> time);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_lig4_html"><div class="ttname"><a href="class_lig4.html">Lig4</a></div><div class="ttdef"><b>Definição</b> lig4.hpp:12</div></div>
-<div class="ttc" id="aclassgame_html"><div class="ttname"><a href="classgame.html">game</a></div><div class="ttdef"><b>Definição</b> game.hpp:7</div></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassgame_html"><div class="ttname"><a href="classgame.html">game</a></div><div class="ttdoc">Abstract class game.</div><div class="ttdef"><b>Definição</b> game.hpp:9</div></div>
+<div class="ttc" id="aclasslig4_html"><div class="ttname"><a href="classlig4.html">lig4</a></div><div class="ttdef"><b>Definição</b> lig4.hpp:12</div></div>
+<div class="ttc" id="aclasslig4_html_a412d6bbcae4077e520282b295060abe1"><div class="ttname"><a href="classlig4.html#a412d6bbcae4077e520282b295060abe1">lig4::lig4</a></div><div class="ttdeci">lig4()</div><div class="ttdef"><b>Definição</b> lig4.cpp:119</div></div>
+<div class="ttc" id="aclasslig4_html_a4585a1ae772b89f411210402f77335a0"><div class="ttname"><a href="classlig4.html#a4585a1ae772b89f411210402f77335a0">lig4::verificarAdjacente</a></div><div class="ttdeci">bool verificarAdjacente(int linha, int coluna, char time)</div><div class="ttdef"><b>Definição</b> lig4.cpp:42</div></div>
+<div class="ttc" id="aclasslig4_html_a7dd147e1e5ad2a5f263d291ea60348b9"><div class="ttname"><a href="classlig4.html#a7dd147e1e5ad2a5f263d291ea60348b9">lig4::mostrarTabuleiro</a></div><div class="ttdeci">void mostrarTabuleiro()</div><div class="ttdef"><b>Definição</b> lig4.cpp:8</div></div>
+<div class="ttc" id="aclasslig4_html_ae4f552bdb9d881c9e65817c823f2e4ec"><div class="ttname"><a href="classlig4.html#ae4f552bdb9d881c9e65817c823f2e4ec">lig4::jogada</a></div><div class="ttdeci">void jogada(int posicao)</div><div class="ttdef"><b>Definição</b> lig4.cpp:21</div></div>
 <div class="ttc" id="agame_8hpp_html"><div class="ttname"><a href="game_8hpp.html">game.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

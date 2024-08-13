@@ -3,9 +3,11 @@
 #include <string>
 #include <vector>
 #include "playersManagement.hpp"
+
+/// @brief Abstract class game
 class game
 {
-private:
+protected:
     std::string name;
     int rows;
     int cols;
@@ -13,7 +15,7 @@ private:
     playersManagement management;
 
 public:
-    game(int _x, int _y);
+    game(int _rows, int _cols);
     ~game();
     virtual void changeElement(int x, int y, char element);
     virtual void winAndLose(std::string winner, std::string loser);

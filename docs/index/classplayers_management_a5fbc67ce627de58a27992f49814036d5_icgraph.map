@@ -1,0 +1,5 @@
+<map id="playersManagement::existPlayer" name="playersManagement::existPlayer">
+<area shape="rect" id="Node000001" title="Verify the player nick exists in the players." alt="" coords="133,5,303,52"/>
+<area shape="rect" id="Node000002" href="$classlig4.html#a412d6bbcae4077e520282b295060abe1" title=" " alt="" coords="5,14,85,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,31,85,31,85,26,117,26"/>
+</map>

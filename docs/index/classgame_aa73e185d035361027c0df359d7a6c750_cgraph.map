@@ -1,0 +1,17 @@
+<map id="game::winAndLose" name="game::winAndLose">
+<area shape="rect" id="Node000001" title="Add one win to the winner and one lose for the loser." alt="" coords="5,91,161,119"/>
+<area shape="rect" id="Node000002" href="$classplayers_management.html#a4f80e5e54d1cd2273b86af3345c3ece1" title="Add a lose in the game for the player nick passed." alt="" coords="209,46,379,92"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,89,193,84,194,89,162,94"/>
+<area shape="rect" id="Node000006" href="$classplayers_management.html#adbef5e6113980c06e9c88dec87a53747" title="Add a win in the game for the player nick passed." alt="" coords="209,116,379,163"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="162,115,194,120,193,126,161,120"/>
+<area shape="rect" id="Node000003" href="$classgame_status.html#a72e4abd5d73b95d8c5300b7e9c210579" title="Add a lose for the player in this game." alt="" coords="428,5,603,34"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,47,433,35,434,41,380,53"/>
+<area shape="rect" id="Node000004" href="$classgame_status.html#a4ab21c8ec9f2dbe1f408dbdb553e5e52" title="get Name" alt="" coords="427,59,604,87"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="379,68,411,68,411,74,379,73"/>
+<area shape="rect" id="Node000005" href="$classplayers_management.html#ae11bf55369752a338e8084f18269517a" title="Save the players data in the playersStatics.txt." alt="" coords="431,111,601,158"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="376,90,420,104,419,109,375,96"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="370,113,426,96,447,90,449,95,428,101,372,118"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="379,135,415,134,415,139,379,140"/>
+<area shape="rect" id="Node000007" href="$classgame_status.html#a8a3a06ec0e05e77736aa5994808c9311" title="Add a win for the player in this game." alt="" coords="432,181,599,210"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="380,159,442,174,440,180,379,164"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="player::player" name="player::player">
+<area shape="rect" id="Node000001" title="Create the player class based by player string line." alt="" coords="5,32,119,61"/>
+<area shape="rect" id="Node000002" href="$classstring_utils.html#a13c1603c08fd6d8e43399d0fe90d7f86" title="Split a string with end deliminator." alt="" coords="187,5,312,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,36,171,28,172,33,120,41"/>
+<area shape="rect" id="Node000003" href="$classstring_utils.html#a56360121f6f79af10301405900535ea2" title=" " alt="" coords="167,59,332,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,52,152,56,151,62,119,57"/>
+</map>
