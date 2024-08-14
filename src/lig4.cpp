@@ -5,6 +5,7 @@
 
 using namespace std;
 
+/// @brief Show the board
 void lig4::mostrarTabuleiro()
 {   
     for (int linha = 0; linha < this->rows; linha++)
@@ -19,6 +20,9 @@ void lig4::mostrarTabuleiro()
     cout << "|1|2|3|4|5|6|7|" << endl;
 }
 
+/// @brief Make a valid play in the board
+/// @param posicao 
+/// @return line that the player did the move as a INT
 int lig4::jogada(int &posicao)
 {
     int jogada = 0;
@@ -48,6 +52,11 @@ int lig4::jogada(int &posicao)
     return linha;
 }
 
+/// @brief Check if one player won the game based on the last move
+/// @param linha 
+/// @param coluna 
+/// @param time 
+/// @return Return true if that´s a win, False if the game ins´t over
 bool lig4::verificarAdjacente(int linha, int coluna, char time)
 {
 
@@ -119,6 +128,7 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     return false;
 }
 
+/// @brief Constructor and match of Lig4
 lig4::lig4() : game(6, 7)
 {
     std::string jogador1;
