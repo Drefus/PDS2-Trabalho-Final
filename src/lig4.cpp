@@ -21,14 +21,15 @@ void lig4::mostrarTabuleiro()
 }
 
 /// @brief Make a valid play in the board
-/// @param posicao 
+/// @param posicao int
 /// @return line that the player did the move as a INT
 int lig4::jogada(int &posicao)
 {
     int jogada = 0;
+    cout << posicao;
     while ((posicao < 1 && posicao > 7) || (tabuleiro[0][posicao - 1] != ' '))
     {
-        cout << "posição inválida, insira uma nova posição" << endl;
+        //cout << "posição inválida, insira uma nova posição" << endl;
         cin >> jogada;
         posicao = jogada;
     }
@@ -53,9 +54,9 @@ int lig4::jogada(int &posicao)
 }
 
 /// @brief Check if one player won the game based on the last move
-/// @param linha 
-/// @param coluna 
-/// @param time 
+/// @param linha int
+/// @param coluna int
+/// @param time char
 /// @return Return true if that´s a win, False if the game ins´t over
 bool lig4::verificarAdjacente(int linha, int coluna, char time)
 {
