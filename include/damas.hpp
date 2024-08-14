@@ -2,7 +2,7 @@
 #define DAMA_HPP
 #include <string>
 #include <vector>
-
+using namespace std;
 class damas
 {
 private:
@@ -21,13 +21,13 @@ public:
 
     bool jogada_valida_X(char jogada1, char jogada2, char jogada3, char jogada4);
 
-    void mover_damas_X(char jogada1, char jogada2, char jogada3, char jogada4) ;
+    void mover_damas_X(char jogada1, char jogada2, char jogada3, char jogada4);
 
-    void mover_damas_XX(int jogada1, int jogada2, int jogada3, int jogada4) ;
+    void mover_damas_XX(int jogada1, int jogada2, int jogada3, int jogada4);
 
-    void mover_damas_O(char jogada1, char jogada2, char jogada3, char jogada4) ;
+    void mover_damas_O(char jogada1, char jogada2, char jogada3, char jogada4);
 
-    void mover_damas_OO(int jogada1, int jogada2, int jogada3, int jogada4) ;
+    void mover_damas_OO(int jogada1, int jogada2, int jogada3, int jogada4);
 
     void comer_multiplas_damas(int a, int b);
 
@@ -46,8 +46,9 @@ public:
     bool jogada_valida_dama_OO(int jogada1, int jogada2, int jogada3, int jogada4);
 
     int transcrever_movimento(char jogada1);
-    
-    int jogar();
 
+    char resultado_final();
+
+    int jogar();
 };
 #endif
