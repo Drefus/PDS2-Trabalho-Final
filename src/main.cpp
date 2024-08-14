@@ -5,7 +5,7 @@
 #include <playersMenu.hpp>
 #include <lig4.hpp>
 #include <reversi.hpp>
-
+#include "damas.hpp"
 int main()
 {
     bool isLoop = true;
@@ -37,6 +37,12 @@ int main()
         case '3':
         {
             reversi();
+            break;
+        }
+        case '4':
+        {
+            damas jogo;
+            jogo.jogar();
             break;
         }
         case 'E':
