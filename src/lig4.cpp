@@ -26,7 +26,7 @@ void lig4::mostrarTabuleiro()
 int lig4::jogada(int &posicao)
 {
     int jogada = 0;
-    while ((posicao < 1 && posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || posicao%1 != 0)
+    while ((posicao < 1 && posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || (posicao%1 != 0) || isdigit(posicao) != 0)
     {   
         cout << "posição inválida, insira uma nova posição" << endl;
         cin >> jogada;
