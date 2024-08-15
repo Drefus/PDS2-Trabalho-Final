@@ -5,8 +5,9 @@
 
 using namespace std;
 
+/// @brief Show the board
 void lig4::mostrarTabuleiro()
-{
+{   
     for (int linha = 0; linha < this->rows; linha++)
     {
         cout << "|";
@@ -16,13 +17,17 @@ void lig4::mostrarTabuleiro()
         }
         cout << endl;
     }
+    cout << "|1|2|3|4|5|6|7|" << endl;
 }
 
+/// @brief Make a valid play in the board
+/// @param posicao int
+/// @return line that the player did the move as a INT
 int lig4::jogada(int &posicao)
 {
     int jogada = 0;
-    while ((posicao < 1 && posicao > 7) || (tabuleiro[0][posicao - 1] != ' '))
-    {
+    while ((posicao < 1 && posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || (posicao%1 != 0) || isdigit(posicao) != 0)
+    {   
         cout << "posição inválida, insira uma nova posição" << endl;
         cin >> jogada;
         posicao = jogada;
@@ -47,6 +52,11 @@ int lig4::jogada(int &posicao)
     return linha;
 }
 
+/// @brief Check if one player won the game based on the last move
+/// @param linha int
+/// @param coluna int
+/// @param time char
+/// @return Return true if that´s a win, False if the game ins´t over
 bool lig4::verificarAdjacente(int linha, int coluna, char time)
 {
 
@@ -118,6 +128,7 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     return false;
 }
 
+/// @brief Constructor and match of Lig4
 lig4::lig4() : game(6, 7)
 {
     std::string jogador1;
@@ -155,6 +166,7 @@ lig4::lig4() : game(6, 7)
     while (true)
     {   
         int input, line;
+        bool completo = true;
         vector<int> cord;
         this->mostrarTabuleiro();
         if (turno % 2 == 0)
@@ -184,5 +196,16 @@ lig4::lig4() : game(6, 7)
             }
         }
         turno++;
+
+        for (int linha = 0; linha < this->rows; linha++) {
+            for (int coluna = 0; coluna < this->cols; coluna++) {
+                if (this->tabuleiro[linha][coluna] == ' ') completo = false;
+            }
+        }
+        if (completo == true) {
+            cout << "Empate" << endl;
+            this->mostrarTabuleiro();
+            break;
+        }
     }
 }
