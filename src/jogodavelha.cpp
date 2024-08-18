@@ -1,9 +1,7 @@
 #include <iostream>
+#include <jogodavelha.hpp>
 using namespace std;
 
-char tabuleiro[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
-char marcadorAtual;
-int jogadorAtual;
 
 /// @brief Construtor do tabuleiro
 void drawTabuleiro() {
@@ -85,7 +83,10 @@ void escolherMarcador() {
 }
 
 /// @brief Utiliza as funções para rodar o jogo e faz checagem para jogadas válidas
-void game(){
+jogodavelha::jogodavelha():game(3,3,"jogodavelha")
+{
+    this->tabuleiro = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+    this->loadPlayers();
     escolherMarcador();
     drawTabuleiro();
 
@@ -121,11 +122,13 @@ void game(){
         int vencedor = winner();
         if (vencedor == 1) {
             cout << "Jogador 1 foi o Vencedor!" << endl;
+            this->winAndLose(jogador1,jogador2);
             break;
         }
 
         if (vencedor == 2) {
             cout << "Jogador 2 foi o Vencedor!" << endl;
+            this->winAndLose(jogador2,jogador1);
             break;
         }
 
@@ -135,9 +138,4 @@ void game(){
 
         mudaJogador();
     }
-}
-
-int main(){
-    game();
-    return 0;
 }

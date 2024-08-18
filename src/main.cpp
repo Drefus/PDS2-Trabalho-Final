@@ -6,6 +6,7 @@
 #include <lig4.hpp>
 #include <reversi.hpp>
 #include "damas.hpp"
+#include <jogodavelha.hpp>
 int main()
 {
     bool isLoop = true;
@@ -19,6 +20,7 @@ int main()
         std::cout << "║ 2. Ligue 4                    ║" << std::endl;
         std::cout << "║ 3. Reversi                    ║" << std::endl;
         std::cout << "║ 4. Damas                      ║" << std::endl;
+        std::cout << "║ 5. Jogo da velha              ║" << std::endl;
         std::cout << "║ E. Sair                       ║" << std::endl;
         std::cout << "╚═══════════════════════════════╝" << std::endl;
         char input;
@@ -44,6 +46,11 @@ int main()
         {
             damas jogo;
             jogo.jogar();
+            break;
+        }
+        case '5':
+        {
+            jogodavelha();
             break;
         }
         case 'E':

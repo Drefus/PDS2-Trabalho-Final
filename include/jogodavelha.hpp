@@ -1,10 +1,19 @@
 #ifndef JOGODAVELHA_HPP
 #define JOGODAVELHA_HPP
+#include <game.hpp>
 
-void drawTabuleiro();
-bool marcador(int coord);
-int winner();
-void mudaJogador();
-void game();
+class jogodavelha : public game
+{
+private:
+    char marcadorAtual;
+    int jogadorAtual;
+
+public:
+    jogodavelha();
+    void drawTabuleiro();
+    bool marcador(int coord);
+    int winner();
+    void mudaJogador();
+};
 
 #endif
