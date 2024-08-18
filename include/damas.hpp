@@ -2,6 +2,7 @@
 #define DAMA_HPP
 #include <string>
 #include <vector>
+#include <game.hpp>
 using namespace std;
 class damas : public game
 {

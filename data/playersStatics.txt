@@ -3,6 +3,7 @@ name:Jorgin;nickname:ShalinMatadorDePorco;
 name:Henrique2;nickname:Baiano;:6,24;
 name:Henrique Castro Caetano;nickname:Maninho da 12;
 name:xerecudo;nickname:xerequinha;
-name:ab;nickname:ab;:24,7;Lig4:0,1;
+name:ab;nickname:ab;:24,7;Lig4:0,1;damas:0,1;
 name:Arthur;nickname:G12;:3,0;
 name:a;nickname:jo;:1,0;Lig4:1,0;
+name:GaloDoido;nickname:GaloDoido;damas:1,0;
