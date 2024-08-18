@@ -1,13 +1,18 @@
 #include <reversi.hpp>
 
+/**
+ * @brief Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais.
+ */
 reversi::reversi() : game(8, 8, "reversi"), turno(0)
 {
+    // Inicializa o tabuleiro com espaços em branco
     for (int i = 0; i < rows; ++i)
     {
         vector<char> linha(cols, ' ');
         tabuleiro.push_back(linha);
     }
 
+    // Define as peças iniciais no tabuleiro
     tabuleiro[3][3] = 'B';
     tabuleiro[4][4] = 'B';
     tabuleiro[3][4] = 'P';
@@ -21,6 +26,8 @@ reversi::reversi() : game(8, 8, "reversi"), turno(0)
     {
         mostrarTabuleiro();
         char currentPlayer = (turno % 2 == 0) ? 'P' : 'B';
+
+        // Verifica se o jogador atual tem movimentos válidos
         if (!temMovimentosValidos(currentPlayer))
         {
             cout << "Jogador " << ((turno % 2 == 0) ? "1" : "2") << " (" << currentPlayer << "), não tem movimentos válidos. Deseja passar a vez? (s/n): ";
@@ -50,9 +57,11 @@ reversi::reversi() : game(8, 8, "reversi"), turno(0)
             }
         }
 
+        // Verifica a pontuação dos jogadores
         int pontuacaoP = contarPecas('P');
         int pontuacaoB = contarPecas('B');
 
+        // Verifica se algum jogador venceu
         if (pontuacaoP == 0)
         {
             cout << endl
@@ -71,6 +80,7 @@ reversi::reversi() : game(8, 8, "reversi"), turno(0)
         bool semMovimentosP = !temMovimentosValidos('P');
         bool semMovimentosB = !temMovimentosValidos('B');
 
+        // Verifica se o jogo acabou
         if (!jogoFinalizado && semMovimentosP && semMovimentosB)
         {
             if (pontuacaoP > pontuacaoB)
@@ -97,6 +107,9 @@ reversi::reversi() : game(8, 8, "reversi"), turno(0)
     mostrarTabuleiro();
 }
 
+/**
+ * @brief Exibe o tabuleiro do jogo.
+ */
 void reversi::mostrarTabuleiro()
 {
     cout << "  ";
@@ -129,6 +142,13 @@ void reversi::mostrarTabuleiro()
     cout << "Pontuação - P: " << pontuacaoP << " B: " << pontuacaoB << endl;
 }
 
+/**
+ * @brief Verifica se um movimento é válido para o jogador atual.
+ * @param x Coordenada x (linha) do movimento.
+ * @param y Coordenada y (coluna) do movimento.
+ * @param player Jogador atual ('P' ou 'B').
+ * @return true se o movimento for válido, false caso contrário.
+ */
 bool reversi::movimentoValido(int x, int y, char player)
 {
     if (tabuleiro[x][y] != ' ')
@@ -137,6 +157,13 @@ bool reversi::movimentoValido(int x, int y, char player)
     return verificarAdjacente(x, y, player);
 }
 
+/**
+ * @brief Executa um movimento no tabuleiro.
+ * @param x Coordenada x (linha) do movimento.
+ * @param y Coordenada y (coluna) do movimento.
+ * @param player Jogador atual ('P' ou 'B').
+ * @return true se o movimento foi realizado, false caso contrário.
+ */
 bool reversi::jogada(int x, int y, char player)
 {
     if (!movimentoValido(x, y, player))
@@ -147,6 +174,7 @@ bool reversi::jogada(int x, int y, char player)
     tabuleiro[x][y] = player;
     char oponente = (player == 'P') ? 'B' : 'P';
 
+    // Verifica e converte as peças do oponente
     for (int dx = -1; dx <= 1; dx++)
     {
         for (int dy = -1; dy <= 1; dy++)
@@ -177,6 +205,13 @@ bool reversi::jogada(int x, int y, char player)
     return true;
 }
 
+/**
+ * @brief Verifica se há peças adjacentes que podem ser capturadas.
+ * @param x Coordenada x (linha) da peça atual.
+ * @param y Coordenada y (coluna) da peça atual.
+ * @param player Jogador atual ('P' ou 'B').
+ * @return true se houver peças adjacentes a serem capturadas, false caso contrário.
+ */
 bool reversi::verificarAdjacente(int x, int y, char player)
 {
     char oponente = (player == 'P') ? 'B' : 'P';
@@ -207,6 +242,11 @@ bool reversi::verificarAdjacente(int x, int y, char player)
     return valido;
 }
 
+/**
+ * @brief Verifica se o jogador atual tem movimentos válidos disponíveis.
+ * @param player Jogador atual ('P' ou 'B').
+ * @return true se o jogador tiver movimentos válidos, false caso contrário.
+ */
 bool reversi::temMovimentosValidos(char player)
 {
     for (int i = 0; i < rows; ++i)
@@ -222,6 +262,12 @@ bool reversi::temMovimentosValidos(char player)
     return false;
 }
 
+/**
+ * @brief Conta o número de peças de um jogador no tabuleiro.
+ * @param player Jogador ('P' ou 'B').
+ * @return Número de peças do jogador
+ * @return Número de peças do jogador no tabuleiro.
+ */
 int reversi::contarPecas(char player)
 {
     int count = 0;
