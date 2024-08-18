@@ -29,10 +29,15 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 
 #### Como jogar: 
 >O objetivo dos jogadores é de unir 4 peças da sua cor, seja na vertical, horizontal ou diagonal.
+
 >Para uma jogada ser válida ela deve ser um dos números inteiros de 1 a 7 e a respectiva coluna não pode estar totalmente preenchida ainda.
+
 >Quando o jogador escolher uma coluna sua peça ira para primeira linha (de cima para baixo) que esteja vazia.
+
 >A primeira jogada é do jogador 1 (time vermelho: V) e em diante os jogadores vermelho e azul irão revezar as jogadas.
+
 >O vencedor será aquele que unir as 4 peças primeiro e cada jogador recebe uma vitória ou derrota
+
 >Caso o tabuleiro esteja totalmente completo e nenhum dos jogadores tenham vencido ocorre um empate.
 
 ### Damas
@@ -70,3 +75,28 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 #### Como ganhar:
 >A única condição de vitória do jogo é que algum jogador coma todas as peças inimigas.
 
+### Reversi
+
+#### Começando o jogo:
+>Insira o apelido do 1º e em seguida do 2º jogador
+
+#### Como jogar:
+>Dois jogadores competem, usando 64 peças idênticas que são claras de um lado e escuras do outro. Cada jogador escolhe uma cor para usar durante o jogo. 
+
+>Os jogadores se revezam colocando um disco em um quadrado vazio, com a cor atribuída voltada para cima. 
+
+>Depois que uma jogada é feita, quaisquer discos da cor do oponente que estejam em linha reta delimitada por aquele que acabou de ser jogado e outro da cor do jogador atual são virados. 
+
+>Quando todos os quadrados vazios jogáveis ​​forem preenchidos, o jogador com mais discos exibidos em sua própria cor ganha o jogo.
+
+### Jogo Da Velha
+
+#### Como jogar:
+>Dois jogadores com os marcadores 'X' e 'O' disputam num tabuleiro 3x3.
+
+>Os jogadores se alternam escolhendo a posição para fazer uma nova marcação.
+
+>Vence quem conseguir deixar 3 dos seus marcadores em sequência, podendo ser na horizontal, vertical ou diagonal.
+
+>Caso nenhum dos dois jogadores consiga vencer e o tabuleiro estiver todo marcado, então terá sido um empate.
+>>>>>>> 6398044197bb72dbb8b0de00fae8bbb461478588
