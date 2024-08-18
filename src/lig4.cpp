@@ -24,9 +24,9 @@ void lig4::mostrarTabuleiro()
 int lig4::jogada(int &posicao)
 {
     int jogada = 0;
-    while ((posicao < 1 && posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || (posicao%1 != 0) || isdigit(posicao) != 0)
+    while ((posicao < 1 || posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || (posicao%1 != 0) || isdigit(posicao) != 0)
     {   
-        cout << "posição inválida, insira uma nova posição" << endl;
+        //cout << "posição inválida, insira uma nova posição" << endl;
         cin >> jogada;
         posicao = jogada;
     }
@@ -171,6 +171,7 @@ lig4::lig4() : game(6, 7)
         {
             cout << "Digite a jogada do jogador 1:" << endl;
             cin >> input;
+            cout << input << " input" << endl;
             line = jogada(input);
             if (verificarAdjacente(line, input-1, 'V'))
             {
@@ -184,6 +185,7 @@ lig4::lig4() : game(6, 7)
         {
             cout << "Digite a jogada do jogador 2:" << endl;
             cin >> input;
+            cout << input << " input" << endl;
             line = jogada(input);
             if (verificarAdjacente(line, input-1, 'A'))
             {   
