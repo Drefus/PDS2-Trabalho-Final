@@ -2,7 +2,7 @@
 #include <vector>
 #include <damas.hpp>
 using namespace std;
-
+/// @brief Construtor do tabuleiro.
 damas::damas()
 {
     linhas = 13;
@@ -83,6 +83,9 @@ damas::damas()
         }
     }
 }
+/// @brief Função para comer o máximo de peças possíveis automaticamente.
+/// @param linha_final 
+/// @param coluna_final 
 void damas::comer_multiplas(int linha_final, int coluna_final)
 {
 loop:
@@ -173,7 +176,7 @@ loop:
         tabuleiro[linha_final][coluna_final] = '@';
     }
 }
-
+/// @brief  Imprime o tabuleiro.
 void damas::imprimir_tabuleiro()
 {
     for (int i = 0; i < linhas; i++)
@@ -185,7 +188,12 @@ void damas::imprimir_tabuleiro()
         cout << endl;
     }
 }
-
+/// @brief Verifica se a jogada a ser executada está dentro das regras do jogo.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
+/// @return Retorna se a jogada foi válida ou não.
 bool damas::jogada_valida_O(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -251,7 +259,12 @@ bool damas::jogada_valida_O(char jogada1, char jogada2, char jogada3, char jogad
     }
     return true;
 }
-
+/// @brief Verifica se a jogada das peças 'X' é válida.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
+/// @return True = jogada valida; False = jogada invalida.
 bool damas::jogada_valida_X(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -323,7 +336,11 @@ bool damas::jogada_valida_X(char jogada1, char jogada2, char jogada3, char jogad
     }
     return true;
 }
-
+/// @brief Função com o intuito de movimentar as damas das peças 'X'.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
 void damas::mover_damas_X(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -390,7 +407,11 @@ void damas::mover_damas_X(char jogada1, char jogada2, char jogada3, char jogada4
         }
     }
 }
-
+/// @brief Função com intuito de movimentar as damas das peças 'X', mas recebendo um int como parâmetro. 
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
 void damas::mover_damas_XX(int jogada1, int jogada2, int jogada3, int jogada4)
 {
     int linha_inicial = jogada1;
@@ -457,7 +478,11 @@ void damas::mover_damas_XX(int jogada1, int jogada2, int jogada3, int jogada4)
         }
     }
 }
-
+/// @brief Função com o intuito de mover as damas das peças 'O'.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
 void damas::mover_damas_O(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -524,7 +549,11 @@ void damas::mover_damas_O(char jogada1, char jogada2, char jogada3, char jogada4
         }
     }
 }
-
+/// @brief Função com o intuito de mover as damas das peças 'O', mas recebendo um inteiro como parâmetro.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
 void damas::mover_damas_OO(int jogada1, int jogada2, int jogada3, int jogada4)
 {
     int linha_inicial = jogada1;
@@ -591,7 +620,9 @@ void damas::mover_damas_OO(int jogada1, int jogada2, int jogada3, int jogada4)
         }
     }
 }
-
+/// @brief Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível, solicitar a jogada.
+/// @param a 
+/// @param b 
 void damas::comer_multiplas_damas(int a, int b)
 {
     int linha_final = a;
@@ -786,7 +817,11 @@ loop_dama_X:
         }
     }
 }
-
+/// @brief função com intuito de movimentar as peças 'O'.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
 void damas::realizar_movimento_O(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -833,7 +868,10 @@ void damas::realizar_movimento_O(char jogada1, char jogada2, char jogada3, char 
         }
     }
 }
-
+/// @brief Função que analisa se a peça selecionada é uma dama.
+/// @param jogada1 
+/// @param jogada2 
+/// @return true = a peça é uma dama; False = a peça não é uma dama.
 bool damas::e_dama(char jogada1, char jogada2)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -843,7 +881,11 @@ bool damas::e_dama(char jogada1, char jogada2)
     else
         return false;
 }
-
+/// @brief Função com o intuito de movimentar as peças 'X'.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
 void damas::realizar_movimento_X(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -888,7 +930,12 @@ void damas::realizar_movimento_X(char jogada1, char jogada2, char jogada3, char 
         }
     }
 }
-
+/// @brief Função que analisa se a jogada das damas do jogador 'O' é valida.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
+/// @return True = jogada valida; False = jogada invalida.
 bool damas::jogada_valida_dama_O(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -980,7 +1027,12 @@ bool damas::jogada_valida_dama_O(char jogada1, char jogada2, char jogada3, char 
 
     return true;
 }
-
+/// @brief Função que analisa se a jogada das damas do jogador 'X' é valida.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
+/// @return True = jogada valida; False = jogada invalida.
 bool damas::jogada_valida_dama_X(char jogada1, char jogada2, char jogada3, char jogada4)
 {
     int linha_inicial = transcrever_movimento(jogada1);
@@ -1072,7 +1124,12 @@ bool damas::jogada_valida_dama_X(char jogada1, char jogada2, char jogada3, char 
 
     return true;
 }
-
+/// @brief Função que analisa se a jogada das damas do jogador 'X' é valida, mas recebendo um inteiro como parâmetro.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
+/// @return True = jogada valida; False = jogada invalida.
 bool damas::jogada_valida_dama_XX(int jogada1, int jogada2, int jogada3, int jogada4)
 {
     int linha_inicial = jogada1;
@@ -1164,7 +1221,12 @@ bool damas::jogada_valida_dama_XX(int jogada1, int jogada2, int jogada3, int jog
 
     return true;
 }
-
+/// @brief Função que analisa se a jogada das damas do jogador 'O' é valida, mas recebendo um inteiro como parâmetro.
+/// @param jogada1 
+/// @param jogada2 
+/// @param jogada3 
+/// @param jogada4 
+/// @return True = jogada valida; False = jogada invalida.
 bool damas::jogada_valida_dama_OO(int jogada1, int jogada2, int jogada3, int jogada4)
 {
     int linha_inicial = jogada1;
@@ -1256,7 +1318,9 @@ bool damas::jogada_valida_dama_OO(int jogada1, int jogada2, int jogada3, int jog
 
     return true;
 }
-
+/// @brief Transcreve a jogada do jogador, para o índice correspondente do vetor.
+/// @param jogada1 
+/// @return retorna o índice de cada jogada
 int damas::transcrever_movimento(char jogada1)
 {
     int linha_inicial;
@@ -1278,6 +1342,8 @@ int damas::transcrever_movimento(char jogada1)
         linha_inicial = 10;
     return linha_inicial;
 }
+/// @brief Analisa a cada final de turno se o jogo acabou, e quem venceu.
+/// @return Retorna 'O' = vitória das peças 'O'; Retorna 'X' = vitoria das peças 'X'.
 char damas::resultado_final()
 {
     int num_pecas_X = 0;
@@ -1307,8 +1373,8 @@ char damas::resultado_final()
     }
     return ganhador;
 }
-
-int damas::jogar()
+/// @brief função main do jogo damas.
+void damas::jogar()
 {
 
     imprimir_tabuleiro();
