@@ -1,12 +1,11 @@
 #include <iostream>
-#include "jogodavelha.hpp"
-
 using namespace std;
 
 char tabuleiro[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
 char marcadorAtual;
 int jogadorAtual;
 
+/// @brief Construtor do tabuleiro
 void drawTabuleiro() {
     cout << " " << tabuleiro[0][0] << " | " << tabuleiro[0][1] << " | " << tabuleiro[0][2] << endl;
     cout << "---|---|---" << endl;
@@ -15,6 +14,9 @@ void drawTabuleiro() {
     cout << " " << tabuleiro[2][0] << " | " << tabuleiro[2][1] << " | " << tabuleiro[2][2] << endl;
 }
 
+/// @brief Marca o tabuleiro
+/// @param coord int
+/// @return true se a jogada for possível e false se não for
 bool marcador(int coord){
     int fileira = (coord - 1) / 3;
     int coluna = (coord - 1) % 3;
@@ -27,6 +29,8 @@ bool marcador(int coord){
         return false;
 }
 
+/// @brief Verifica se houve um vencedor
+/// @return 1 ou 2 se houver vencedor e 0 se não houver
 int winner(){
 
     for (int i = 0; i < 3; i++) {
@@ -47,6 +51,7 @@ int winner(){
     return 0;
 }
 
+/// @brief Alterna o jogador após a jogada
 void mudaJogador(){
     if (marcadorAtual == 'X')
         marcadorAtual = 'O';
@@ -59,19 +64,45 @@ void mudaJogador(){
         jogadorAtual = 1;
 }
 
-void game(){
-    cout << "Jogador 1, escolha o marcador X ou O: ";
-    char marcador1;
-    cin >> marcador1;
-    jogadorAtual = 1;
-    marcadorAtual = marcador1;
+/// @brief Função para garantir que o jogador 1 escolha entre X ou O
+void escolherMarcador() {
+    while (true) {
+        cout << "Jogador 1, escolha o marcador (X ou O): ";
+        char marcador1;
+        cin >> marcador1;
+        marcador1 = toupper(marcador1); 
 
+        if (marcador1 == 'X' || marcador1 == 'O') {
+            marcadorAtual = marcador1;
+            jogadorAtual = 1;
+            break; 
+        } else {
+            cout << "Escolha inválida. Escolha X ou O." << endl;
+            cin.clear();
+            cin.ignore(10000, '\n');
+        }
+    }
+}
+
+/// @brief Utiliza as funções para rodar o jogo e faz checagem para jogadas válidas
+void game(){
+    escolherMarcador();
     drawTabuleiro();
 
     for (int g = 0; g < 9; g++){
-        cout << "Jogador " << jogadorAtual << ", faça sua jogada: ";
         int coord;
-        cin >> coord;
+        while (true) {
+            cout << "Jogador " << jogadorAtual << ", faça sua jogada: ";
+            cin >> coord;
+
+            if (cin.fail()) {
+                cin.clear();
+                cin.ignore(10000, '\n');
+                cout << "Movimento inválido. Por favor, insira um número entre 1 e 9." << endl;
+            } else {
+                break;
+            }
+        }
 
         if (coord < 1 || coord > 9) {
             cout << "Movimento Inválido." << endl;
@@ -104,4 +135,9 @@ void game(){
 
         mudaJogador();
     }
+}
+
+int main(){
+    game();
+    return 0;
 }
