@@ -5,7 +5,7 @@
 
 using namespace std;
 
-/// @brief Show the board
+/// @brief Mostra o tabuleiro
 void lig4::mostrarTabuleiro()
 {   
     for (int linha = 0; linha < this->rows; linha++)
@@ -20,9 +20,9 @@ void lig4::mostrarTabuleiro()
     cout << "|1|2|3|4|5|6|7|" << endl;
 }
 
-/// @brief Make a valid play in the board
+/// @brief Faz uma jogada valida no tabuleiro
 /// @param posicao int
-/// @return line that the player did the move as a INT
+/// @return linha que o jogador fez a jogada como INT
 int lig4::jogada(int &posicao)
 {
     int jogada = 0;
@@ -52,11 +52,11 @@ int lig4::jogada(int &posicao)
     return linha;
 }
 
-/// @brief Check if one player won the game based on the last move
+/// @brief Verifica se um jogador venceu baseado em sua última jogada
 /// @param linha int
 /// @param coluna int
 /// @param time char
-/// @return Return true if that´s a win, False if the game ins´t over
+/// @return Retorna TRUE caso o jogador venceu e FALSE caso o jogo ainda não acabou
 bool lig4::verificarAdjacente(int linha, int coluna, char time)
 {
 
@@ -128,7 +128,7 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     return false;
 }
 
-/// @brief Constructor and match of Lig4
+/// @brief Construtor e jogo do Lig4
 lig4::lig4() : game(6, 7)
 {
     std::string jogador1;
