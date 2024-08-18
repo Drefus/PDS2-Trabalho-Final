@@ -6,7 +6,7 @@
 #include <lig4.hpp>
 #include <reversi.hpp>
 #include "damas.hpp"
-#include <jogodavelha.hpp>
+#include <jogoDaVelha.hpp>
 int main()
 {
     bool isLoop = true;
@@ -50,7 +50,7 @@ int main()
         }
         case '5':
         {
-            jogodavelha();
+            jogoDaVelha();
             break;
         }
         case 'E':

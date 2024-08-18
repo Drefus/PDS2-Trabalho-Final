@@ -4,8 +4,8 @@ SRC = src
 OBJ = obj
 INC = include
 BIN = bin
-OBJS = $(OBJ)/main.o $(OBJ)/game.o $(OBJ)/gameStatus.o $(OBJ)/player.o $(OBJ)/playersManagement.o $(OBJ)/stringUtils.o $(OBJ)/playersMenu.o $(OBJ)/lig4.o $(OBJ)/reversi.o $(OBJ)/damas.o
-HDRS = $(INC)/game.hpp $(INC)/gameStatus.hpp $(INC)/player.hpp $(INC)/playersManagement.hpp $(INC)/stringUtils.hpp $(INC)/playersMenu.hpp $(INC)/lig4.hpp $(INC)/reversi.hpp $(INC)/damas.hpp
+OBJS = $(OBJ)/main.o $(OBJ)/game.o $(OBJ)/gameStatus.o $(OBJ)/player.o $(OBJ)/playersManagement.o $(OBJ)/stringUtils.o $(OBJ)/playersMenu.o $(OBJ)/lig4.o $(OBJ)/reversi.o $(OBJ)/damas.o $(OBJ)/jogoDaVelha.o
+HDRS = $(INC)/game.hpp $(INC)/gameStatus.hpp $(INC)/player.hpp $(INC)/playersManagement.hpp $(INC)/stringUtils.hpp $(INC)/playersMenu.hpp $(INC)/lig4.hpp $(INC)/reversi.hpp $(INC)/damas.hpp $(INC)/jogoDaVelha.hpp 
 CFLAGS = -Wall -c -g -I$(INC)
 
 EXE = $(BIN)/main
@@ -54,6 +54,9 @@ $(OBJ)/reversi.o: $(HDRS) $(SRC)/reversi.cpp
 
 $(OBJ)/damas.o: $(HDRS) $(SRC)/damas.cpp
 	$(CC) $(CFLAGS) -o $(OBJ)/damas.o $(SRC)/damas.cpp
+
+$(OBJ)/jogoDaVelha.o: $(HDRS) $(SRC)/jogoDaVelha.cpp
+	$(CC) $(CFLAGS) -o $(OBJ)/jogoDaVelha.o $(SRC)/jogoDaVelha.cpp
 
 clean:
 	rm -f $(BIN)/*.out $(EXE) $(OBJS) gmon.out
