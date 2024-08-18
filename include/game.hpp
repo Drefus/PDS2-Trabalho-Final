@@ -15,8 +15,16 @@ protected:
     playersManagement management;
 
 public:
+    /// @brief Construtor da game
+    /// @param _rows
+    /// @param _cols
     game(int _rows, int _cols);
+    /// @brief Destrutor da game
     ~game();
+    /// @brief Troca o elemento na posicao x,y para element
+    /// @param x
+    /// @param y
+    /// @param element
     virtual void changeElement(int x, int y, char element);
     virtual void winAndLose(std::string winner, std::string loser);
 };

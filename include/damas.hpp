@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-class damas
+class damas : public game
 {
 private:
     int linhas;
