@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 
+/// @brief Menu de jogadores
 playersMenu::playersMenu()
 {
     bool isLoop = true;
@@ -80,4 +81,4 @@ playersMenu::playersMenu()
     }
 };
 
-playersMenu::~playersMenu(){};
+playersMenu::~playersMenu() {};

@@ -3,15 +3,21 @@
 #include <string>
 #include <vector>
 
-class stringUtils
+/// @brief Classe statica de utilidades de strings
+static class stringUtils
 {
-private:
-    /* data */
 public:
-    stringUtils(/* args */);
     ~stringUtils();
-    static std::vector<std::string> split(std::string text,char deliminator);
-    static std::vector<std::string> splitInTwo(std::string text,char deliminator);
+    /// @brief Dividir string em sub strings
+    /// @param text
+    /// @param deliminator
+    /// @return Vetor de sub string
+    static std::vector<std::string> split(std::string text, char deliminator);
+    /// @brief Dividir uma string em duas
+    /// @param text
+    /// @param deliminator
+    /// @return Vetor de sub string
+    static std::vector<std::string> splitInTwo(std::string text, char deliminator);
 };
 
 #endif
