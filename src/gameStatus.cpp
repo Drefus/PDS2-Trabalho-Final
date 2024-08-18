@@ -1,7 +1,7 @@
 #include <gameStatus.hpp>
 #include <iostream>
 #include <iomanip>
-/// @brief Start the class with the name, wins and loses.
+/// @brief Comece a classe com o nome, ganha e perde.
 /// @param _name
 /// @param _wins
 /// @param _loses
@@ -12,43 +12,43 @@ gameStatus::gameStatus(std::string _name, int _wins, int _loses) : name(_name), 
 gameStatus::~gameStatus()
 {
 }
-/// @brief Win Rate at this game
-/// @return Calc the win rate of the player in this game.
+/// @brief Taxa de vitórias neste jogo
+/// @return Calcule a taxa de vitória do jogador neste jogo.
 double gameStatus::winRate()
 {
     double media = static_cast<double>(this->wins) / (this->wins + this->loses);
     return media * 100;
 }
-/// @brief Lose Rate at this game
-/// @return Calc the lose rate of the player in this game.
+/// @brief Taxa de perda neste jogo
+/// @return Calcule a taxa de perdas do jogador neste jogo.
 double gameStatus::loseRate()
 {
     double media = static_cast<double>(this->loses) / (this->wins + this->loses);
     return media * 100;
 }
-/// @brief Show in the console the statics of the player in this game.
+/// @brief Mostre no console a estática do jogador neste jogo.
 void gameStatus::gameStatics()
 {
     std::cout << " " << this->name << " wins: %" << std::fixed << std::setprecision(2) << this->winRate() << '|' << std::to_string(this->wins) << " loses: %" << std::fixed << std::setprecision(2) << this->loseRate() << '|' << std::to_string(this->loses) << ";";
 }
-/// @brief Wins and Loses
-/// @return Stringy the wins and the loses of the player and separe by a , .
+/// @brief Vitorias e derrotas
+/// @return Stringy as vitórias e as derrotas do jogador e separadas por um , .
 std::string gameStatus::winsAndLoses()
 {
     return std::to_string(this->wins) + "," + std::to_string(this->loses);
 }
 /// @brief get Name
-/// @return name of the game.
+/// @return Nome do jogo.
 std::string gameStatus::getName()
 {
     return this->name;
 }
-/// @brief Add a win for the player in this game.
+/// @brief Adicione uma vitória para o jogador neste jogo.
 void gameStatus::addWin()
 {
     this->wins++;
 }
-/// @brief Add a lose for the player in this game.
+/// @brief Adicione uma perda para o jogador neste jogo.
 void gameStatus::addLose()
 {
     this->loses++;
