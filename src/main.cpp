@@ -18,6 +18,7 @@ int main()
         std::cout << "║ 1. Gerenciamento de jogadores ║" << std::endl;
         std::cout << "║ 2. Ligue 4                    ║" << std::endl;
         std::cout << "║ 3. Reversi                    ║" << std::endl;
+        std::cout << "║ 4. Damas                      ║" << std::endl;
         std::cout << "║ E. Sair                       ║" << std::endl;
         std::cout << "╚═══════════════════════════════╝" << std::endl;
         char input;
