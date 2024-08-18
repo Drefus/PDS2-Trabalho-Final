@@ -22,10 +22,10 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 
 ## Instruções para o LIG4:
 
-###Começando o jogo:
+### Começando o jogo:
 >Insira o apelido do 1º e em seguida do 2º jogador
 
-###Como jogar: 
+### Como jogar: 
 >O objetivo dos jogadores é de unir 4 peças da sua cor, seja na vertial, horizontal ou diagonal.
 >Para uma jogada ser válida ela deve ser um dos números inteiros de 1 a 7 e a respectiva coluna não pode estar totalmente preenchida ainda.
 >Quando o jogador escolher uma coluna sua peça ira para primeira linha (de cima para baixo) que esteja vazia.
