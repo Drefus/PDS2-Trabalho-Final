@@ -3,8 +3,6 @@
 #include <vector>
 #include <lig4.hpp>
 
-using namespace std;
-
 /// @brief Mostra o tabuleiro
 void lig4::mostrarTabuleiro()
 {   
@@ -131,13 +129,13 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
 /// @brief Construtor e jogo do Lig4
 lig4::lig4() : game(6, 7)
 {
-    std::string jogador1;
-    std::string jogador2;
+    string jogador1;
+    string jogador2;
     do
     {
-        std::cout << "Digite o apelido do jogador 1:" << std::endl;
+        cout << "Digite o apelido do jogador 1:" << endl;
 
-        while (std::getline(std::cin, jogador1))
+        while (getline(cin, jogador1))
             if (jogador1 != "")
             {
                 break;
@@ -150,9 +148,9 @@ lig4::lig4() : game(6, 7)
 
     do
     {
-        std::cout << "Digite o apelido do jogador 2:" << std::endl;
+        cout << "Digite o apelido do jogador 2:" << endl;
 
-        while (std::getline(std::cin, jogador2))
+        while (getline(cin, jogador2))
             if (jogador2 != "")
             {
                 break;
@@ -171,8 +169,8 @@ lig4::lig4() : game(6, 7)
         this->mostrarTabuleiro();
         if (turno % 2 == 0)
         {
-            std::cout << "Digite a jogada do jogador 1:" << std::endl;
-            std::cin >> input;
+            cout << "Digite a jogada do jogador 1:" << endl;
+            cin >> input;
             line = jogada(input);
             if (verificarAdjacente(line, input-1, 'V'))
             {
@@ -184,8 +182,8 @@ lig4::lig4() : game(6, 7)
         }
         else
         {
-            std::cout << "Digite a jogada do jogador 2:" << std::endl;
-            std::cin >> input;
+            cout << "Digite a jogada do jogador 2:" << endl;
+            cin >> input;
             line = jogada(input);
             if (verificarAdjacente(line, input-1, 'A'))
             {   
