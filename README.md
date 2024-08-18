@@ -1,19 +1,19 @@
 # Trabalho Final da disciplina de PDS2
 ## Instruções de execução:
-Para executar o codigo, em uma ambiente linux dentro do diretorio do projeto. Use o comando **make all** para gerar o arquivo compilado. Após a execução execute o arquivo bin/tp.out.
+Para executar o código, em uma ambiente Linux dentro do diretório do projeto. Use o comando **make all** para gerar o arquivo compilado. Após a execução execute o arquivo bin/tp.out.
 
 ## Instruções para jogar:
 Escolha uma das opções do menu,o que cada uma delas faz está citado abaixo. Caso deseje sair do menu digite **E** .
 ### Gerenciamento de jogadores:
 >Para isso escolha a opção 1 do menu
 > #### Adição de jogador:
-> Escolha a opção 1 do menu de gerencia de jogadores ao passar um nome e um apelido unico para o jogador o jogador sera criado.
+> Escolha a opção 1 do menu de gerencia de jogadores ao passar um nome e um apelido único para o jogador o jogador sera criado.
 >#### Remoção de jogador:
 >  Escolha a opção 2 do menu de gerencia de jogadores ao passar um nome ou um apelido valido o jogador será removido.
->#### Listar estatisticas de jogador:
->  Escolha a opção 3 do menu de gerencia de jogadores ao passar um nome ou um apelido valido. Assim aparecerá na tela as estatisticas do jogador. Observação: so aparecerá estatisticas de jogos que ele ja jogou então   se o usurio não tiver jogado nenhum jogo so aparecera o nick dele.
->#### Listar estatisticas de todos jogadores:
->  Escolha a opção 4 do menu de gerencia de jogadores. Assim aparecerá na tela todas as estatisticas de todos jogadores. Observação: so aparecerá estatisticas de jogos que ele ja jogou então se o usurio não tiver jogado nenhum jogo so aparecera o nick dele.
+>#### Listar estatísticas de jogador:
+>  Escolha a opção 3 do menu de gerencia de jogadores ao passar um nome ou um apelido valido. Assim aparecerá na tela as estatísticas do jogador. Observação: so aparecerá estatísticas de jogos que ele ja jogou então   se o usuário não tiver jogado nenhum jogo so aparecera o nick dele.
+>#### Listar estatísticas de todos jogadores:
+>  Escolha a opção 4 do menu de gerencia de jogadores. Assim aparecerá na tela todas as estatísticas de todos jogadores. Observação: so aparecerá estatísticas de jogos que ele ja jogou então se o usuário não tiver jogado nenhum jogo so aparecera o nick dele.
 >#### Sair:
 > Caso deseje sair do menu digite **E** .
  
@@ -53,3 +53,20 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 >A pedra que durante o lance de captura de várias peças, apenas passe por qualquer casa de coroação, sem aí parar, não será promovida à dama.
 
 >Na execução do lance de captura, é permitido passar mais de uma vez pela mesma casa vazia, não é permitido capturar duas vezes a mesma peça.
+
+#### Como realizar as jogadas:
+>Primeiro você deve selecionar a peça que deve executar a ação, para tal deve indicar qual a sua posição no tabuleiro.
+
+>Deve-se indicar respectivamente em qual Linha e em qual Coluna a peça está.
+
+>É de suma importância que as informações referentes às posições das peças sejam passadas em letra maiúscula e na ordem LinhaColuna.
+
+>Posteriormente, para finalizar o seu turno, deve indicar para qual casa a peça deve se mover.
+
+>Se a sua jogada for comer apenas uma peça, basta apenas colocar a casa final da peça movimentada.
+
+>Em caso de comer múltiplas peças, se a peça inicial for uma pedra comum, ela irá comer as múltiplas peças automaticamente, mas em caso de dama, após a primeira peça, todas as outras você deve indicar para qual posição sua dama deve ir, priorizando sempre que coma alguma peça.
+
+#### Como ganhar:
+>A única condição de vitória do jogo é que algum jogador coma todas as peças inimigas.
+
