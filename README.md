@@ -42,7 +42,7 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 
 ### Damas
 
-#### Como jogar :
+#### Regras :
 >O jogo de damas é praticado entre dois parceiros, com 12 pedras 'O' de um lado e com 12 pedras 'X' de outro lado. O lance inicial cabe sempre a quem estiver com as peças 'O'.
 
 >A pedra anda só para frente, uma casa de cada vez. Quando a pedra atinge a oitava linha do tabuleiro ela é promovida à dama. Para identificá-la coloca-se '@' para as peças 'O' e '*' para as peças 'X'.
