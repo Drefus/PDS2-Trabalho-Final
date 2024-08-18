@@ -99,4 +99,3 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 >Vence quem conseguir deixar 3 dos seus marcadores em sequência, podendo ser na horizontal, vertical ou diagonal.
 
 >Caso nenhum dos dois jogadores consiga vencer e o tabuleiro estiver todo marcado, então terá sido um empate.
-
