@@ -5,7 +5,7 @@
 
 /// @brief Mostra o tabuleiro
 void lig4::mostrarTabuleiro()
-{   
+{
     for (int linha = 0; linha < this->rows; linha++)
     {
         cout << "|";
@@ -24,9 +24,9 @@ void lig4::mostrarTabuleiro()
 int lig4::jogada(int &posicao)
 {
     int jogada = 0;
-    while ((posicao < 1 || posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || (posicao%1 != 0) || isdigit(posicao) != 0)
-    {   
-        //cout << "posição inválida, insira uma nova posição" << endl;
+    while ((posicao < 1 || posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || (posicao % 1 != 0) || isdigit(posicao) != 0)
+    {
+        // cout << "posição inválida, insira uma nova posição" << endl;
         cin >> jogada;
         posicao = jogada;
     }
@@ -63,7 +63,8 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     {
         if (linha - i >= 0 && time == tabuleiro[linha - i][coluna])
             sequencia++;
-        else break;
+        else
+            break;
     }
     for (int i = 1; i < 4; i++)
     {
@@ -80,13 +81,15 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     {
         if (coluna - i >= 0 && time == tabuleiro[linha][coluna - i])
             sequencia++;
-        else break;
+        else
+            break;
     }
     for (int i = 1; i < 4; i++)
     {
         if (coluna + i <= 6 && time == tabuleiro[linha][coluna + i])
             sequencia++;
-        else break;
+        else
+            break;
     }
     if (sequencia >= 4)
         return true;
@@ -96,13 +99,15 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     {
         if (linha - i >= 0 && coluna - i >= 0 && time == tabuleiro[linha - i][coluna - i])
             sequencia++;
-        else break;
+        else
+            break;
     }
     for (int i = 1; i < 4; i++)
     {
         if (linha + i <= 5 && coluna + i <= 6 && time == tabuleiro[linha + i][coluna + i])
             sequencia++;
-        else break;
+        else
+            break;
     }
     if (sequencia >= 4)
         return true;
@@ -112,13 +117,15 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
     {
         if (linha + i <= 5 && coluna - i >= 0 && time == tabuleiro[linha + i][coluna - i])
             sequencia++;
-        else break;
+        else
+            break;
     }
     for (int i = 1; i < 4; i++)
     {
         if (linha - i >= 0 && coluna + i <= 6 && time == tabuleiro[linha - i][coluna + i])
             sequencia++;
-        else break;
+        else
+            break;
     }
     if (sequencia >= 4)
         return true;
@@ -127,42 +134,12 @@ bool lig4::verificarAdjacente(int linha, int coluna, char time)
 }
 
 /// @brief Construtor e jogo do Lig4
-lig4::lig4() : game(6, 7)
+lig4::lig4() : game(6, 7, "Lig4")
 {
-    string jogador1;
-    string jogador2;
-    do
-    {
-        cout << "Digite o apelido do jogador 1:" << endl;
-
-        while (getline(cin, jogador1))
-            if (jogador1 != "")
-            {
-                break;
-            }
-        if (management.existPlayer(jogador1) == 1)
-        {
-            break;
-        }
-    } while (true);
-
-    do
-    {
-        cout << "Digite o apelido do jogador 2:" << endl;
-
-        while (getline(cin, jogador2))
-            if (jogador2 != "")
-            {
-                break;
-            }
-        if (management.existPlayer(jogador2) == 1)
-        {
-            break;
-        }
-    } while (true);
+    this->loadPlayers();
 
     while (true)
-    {   
+    {
         int input, line;
         bool completo = true;
         vector<int> cord;
@@ -173,7 +150,7 @@ lig4::lig4() : game(6, 7)
             cin >> input;
             cout << input << " input" << endl;
             line = jogada(input);
-            if (verificarAdjacente(line, input-1, 'V'))
+            if (verificarAdjacente(line, input - 1, 'V'))
             {
                 cout << "Jogador 1 venceu" << endl;
                 winAndLose(jogador1, jogador2);
@@ -187,8 +164,8 @@ lig4::lig4() : game(6, 7)
             cin >> input;
             cout << input << " input" << endl;
             line = jogada(input);
-            if (verificarAdjacente(line, input-1, 'A'))
-            {   
+            if (verificarAdjacente(line, input - 1, 'A'))
+            {
                 cout << "Jogador 2 venceu" << endl;
                 this->mostrarTabuleiro();
                 winAndLose(jogador2, jogador1);
@@ -197,12 +174,16 @@ lig4::lig4() : game(6, 7)
         }
         turno++;
 
-        for (int linha = 0; linha < this->rows; linha++) {
-            for (int coluna = 0; coluna < this->cols; coluna++) {
-                if (this->tabuleiro[linha][coluna] == ' ') completo = false;
+        for (int linha = 0; linha < this->rows; linha++)
+        {
+            for (int coluna = 0; coluna < this->cols; coluna++)
+            {
+                if (this->tabuleiro[linha][coluna] == ' ')
+                    completo = false;
             }
         }
-        if (completo == true) {
+        if (completo == true)
+        {
             cout << "Empate" << endl;
             this->mostrarTabuleiro();
             break;

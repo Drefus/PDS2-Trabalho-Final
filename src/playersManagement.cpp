@@ -187,5 +187,29 @@ int playersManagement::existPlayer(std::string nick)
         }
     }
     std::cout << "ERRO: Não foi encontrado nenhum jogador com esse nickname." << std::endl;
-    return -1;
+    std::cout << "Deseja criar um jogador novo(y/n):" << std::endl;
+    std::string entrada, nome, nickname;
+    do
+    {
+        std::cin >> entrada;
+        if (entrada == "y")
+        {
+            do
+            {
+                std::cout << "Digite o nome do jogador:" << std::endl;
+                std::cin >> nome;
+                std::cout << "Digite o nome do nick:" << std::endl;
+                std::cin >> nickname;
+                if (this->addPlayer(nome, nickname) == 0)
+                {
+                    break;
+                }
+            } while (true);
+            return 2;
+        }
+        else if (entrada == "n")
+        {
+            return -1;
+        }
+    } while (true);
 }

@@ -1,6 +1,6 @@
 #include <reversi.hpp>
 
-reversi::reversi() : game(8, 8), turno(0)
+reversi::reversi() : game(8, 8, "reversi"), turno(0)
 {
     for (int i = 0; i < rows; ++i)
     {
@@ -13,36 +13,7 @@ reversi::reversi() : game(8, 8), turno(0)
     tabuleiro[3][4] = 'P';
     tabuleiro[4][3] = 'P';
 
-    string jogador1, jogador2;
-    do
-    {
-        cout << "Digite o apelido do jogador 1:" << endl;
-
-        while (getline(cin, jogador1))
-            if (jogador1 != "")
-            {
-                break;
-            }
-        if (management.existPlayer(jogador1) == 1)
-        {
-            break;
-        }
-    } while (true);
-
-    do
-    {
-        cout << "Digite o apelido do jogador 2:" << endl;
-
-        while (getline(cin, jogador2))
-            if (jogador2 != "")
-            {
-                break;
-            }
-        if (management.existPlayer(jogador2) == 1)
-        {
-            break;
-        }
-    } while (true);
+    this->loadPlayers();
 
     bool jogoFinalizado = false;
 
@@ -84,13 +55,15 @@ reversi::reversi() : game(8, 8), turno(0)
 
         if (pontuacaoP == 0)
         {
-            cout << endl << "Jogador 2 (B) venceu!" << endl;
+            cout << endl
+                 << "Jogador 2 (B) venceu!" << endl;
             winAndLose(jogador2, jogador1);
             jogoFinalizado = true;
         }
         else if (pontuacaoB == 0)
         {
-            cout << endl << "Jogador 1 (P) venceu!" << endl;
+            cout << endl
+                 << "Jogador 1 (P) venceu!" << endl;
             winAndLose(jogador1, jogador2);
             jogoFinalizado = true;
         }
@@ -102,18 +75,20 @@ reversi::reversi() : game(8, 8), turno(0)
         {
             if (pontuacaoP > pontuacaoB)
             {
-                cout << endl << "Jogador 1 (P) venceu!" << endl;
+                cout << endl
+                     << "Jogador 1 (P) venceu!" << endl;
                 winAndLose(jogador1, jogador2);
-
             }
             else if (pontuacaoB > pontuacaoP)
             {
-                cout << endl << "Jogador 2 (B) venceu!" << endl;
+                cout << endl
+                     << "Jogador 2 (B) venceu!" << endl;
                 winAndLose(jogador2, jogador1);
             }
             else
             {
-                cout << endl << "Empate!" << endl;
+                cout << endl
+                     << "Empate!" << endl;
             }
             jogoFinalizado = true;
         }

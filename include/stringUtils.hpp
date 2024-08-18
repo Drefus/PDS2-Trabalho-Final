@@ -4,9 +4,10 @@
 #include <vector>
 
 /// @brief Classe statica de utilidades de strings
-static class stringUtils
+class stringUtils
 {
 public:
+    stringUtils();
     ~stringUtils();
     /// @brief Dividir string em sub strings
     /// @param text
