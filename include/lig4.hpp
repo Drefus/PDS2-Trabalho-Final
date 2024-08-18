@@ -7,7 +7,7 @@
 #include <game.hpp>
 
 using namespace std;
-
+/// @brief Classe responsável pelo jogo LIG4 
 class lig4 : public game
 {
 private:
