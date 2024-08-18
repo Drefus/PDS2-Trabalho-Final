@@ -109,6 +109,7 @@ void playersManagement::listPlayers(std::string name)
             for (auto game : it.getGameStatics())
             {
                 game.gameStatics();
+                std::cout << std::endl;
             }
         }
     }
@@ -198,7 +199,7 @@ int playersManagement::existPlayer(std::string nick)
             {
                 std::cout << "Digite o nome do jogador:" << std::endl;
                 std::cin >> nome;
-                std::cout << "Digite o nome do nick:" << std::endl;
+                std::cout << "Digite o nick do jogador:" << std::endl;
                 std::cin >> nickname;
                 if (this->addPlayer(nome, nickname) == 0)
                 {
