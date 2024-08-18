@@ -3,19 +3,18 @@
 #include <damas.hpp>
 using namespace std;
 /// @brief Construtor do tabuleiro.
-damas::damas()
+damas::damas():game(13,13,"damas")
 {
-    linhas = 13;
-    colunas = 13;
-    tabuleiro.resize(linhas, vector<char>(colunas, ' '));
+    
+    tabuleiro.resize(_rows, vector<char>(_cols, ' '));
     for (int i = 0; i < 2; i++)
     {
-        for (int j = 0; j < colunas; j++)
+        for (int j = 0; j < _cols; j++)
         {
             tabuleiro[i][j] = ' ';
         }
     }
-    for (int i = 0; i < linhas; i++)
+    for (int i = 0; i < _rows; i++)
     {
         for (int j = 0; j < 2; j++)
         {
@@ -24,12 +23,12 @@ damas::damas()
     }
     for (int i = 11; i < 13; i++)
     {
-        for (int j = 0; j < colunas; j++)
+        for (int j = 0; j < _cols; j++)
         {
             tabuleiro[i][j] = ' ';
         }
     }
-    for (int i = 0; i < linhas; i++)
+    for (int i = 0; i < _rows; i++)
     {
         for (int j = 11; j < 13; j++)
         {
@@ -54,9 +53,9 @@ damas::damas()
     tabuleiro[9][2] = 'G';
     tabuleiro[10][2] = 'H';
 
-    for (int i = 3; i < linhas - 2; i++)
+    for (int i = 3; i < _rows - 2; i++)
     {
-        for (int j = 3; j < colunas - 2; j++)
+        for (int j = 3; j < _cols - 2; j++)
         {
             if (i < 6)
             {
@@ -179,9 +178,9 @@ loop:
 /// @brief  Imprime o tabuleiro.
 void damas::imprimir_tabuleiro()
 {
-    for (int i = 0; i < linhas; i++)
+    for (int i = 0; i < _rows; i++)
     {
-        for (int j = 0; j < colunas; j++)
+        for (int j = 0; j < _cols; j++)
         {
             cout << tabuleiro[i][j] << " ";
         }
@@ -1361,9 +1360,9 @@ char damas::resultado_final()
     int num_pecas_X = 0;
     int num_pecas_O = 0;
     char ganhador = 'E';
-    for (int i = 1; i < linhas; i++)
+    for (int i = 1; i < _rows; i++)
     {
-        for (int j = 1; j < colunas; j++)
+        for (int j = 1; j < _cols; j++)
         {
             if (tabuleiro[i][j] == 'X')
                 num_pecas_X++;

@@ -5,11 +5,6 @@
 using namespace std;
 class damas : public game
 {
-private:
-    int linhas;
-    int colunas;
-    vector<vector<char>> tabuleiro;
-
 public:
     damas();
 
