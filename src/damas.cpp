@@ -256,6 +256,12 @@ bool damas::jogada_valida_O(char jogada1, char jogada2, char jogada3, char jogad
              << "Movimento invalido, tente novamente!" << endl
              << endl;
         return false;
+    }else if((linha_final + coluna_final)%2 == 0 || (linha_inicial + coluna_inicial)%2 == 0 )
+    {
+         cout << endl
+             << "Movimento invalido, tente novamente!" << endl
+             << endl;
+        return false;
     }
     return true;
 }
@@ -330,6 +336,12 @@ bool damas::jogada_valida_X(char jogada1, char jogada2, char jogada3, char jogad
     else if (linha_final == linha_inicial + 1 && ((coluna_final - coluna_inicial) >= 2 || (coluna_final - coluna_inicial) <= -2))
     {
         cout << endl
+             << "Movimento invalido, tente novamente!" << endl
+             << endl;
+        return false;
+    }else if((linha_final + coluna_final)%2 == 0 || (linha_inicial + coluna_inicial)%2 == 0 )
+    {
+         cout << endl
              << "Movimento invalido, tente novamente!" << endl
              << endl;
         return false;
@@ -1373,8 +1385,9 @@ char damas::resultado_final()
     }
     return ganhador;
 }
-/// @brief função main do jogo damas.
-void damas::jogar()
+/// @brief Função main do jogo damas.
+/// @return Retorna '0' se deu tudo certo.
+int damas::jogar()
 {
 
     imprimir_tabuleiro();
