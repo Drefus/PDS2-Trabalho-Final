@@ -26,7 +26,7 @@ int lig4::jogada(int &posicao)
     int jogada = 0;
     while ((posicao < 1 || posicao > 7) || (tabuleiro[0][posicao - 1] != ' ') || (posicao % 1 != 0) || isdigit(posicao) != 0)
     {
-        // cout << "posição inválida, insira uma nova posição" << endl;
+        cout << "posição inválida, insira uma nova posição" << endl;
         cin >> jogada;
         posicao = jogada;
     }
@@ -141,14 +141,32 @@ lig4::lig4() : game(6, 7, "Lig4")
     while (true)
     {
         int input, line;
-        bool completo = true;
+        bool completo = true, entrada_valida = false;
         vector<int> cord;
         this->mostrarTabuleiro();
         if (turno % 2 == 0)
         {
             cout << "Digite a jogada do jogador 1:" << endl;
             cin >> input;
-            cout << input << " input" << endl;
+            while (entrada_valida == false)
+            {
+                if ((cin.fail() == true))
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "posição inválida, insira uma nova posição" << endl;
+                    cin >> input;
+                }
+                else if (cin.peek() != '\n')
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "Posição inválida, insira uma nova posição" << endl;
+                    cin >> input;
+                }
+                else
+                    entrada_valida = true;
+            }
             line = jogada(input);
             if (verificarAdjacente(line, input - 1, 'V'))
             {
@@ -162,7 +180,25 @@ lig4::lig4() : game(6, 7, "Lig4")
         {
             cout << "Digite a jogada do jogador 2:" << endl;
             cin >> input;
-            cout << input << " input" << endl;
+            while (entrada_valida == false)
+            {
+                if (cin.fail())
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "posição inválida, insira uma nova posição" << endl;
+                    cin >> input;
+                }
+                else if (cin.peek() != '\n')
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "Posição inválida, insira uma nova posição" << endl;
+                    cin >> input;
+                }
+                else
+                    entrada_valida = true;
+            }
             line = jogada(input);
             if (verificarAdjacente(line, input - 1, 'A'))
             {
