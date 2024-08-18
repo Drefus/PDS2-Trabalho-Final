@@ -39,10 +39,17 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 
 #### Como jogar :
 >O jogo de damas é praticado entre dois parceiros, com 12 pedras 'O' de um lado e com 12 pedras 'X' de outro lado. O lance inicial cabe sempre a quem estiver com as peças 'O'.
+
 >A pedra anda só para frente, uma casa de cada vez. Quando a pedra atinge a oitava linha do tabuleiro ela é promovida à dama. Para identificá-la coloca-se '@' para as peças 'O' e '*' para as peças 'X'.
+
 >A dama é uma peça de movimentos mais amplos. Ela anda para frente e para trás, quantas casas quiser. A dama não pode saltar uma peça da mesma cor.
+
 >A captura é obrigatória. Não existe sopro. Duas ou mais peças juntas, na mesma diagonal, não podem ser capturadas.
+
 >A pedra captura a dama e a dama captura a pedra. A pedra e a dama podem capturar tanto para frente como para trás, uma ou mais peças
+
 >Se no mesmo lance se apresentar mais de um modo de capturar, é obrigatório executar o lance que capture o maior número de peças (Lei da Maioria).
+
 >A pedra que durante o lance de captura de várias peças, apenas passe por qualquer casa de coroação, sem aí parar, não será promovida à dama.
+
 >Na execução do lance de captura, é permitido passar mais de uma vez pela mesma casa vazia, não é permitido capturar duas vezes a mesma peça.
