@@ -53,3 +53,17 @@ A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo
 >A pedra que durante o lance de captura de várias peças, apenas passe por qualquer casa de coroação, sem aí parar, não será promovida à dama.
 
 >Na execução do lance de captura, é permitido passar mais de uma vez pela mesma casa vazia, não é permitido capturar duas vezes a mesma peça.
+
+### Reversi
+
+#### Começando o jogo:
+>Insira o apelido do 1º e em seguida do 2º jogador
+
+#### Como jogar:
+>Dois jogadores competem, usando 64 peças idênticas que são claras de um lado e escuras do outro. Cada jogador escolhe uma cor para usar durante o jogo. 
+
+>Os jogadores se revezam colocando um disco em um quadrado vazio, com a cor atribuída voltada para cima. 
+
+>Depois que uma jogada é feita, quaisquer discos da cor do oponente que estejam em linha reta delimitada por aquele que acabou de ser jogado e outro da cor do jogador atual são virados. 
+
+>Quando todos os quadrados vazios jogáveis ​​forem preenchidos, o jogador com mais discos exibidos em sua própria cor ganha o jogo.
