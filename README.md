@@ -20,3 +20,18 @@ Escolha uma das opções do menu,o que cada uma delas faz está citado abaixo. C
 ## Documentação:
 A documentação foi feita utilizando o doxygen. Para acessar ela abra o arquivo docs/index/index.html em seu navegador de preferencia ou [Clique  aqui](https://drefus.github.io/PDS2-Trabalho-Final/index/index.html). Se preferir a documentação em formatato de arquivo, acesse o arquivo docs\rtf\refman.rtf.
 
+## Instruções para os jogos:
+
+### Lig4
+
+#### Começando o jogo:
+>Insira o apelido do 1º e em seguida do 2º jogador
+
+#### Como jogar: 
+>O objetivo dos jogadores é de unir 4 peças da sua cor, seja na vertial, horizontal ou diagonal.
+>Para uma jogada ser válida ela deve ser um dos números inteiros de 1 a 7 e a respectiva coluna não pode estar totalmente preenchida ainda.
+>Quando o jogador escolher uma coluna sua peça ira para primeira linha (de cima para baixo) que esteja vazia.
+>A primeira jogada é do jogador 1 (time vermelho: V) e em diante os jogadores vermelho e azul irão revezar as jogadas.
+>O vencedor será aquele que unir as 4 peças primeiro e cada jogador recebe uma vitória ou derrota
+>Caso o tabuleiro esteja totalmente completo e nenhum dos jogadores tenham vencido ocorre um empate.
+
