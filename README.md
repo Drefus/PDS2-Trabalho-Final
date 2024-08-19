@@ -100,4 +100,4 @@ Vence o jogador que conseguir alinhar 3 de seus marcadores em sequência, seja n
 
 ## Documentação
 
-A documentação foi feita utilizando o Doxygen. Para acessá-la, abra o arquivo `docs/index/index.html` em seu navegador de preferência ou [clique aqui](https://drefus.github.io/PDS2-Trabalho-Final/index/index.html). Se preferir a documentação em formato de arquivo, acesse `docs/rtf/refman.rtf`.
+A documentação foi feita utilizando o Doxygen. Para acessá-la, abra o arquivo `docs/html/index.html` em seu navegador de preferência ou [clique aqui](https://drefus.github.io/PDS2-Trabalho-Final/html/index.html). Se preferir a documentação em formato de arquivo, acesse `docs/rtf/refman.rtf`.
