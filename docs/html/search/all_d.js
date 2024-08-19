@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sair_0',['Sair',['../index.html#autotoc_md8',1,'']]],
+  ['sair_0',['Sair',['../index.html#sair',1,'']]],
   ['savedata_1',['saveData',['../classplayers_management.html#ae11bf55369752a338e8084f18269517a',1,'playersManagement']]],
   ['setgamestatics_2',['setGameStatics',['../classplayer.html#aaf4bdf9df2a452855892215909bff7d6',1,'player']]],
   ['split_3',['split',['../classstring_utils.html#a13c1603c08fd6d8e43399d0fe90d7f86',1,'stringUtils']]],
