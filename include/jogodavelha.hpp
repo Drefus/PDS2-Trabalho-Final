@@ -2,6 +2,7 @@
 #define JOGODAVELHA_HPP
 #include <game.hpp>
 
+/// @brief Classe responsável pelo jogo da velha
 class jogoDaVelha : public game
 {
 private:

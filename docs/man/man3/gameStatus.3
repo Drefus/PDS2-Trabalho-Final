@@ -1,0 +1,145 @@
+.TH "gameStatus" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gameStatus \- game status classe  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <gameStatus\&.hpp>\fP
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBgameStatus\fP (std::string _name, int _wins, int _loses)"
+.br
+.RI "game status construtor "
+.ti -1c
+.RI "\fB~gameStatus\fP ()"
+.br
+.RI "game status destructor "
+.ti -1c
+.RI "double \fBwinRate\fP ()"
+.br
+.RI "Calcula a taxa de vitoria\&. "
+.ti -1c
+.RI "double \fBloseRate\fP ()"
+.br
+.RI "Calcula a taxa de derrota\&. "
+.ti -1c
+.RI "void \fBgameStatics\fP ()"
+.br
+.RI "Printa as estatísticas do jogo\&. "
+.ti -1c
+.RI "std::string \fBwinsAndLoses\fP ()"
+.br
+.RI "Cria uma string de vitorias e derrotas\&. "
+.ti -1c
+.RI "std::string \fBgetName\fP ()"
+.br
+.RI "Pega o nome de jogo\&. "
+.ti -1c
+.RI "void \fBaddWin\fP ()"
+.br
+.RI "Adiciona uma vitoria\&. "
+.ti -1c
+.RI "void \fBaddLose\fP ()"
+.br
+.RI "Adiciona uma derrota\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+game status classe 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "gameStatus::gameStatus (std::string _name, int _wins, int _loses)"
+
+.PP
+game status construtor Comece a classe com o nome, ganha e perde\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fI_name\fP 
+.br
+\fI_wins\fP 
+.br
+\fI_loses\fP 
+.RE
+.PP
+
+.SS "gameStatus::~gameStatus ()"
+
+.PP
+game status destructor Destructor\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "void gameStatus::addLose ()"
+
+.PP
+Adiciona uma derrota\&. Adicione uma perda para o jogador neste jogo\&. 
+.SS "void gameStatus::addWin ()"
+
+.PP
+Adiciona uma vitoria\&. Adicione uma vitória para o jogador neste jogo\&. 
+.SS "void gameStatus::gameStatics ()"
+
+.PP
+Printa as estatísticas do jogo\&. Mostre no console a estática do jogador neste jogo\&. 
+.SS "std::string gameStatus::getName ()"
+
+.PP
+Pega o nome de jogo\&. get Name
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna o nome do jogo
+.PP
+Nome do jogo\&. 
+.RE
+.PP
+
+.SS "double gameStatus::loseRate ()"
+
+.PP
+Calcula a taxa de derrota\&. Taxa de perda neste jogo\&.
+.PP
+\fBRetorna\fP
+.RS 4
+A taxa de derrota
+.PP
+Calcule a taxa de perdas do jogador neste jogo\&. 
+.RE
+.PP
+
+.SS "double gameStatus::winRate ()"
+
+.PP
+Calcula a taxa de vitoria\&. Taxa de vitórias neste jogo\&.
+.PP
+\fBRetorna\fP
+.RS 4
+A taxa de vitoria
+.PP
+Calcule a taxa de vitória do jogador neste jogo\&. 
+.RE
+.PP
+
+.SS "std::string gameStatus::winsAndLoses ()"
+
+.PP
+Cria uma string de vitorias e derrotas\&. Vitorias e derrotas\&.
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna uma string de vitorias e derrotas
+.PP
+Stringy as vitórias e as derrotas do jogador e separadas por um , \&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

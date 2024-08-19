@@ -1,0 +1,34 @@
+<map id="reversi::reversi" name="reversi::reversi">
+<area shape="rect" id="Node000001" title="Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais." alt="" coords="5,85,109,111"/>
+<area shape="rect" id="Node000002" href="$classreversi.html#a69d1869b3291e69f2f1df21066169f2d" title="Conta o número de peças de um jogador no tabuleiro." alt="" coords="418,34,557,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,83,104,49,129,32,156,19,191,10,228,5,302,5,371,14,429,27,428,32,370,19,301,10,228,10,192,15,158,24,132,37,108,53,72,87"/>
+<area shape="rect" id="Node000003" href="$classreversi.html#a61a6bab1f7218ab59ddc558144708d2d" title="Executa um movimento no tabuleiro." alt="" coords="205,135,309,162"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,108,157,121,190,129,189,134,156,126,108,114"/>
+<area shape="rect" id="Node000006" href="$classreversi.html#aefb6d699ad96f2ffd06b72c1db4304b2" title="Exibe o tabuleiro do jogo." alt="" coords="176,34,338,61"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="108,82,156,70,186,62,187,68,157,75,110,88"/>
+<area shape="rect" id="Node000007" href="$classreversi.html#af1c50434d7b4dc562ebc42e9dae295e2" title="Verifica se o jogador atual tem movimentos válidos disponíveis." alt="" coords="157,85,357,111"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="109,95,141,95,141,101,109,101"/>
+<area shape="rect" id="Node000008" href="$classgame.html#aa73e185d035361027c0df359d7a6c750" title="Adicione uma vitória ao vencedor e uma derrota ao perdedor." alt="" coords="191,186,323,213"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="74,110,110,141,158,172,178,180,176,185,155,176,107,145,71,114"/>
+<area shape="rect" id="Node000004" href="$classreversi.html#a51650b35f2466c62630eb1f667e0cb64" title="Verifica se um movimento é válido para o jogador atual." alt="" coords="405,85,569,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,135,408,113,409,118,310,140"/>
+<area shape="rect" id="Node000005" href="$classreversi.html#a15c02d74ff13d04be81340bf623ba5b7" title="Verifica se há peças adjacentes que podem ser capturadas." alt="" coords="617,85,785,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="570,95,602,95,602,101,570,101"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="338,45,402,45,402,50,338,50"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="322,59,409,78,408,83,320,64"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="357,95,389,95,389,101,357,101"/>
+<area shape="rect" id="Node000009" href="$classplayers_management.html#a4f80e5e54d1cd2273b86af3345c3ece1" title="Adicionar derrota a um jogador." alt="" coords="414,178,560,221"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="323,197,398,197,398,202,323,202"/>
+<area shape="rect" id="Node000013" href="$classplayers_management.html#adbef5e6113980c06e9c88dec87a53747" title="Adiciona vitoria a um jogador." alt="" coords="414,245,560,287"/>
+<area shape="poly" id="edge15_Node000008_Node000013" title=" " alt="" coords="307,211,400,238,398,243,305,216"/>
+<area shape="rect" id="Node000010" href="$classgame_status.html#a72e4abd5d73b95d8c5300b7e9c210579" title="Adiciona uma derrota." alt="" coords="627,135,775,162"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="560,179,626,163,628,169,561,185"/>
+<area shape="rect" id="Node000011" href="$classgame_status.html#a4ab21c8ec9f2dbe1f408dbdb553e5e52" title="Pega o nome de jogo." alt="" coords="625,253,777,279"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="557,219,618,238,640,245,639,250,617,243,555,224"/>
+<area shape="rect" id="Node000012" href="$classplayers_management.html#ae11bf55369752a338e8084f18269517a" title="Salvar dados." alt="" coords="628,186,774,229"/>
+<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="561,199,612,201,612,207,560,205"/>
+<area shape="poly" id="edge17_Node000013_Node000011" title=" " alt="" coords="561,263,610,263,610,269,561,269"/>
+<area shape="poly" id="edge18_Node000013_Node000012" title=" " alt="" coords="560,243,612,229,614,234,561,249"/>
+<area shape="rect" id="Node000014" href="$classgame_status.html#a8a3a06ec0e05e77736aa5994808c9311" title="Adiciona uma vitoria." alt="" coords="629,303,773,330"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="561,281,628,297,626,302,560,286"/>
+</map>

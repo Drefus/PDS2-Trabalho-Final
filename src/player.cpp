@@ -5,7 +5,7 @@
 #include <gameStatus.hpp>
 #include <player.hpp>
 #include <iostream>
-/// @brief Create the player class based by player string line.
+/// @brief Crie a classe do jogador com base na linha do jogador.
 /// @param playerLine
 player::player(std::string playerLine)
 {
@@ -27,7 +27,7 @@ player::player(std::string playerLine)
         this->gameStatics.push_back(gameStatus(data[0], std::stoi(statics[0]), std::stoi(statics[1])));
     }
 }
-/// @brief Create a player based in the name and nickname;
+/// @brief Crie um jogador baseado no nome e apelido;
 /// @param name
 /// @param nickname
 player::player(std::string name, std::string nickname)

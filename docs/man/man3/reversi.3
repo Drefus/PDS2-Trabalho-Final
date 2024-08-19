@@ -1,0 +1,206 @@
+.TH "reversi" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+reversi \- Classe do jogo reverse\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <reversi\&.hpp>\fP
+.PP
+Subclasse de \fBgame\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBreversi\fP ()"
+.br
+.RI "Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais\&. "
+.ti -1c
+.RI "void \fBmostrarTabuleiro\fP ()"
+.br
+.RI "Exibe o tabuleiro do jogo\&. "
+.ti -1c
+.RI "bool \fBjogada\fP (int x, int y, char \fBplayer\fP)"
+.br
+.RI "Executa um movimento no tabuleiro\&. "
+.ti -1c
+.RI "bool \fBverificarAdjacente\fP (int x, int y, char \fBplayer\fP)"
+.br
+.RI "Verifica se há peças adjacentes que podem ser capturadas\&. "
+.ti -1c
+.RI "bool \fBmovimentoValido\fP (int x, int y, char \fBplayer\fP)"
+.br
+.RI "Verifica se um movimento é válido para o jogador atual\&. "
+.ti -1c
+.RI "bool \fBtemMovimentosValidos\fP (char \fBplayer\fP)"
+.br
+.RI "Verifica se o jogador atual tem movimentos válidos disponíveis\&. "
+.ti -1c
+.RI "int \fBcontarPecas\fP (char \fBplayer\fP)"
+.br
+.RI "Conta o número de peças de um jogador no tabuleiro\&. "
+.in -1c
+
+Membros Públicos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP (int _rows, int _cols, std::string _name)"
+.br
+.RI "Construtor da game\&. "
+.ti -1c
+.RI "\fB~game\fP ()"
+.br
+.RI "Destrutor da game\&. "
+.ti -1c
+.RI "virtual void \fBchangeElement\fP (int x, int y, char element)"
+.br
+.RI "Troca o elemento na posicao x,y para element\&. "
+.ti -1c
+.RI "virtual void \fBwinAndLose\fP (std::string winner, std::string loser)"
+.br
+.RI "Adicione uma vitória ao vencedor e uma derrota ao perdedor\&. "
+.ti -1c
+.RI "void \fBloadPlayers\fP ()"
+.br
+.in -1c
+.SS "Outros membros herdados"
+
+
+Atributos Protegidos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBrows\fP"
+.br
+.ti -1c
+.RI "int \fBcols\fP"
+.br
+.ti -1c
+.RI "std::vector< std::vector< char > > \fBtabuleiro\fP"
+.br
+.ti -1c
+.RI "\fBplayersManagement\fP \fBmanagement\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador1\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador2\fP"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe do jogo reverse\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "reversi::reversi ()"
+
+.PP
+Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "int reversi::contarPecas (char player)"
+
+.PP
+Conta o número de peças de um jogador no tabuleiro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIplayer\fP Jogador ('P' ou 'B')\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Número de peças do jogador no tabuleiro\&. 
+.RE
+.PP
+
+.SS "bool reversi::jogada (int x, int y, char player)"
+
+.PP
+Executa um movimento no tabuleiro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIx\fP Coordenada x (linha) do movimento\&. 
+.br
+\fIy\fP Coordenada y (coluna) do movimento\&. 
+.br
+\fIplayer\fP Jogador atual ('P' ou 'B')\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true se o movimento foi realizado, false caso contrário\&. 
+.RE
+.PP
+
+.SS "void reversi::mostrarTabuleiro ()"
+
+.PP
+Exibe o tabuleiro do jogo\&. 
+.SS "bool reversi::movimentoValido (int x, int y, char player)"
+
+.PP
+Verifica se um movimento é válido para o jogador atual\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIx\fP Coordenada x (linha) do movimento\&. 
+.br
+\fIy\fP Coordenada y (coluna) do movimento\&. 
+.br
+\fIplayer\fP Jogador atual ('P' ou 'B')\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true se o movimento for válido, false caso contrário\&. 
+.RE
+.PP
+
+.SS "bool reversi::temMovimentosValidos (char player)"
+
+.PP
+Verifica se o jogador atual tem movimentos válidos disponíveis\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIplayer\fP Jogador atual ('P' ou 'B')\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true se o jogador tiver movimentos válidos, false caso contrário\&. 
+.RE
+.PP
+
+.SS "bool reversi::verificarAdjacente (int x, int y, char player)"
+
+.PP
+Verifica se há peças adjacentes que podem ser capturadas\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIx\fP Coordenada x (linha) da peça atual\&. 
+.br
+\fIy\fP Coordenada y (coluna) da peça atual\&. 
+.br
+\fIplayer\fP Jogador atual ('P' ou 'B')\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true se houver peças adjacentes a serem capturadas, false caso contrário\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

@@ -1,0 +1,64 @@
+<map id="damas::jogar" name="damas::jogar">
+<area shape="rect" id="Node000001" title="Função main do jogo damas." alt="" coords="5,344,102,371"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#a376a7a0704e6cc214cff1d8df5e3c794" title="Função que analisa se a peça selecionada é uma dama." alt="" coords="419,227,533,253"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,341,107,319,149,299,215,278,282,262,403,244,404,249,283,268,216,283,151,304,109,324,75,346"/>
+<area shape="rect" id="Node000004" href="$classdamas.html#a6d56d7e30998efad287b3086189e238d" title="Imprime o tabuleiro." alt="" coords="608,8,778,35"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="53,344,60,299,75,237,103,170,123,139,148,112,197,75,252,47,311,27,371,14,431,7,490,3,593,6,592,12,490,9,432,12,372,19,312,33,254,52,200,80,151,115,127,142,108,172,80,238,65,300,59,344"/>
+<area shape="rect" id="Node000005" href="$classdamas.html#a48b57b3508da26a8cc5cf7c3ff6faaa5" title="Função que analisa se a jogada das damas do jogador &#39;O&#39; é valida." alt="" coords="403,277,548,320"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="101,341,149,330,274,312,387,301,388,307,274,317,150,335,102,346"/>
+<area shape="rect" id="Node000006" href="$classdamas.html#a5a05d2bd54d0f5a9e5254c139f18d968" title="Função que analisa se a jogada das damas do jogador &#39;X&#39; é valida." alt="" coords="403,496,548,539"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="70,369,105,401,151,431,210,457,273,477,389,503,387,508,271,482,209,462,148,436,102,405,67,373"/>
+<area shape="rect" id="Node000007" href="$classdamas.html#af5db134b01135da2853b18b70e62f3bf" title="Verifica se a jogada a ser executada está dentro das regras do jogo." alt="" coords="395,563,557,589"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="62,370,93,433,119,469,151,499,205,529,264,550,324,563,379,570,378,575,323,568,263,555,203,534,148,504,115,473,88,436,57,372"/>
+<area shape="rect" id="Node000008" href="$classdamas.html#a5591a7422c98149f1411829e66ea5c16" title="Verifica se a jogada das peças &#39;X&#39; é válida." alt="" coords="168,592,328,619"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="62,370,93,447,119,494,152,538,178,562,207,582,204,586,175,567,148,542,115,497,88,449,57,372"/>
+<area shape="rect" id="Node000009" href="$classdamas.html#ad6846fcb7b71841a2126065d107ba126" title="Função com o intuito de mover as damas das peças &#39;O&#39;." alt="" coords="165,125,331,152"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="55,343,64,307,82,258,109,206,127,183,148,162,154,158,157,162,151,166,131,186,113,209,86,260,69,308,60,344"/>
+<area shape="rect" id="Node000013" href="$classdamas.html#a672200678c32ba18e93a70cd710c0f8b" title="Função com o intuito de movimentar as damas das peças &#39;X&#39;." alt="" coords="167,176,329,203"/>
+<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="59,342,92,286,118,253,148,225,179,207,182,211,151,229,122,257,97,289,64,345"/>
+<area shape="rect" id="Node000014" href="$classdamas.html#a9c5da7d2b169691f4a55ad39df2770d6" title="função com intuito de movimentar as peças &#39;O&#39;." alt="" coords="150,395,346,421"/>
+<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="103,368,150,380,179,388,178,393,149,385,101,373"/>
+<area shape="rect" id="Node000016" href="$classdamas.html#aeccc6de22f3d24f9be32bbcf94192c23" title="Função com o intuito de movimentar as peças &#39;X&#39;." alt="" coords="151,344,345,371"/>
+<area shape="poly" id="edge26_Node000001_Node000016" title=" " alt="" coords="102,355,135,355,135,360,102,360"/>
+<area shape="rect" id="Node000017" href="$classdamas.html#aca35887389fe92f843426847998d7da5" title="Analisa a cada final de turno se o jogo acabou, e quem venceu." alt="" coords="172,659,324,685"/>
+<area shape="poly" id="edge29_Node000001_Node000017" title=" " alt="" coords="58,371,64,419,79,487,107,562,127,598,152,629,181,650,177,654,148,633,123,601,102,565,74,489,59,420,53,372"/>
+<area shape="rect" id="Node000003" href="$classdamas.html#aa77e13e9f46fc2ace4f886430e014dff" title="Transcreve a jogada do jogador, para o índice correspondente do vetor." alt="" coords="627,307,759,349"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,252,558,263,636,297,634,302,556,268,524,257"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="549,306,612,315,612,320,548,311"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="527,493,556,475,588,448,618,418,665,360,669,364,622,421,591,452,559,480,530,498"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="536,560,556,549,598,506,633,456,659,406,677,363,682,365,664,408,637,459,602,509,559,553,539,565"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="298,617,355,628,422,632,457,631,492,625,525,615,556,599,585,577,609,549,630,518,646,485,670,419,683,364,689,365,675,421,651,487,634,521,613,552,588,581,559,604,527,620,493,630,458,636,422,638,354,633,297,622"/>
+<area shape="poly" id="edge19_Node000009_Node000003" title=" " alt="" coords="331,133,384,135,443,142,502,156,559,179,594,203,626,233,673,292,668,295,622,236,591,207,556,184,501,161,442,147,384,140,331,138"/>
+<area shape="rect" id="Node000010" href="$classdamas.html#a22a0b40217b48eef9cb049cbb77a8786" title="Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível,..." alt="" coords="394,59,557,101"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="302,122,378,102,380,108,303,128"/>
+<area shape="poly" id="edge18_Node000010_Node000003" title=" " alt="" coords="532,100,559,118,598,160,632,207,678,291,674,294,627,210,594,163,556,122,529,104"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="556,56,626,37,627,42,558,61"/>
+<area shape="rect" id="Node000011" href="$classdamas.html#a760fa05bd41c9ba3b8bdee112316bacf" title="Função que analisa se a jogada das damas do jogador &#39;O&#39; é valida, mas recebendo um inteiro como parâm..." alt="" coords="620,59,766,101"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="558,77,605,77,605,83,558,83"/>
+<area shape="rect" id="Node000012" href="$classdamas.html#a0736c20c8cd903037cc6911f05c5b41f" title="Função com o intuito de mover as damas das peças &#39;O&#39;, mas recebendo um inteiro como parâmetro." alt="" coords="605,125,781,152"/>
+<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="529,99,594,118,593,124,528,105"/>
+<area shape="poly" id="edge17_Node000012_Node000010" title=" " alt="" coords="663,127,571,100,573,95,665,122"/>
+<area shape="poly" id="edge22_Node000013_Node000003" title=" " alt="" coords="330,180,382,180,440,184,501,194,558,212,590,229,619,250,666,293,662,297,615,254,587,233,556,217,499,199,440,189,382,185,330,186"/>
+<area shape="poly" id="edge21_Node000013_Node000010" title=" " alt="" coords="313,173,345,162,392,137,433,109,436,113,394,141,347,167,315,178"/>
+<area shape="poly" id="edge25_Node000014_Node000003" title=" " alt="" coords="292,419,346,433,413,444,486,445,522,440,556,431,586,417,614,399,661,359,664,363,618,403,589,422,558,436,523,445,486,450,412,449,345,438,290,425"/>
+<area shape="rect" id="Node000015" href="$classdamas.html#ad7796adae0c2167711cd1be823a0681b" title="Função para comer o máximo de peças possíveis automaticamente." alt="" coords="394,395,557,421"/>
+<area shape="poly" id="edge24_Node000014_Node000015" title=" " alt="" coords="347,405,378,405,378,411,347,411"/>
+<area shape="poly" id="edge28_Node000016_Node000003" title=" " alt="" coords="344,349,612,331,612,336,345,354"/>
+<area shape="poly" id="edge27_Node000016_Node000015" title=" " alt="" coords="312,369,398,388,397,393,311,374"/>
+<area shape="rect" id="Node000018" href="$classgame.html#aa73e185d035361027c0df359d7a6c750" title="Adicione uma vitória ao vencedor e uma derrota ao perdedor." alt="" coords="410,664,541,691"/>
+<area shape="poly" id="edge30_Node000017_Node000018" title=" " alt="" coords="324,671,395,673,395,678,324,677"/>
+<area shape="rect" id="Node000019" href="$classplayers_management.html#a4f80e5e54d1cd2273b86af3345c3ece1" title="Adicionar derrota a um jogador." alt="" coords="620,623,766,665"/>
+<area shape="poly" id="edge31_Node000018_Node000019" title=" " alt="" coords="542,665,604,655,605,660,542,670"/>
+<area shape="rect" id="Node000023" href="$classplayers_management.html#adbef5e6113980c06e9c88dec87a53747" title="Adiciona vitoria a um jogador." alt="" coords="620,689,766,732"/>
+<area shape="poly" id="edge35_Node000018_Node000023" title=" " alt="" coords="542,685,605,695,604,700,542,690"/>
+<area shape="rect" id="Node000020" href="$classgame_status.html#a72e4abd5d73b95d8c5300b7e9c210579" title="Adiciona uma derrota." alt="" coords="830,576,979,603"/>
+<area shape="poly" id="edge32_Node000019_Node000020" title=" " alt="" coords="766,623,834,605,836,610,767,628"/>
+<area shape="rect" id="Node000021" href="$classgame_status.html#a4ab21c8ec9f2dbe1f408dbdb553e5e52" title="Pega o nome de jogo." alt="" coords="829,693,980,720"/>
+<area shape="poly" id="edge33_Node000019_Node000021" title=" " alt="" coords="767,663,843,686,842,691,766,668"/>
+<area shape="rect" id="Node000022" href="$classplayers_management.html#ae11bf55369752a338e8084f18269517a" title="Salvar dados." alt="" coords="831,627,978,669"/>
+<area shape="poly" id="edge34_Node000019_Node000022" title=" " alt="" coords="767,643,815,644,815,649,767,648"/>
+<area shape="poly" id="edge37_Node000023_Node000021" title=" " alt="" coords="767,707,813,706,813,711,767,712"/>
+<area shape="poly" id="edge38_Node000023_Node000022" title=" " alt="" coords="766,687,816,672,817,677,767,692"/>
+<area shape="rect" id="Node000024" href="$classgame_status.html#a8a3a06ec0e05e77736aa5994808c9311" title="Adiciona uma vitoria." alt="" coords="833,744,976,771"/>
+<area shape="poly" id="edge36_Node000023_Node000024" title=" " alt="" coords="767,724,827,738,825,743,766,730"/>
+</map>

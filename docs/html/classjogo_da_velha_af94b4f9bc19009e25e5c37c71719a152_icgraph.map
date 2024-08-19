@@ -1,0 +1,5 @@
+<map id="jogoDaVelha::winner" name="jogoDaVelha::winner">
+<area shape="rect" id="Node000001" title="Verifica se houve um vencedor." alt="" coords="229,5,368,32"/>
+<area shape="rect" id="Node000002" href="$classjogo_da_velha.html#a770439b2e5ae4c9b8e00c282935410d0" title="Utiliza as funções para rodar o jogo e faz checagem para jogadas válidas." alt="" coords="5,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>

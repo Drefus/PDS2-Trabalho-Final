@@ -1,0 +1,5 @@
+<map id="game" name="game">
+<area shape="rect" id="Node000001" title="Abstract class game." alt="" coords="23,352,144,613"/>
+<area shape="rect" id="Node000002" href="$classplayers_management.html" title="Gerenciamento de Jogadores." alt="" coords="5,5,161,288"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,288,86,335,81,335,81,288"/>
+</map>

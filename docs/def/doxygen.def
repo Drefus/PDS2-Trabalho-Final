@@ -1,0 +1,4019 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'classdamas';
+  cp-name   = 'damas';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classgame';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a94782cc083d9b3df1423c897c33cae03';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'damas';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construtor do tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1ad7796adae0c2167711cd1be823a0681b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'comer_multiplas';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'linha_final';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'coluna_final';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função para comer o máximo de peças possíveis automaticamente.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param linha_final
+@param coluna_final 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a9c5da7d2b169691f4a55ad39df2770d6';
+        sec-mem-ref-line = '838';
+        sec-mem-ref-name = 'realizar_movimento_O';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1aeccc6de22f3d24f9be32bbcf94192c23';
+        sec-mem-ref-line = '902';
+        sec-mem-ref-name = 'realizar_movimento_X';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a6d56d7e30998efad287b3086189e238d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'imprimir_tabuleiro';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Imprime o tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1af5db134b01135da2853b18b70e62f3bf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada_valida_O';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se a jogada a ser executada está dentro das regras do jogo.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4
+@return Retorna se a jogada foi válida ou não. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a5591a7422c98149f1411829e66ea5c16';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada_valida_X';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se a jogada das peças 'X' é válida.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4
+@return True = jogada valida; False = jogada invalida. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a672200678c32ba18e93a70cd710c0f8b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mover_damas_X';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função com o intuito de movimentar as damas das peças 'X'.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a09995f2400a7dae48900ffdab6bb130c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mover_damas_XX';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função com intuito de movimentar as damas das peças 'X', mas recebendo um int como parâmetro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1ad6846fcb7b71841a2126065d107ba126';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mover_damas_O';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função com o intuito de mover as damas das peças 'O'.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a0736c20c8cd903037cc6911f05c5b41f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mover_damas_OO';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função com o intuito de mover as damas das peças 'O', mas recebendo um inteiro como parâmetro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a22a0b40217b48eef9cb049cbb77a8786';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'comer_multiplas_damas';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'a';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'b';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível, solicitar a jogada.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param a
+@param b 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a6d56d7e30998efad287b3086189e238d';
+        sec-mem-ref-line = '179';
+        sec-mem-ref-name = 'imprimir_tabuleiro';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a760fa05bd41c9ba3b8bdee112316bacf';
+        sec-mem-ref-line = '1243';
+        sec-mem-ref-name = 'jogada_valida_dama_OO';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a0736c20c8cd903037cc6911f05c5b41f';
+        sec-mem-ref-line = '570';
+        sec-mem-ref-name = 'mover_damas_OO';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ad6846fcb7b71841a2126065d107ba126';
+        sec-mem-ref-line = '499';
+        sec-mem-ref-name = 'mover_damas_O';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a0736c20c8cd903037cc6911f05c5b41f';
+        sec-mem-ref-line = '570';
+        sec-mem-ref-name = 'mover_damas_OO';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a672200678c32ba18e93a70cd710c0f8b';
+        sec-mem-ref-line = '357';
+        sec-mem-ref-name = 'mover_damas_X';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a09995f2400a7dae48900ffdab6bb130c';
+        sec-mem-ref-line = '428';
+        sec-mem-ref-name = 'mover_damas_XX';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a9c5da7d2b169691f4a55ad39df2770d6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'realizar_movimento_O';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+função com intuito de movimentar as peças 'O'.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1ad7796adae0c2167711cd1be823a0681b';
+        sec-mem-ref-line = '88';
+        sec-mem-ref-name = 'comer_multiplas';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a376a7a0704e6cc214cff1d8df5e3c794';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'e_dama';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função que analisa se a peça selecionada é uma dama.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@return true = a peça é uma dama; False = a peça não é uma dama. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1aeccc6de22f3d24f9be32bbcf94192c23';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'realizar_movimento_X';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função com o intuito de movimentar as peças 'X'.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1ad7796adae0c2167711cd1be823a0681b';
+        sec-mem-ref-line = '88';
+        sec-mem-ref-name = 'comer_multiplas';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a48b57b3508da26a8cc5cf7c3ff6faaa5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada_valida_dama_O';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função que analisa se a jogada das damas do jogador 'O' é valida.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4
+@return True = jogada valida; False = jogada invalida. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a5a05d2bd54d0f5a9e5254c139f18d968';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada_valida_dama_X';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função que analisa se a jogada das damas do jogador 'X' é valida.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4
+@return True = jogada valida; False = jogada invalida. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aa77e13e9f46fc2ace4f886430e014dff';
+        sec-mem-ref-line = '1337';
+        sec-mem-ref-name = 'transcrever_movimento';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1ad3fd40643456b29385015c9ea1f2931b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada_valida_dama_XX';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função que analisa se a jogada das damas do jogador 'X' é valida, mas recebendo um inteiro como parâmetro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4
+@return True = jogada valida; False = jogada invalida. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1a760fa05bd41c9ba3b8bdee112316bacf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada_valida_dama_OO';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada3';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada4';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função que analisa se a jogada das damas do jogador 'O' é valida, mas recebendo um inteiro como parâmetro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@param jogada2
+@param jogada3
+@param jogada4
+@return True = jogada valida; False = jogada invalida. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1aa77e13e9f46fc2ace4f886430e014dff';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'transcrever_movimento';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'jogada1';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Transcreve a jogada do jogador, para o índice correspondente do vetor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param jogada1
+@return retorna o índice de cada jogada 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a22a0b40217b48eef9cb049cbb77a8786';
+        sec-mem-ref-line = '639';
+        sec-mem-ref-name = 'comer_multiplas_damas';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a376a7a0704e6cc214cff1d8df5e3c794';
+        sec-mem-ref-line = '888';
+        sec-mem-ref-name = 'e_dama';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a48b57b3508da26a8cc5cf7c3ff6faaa5';
+        sec-mem-ref-line = '952';
+        sec-mem-ref-name = 'jogada_valida_dama_O';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a5a05d2bd54d0f5a9e5254c139f18d968';
+        sec-mem-ref-line = '1049';
+        sec-mem-ref-name = 'jogada_valida_dama_X';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1af5db134b01135da2853b18b70e62f3bf';
+        sec-mem-ref-line = '196';
+        sec-mem-ref-name = 'jogada_valida_O';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a5591a7422c98149f1411829e66ea5c16';
+        sec-mem-ref-line = '274';
+        sec-mem-ref-name = 'jogada_valida_X';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ad6846fcb7b71841a2126065d107ba126';
+        sec-mem-ref-line = '499';
+        sec-mem-ref-name = 'mover_damas_O';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a672200678c32ba18e93a70cd710c0f8b';
+        sec-mem-ref-line = '357';
+        sec-mem-ref-name = 'mover_damas_X';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1a9c5da7d2b169691f4a55ad39df2770d6';
+        sec-mem-ref-line = '838';
+        sec-mem-ref-name = 'realizar_movimento_O';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1aeccc6de22f3d24f9be32bbcf94192c23';
+        sec-mem-ref-line = '902';
+        sec-mem-ref-name = 'realizar_movimento_X';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1aca35887389fe92f843426847998d7da5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'resultado_final';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '48';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Analisa a cada final de turno se o jogo acabou, e quem venceu.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return Retorna 'O' = vitória das peças 'O'; Retorna 'X' = vitoria das peças 'X'. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_8cpp_1aa73e185d035361027c0df359d7a6c750';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'game::winAndLose';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1ab5dbdc7d78b8c5700a32b0e821335a94';
+        sec-mem-ref-line = '1393';
+        sec-mem-ref-name = 'jogar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classdamas_1ab5dbdc7d78b8c5700a32b0e821335a94';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogar';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função main do jogo damas.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return Retorna '0' se deu tudo certo. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a376a7a0704e6cc214cff1d8df5e3c794';
+        sec-mem-ref-line = '888';
+        sec-mem-ref-name = 'e_dama';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a6d56d7e30998efad287b3086189e238d';
+        sec-mem-ref-line = '179';
+        sec-mem-ref-name = 'imprimir_tabuleiro';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a48b57b3508da26a8cc5cf7c3ff6faaa5';
+        sec-mem-ref-line = '952';
+        sec-mem-ref-name = 'jogada_valida_dama_O';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a5a05d2bd54d0f5a9e5254c139f18d968';
+        sec-mem-ref-line = '1049';
+        sec-mem-ref-name = 'jogada_valida_dama_X';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1af5db134b01135da2853b18b70e62f3bf';
+        sec-mem-ref-line = '196';
+        sec-mem-ref-name = 'jogada_valida_O';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a5591a7422c98149f1411829e66ea5c16';
+        sec-mem-ref-line = '274';
+        sec-mem-ref-name = 'jogada_valida_X';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1ad6846fcb7b71841a2126065d107ba126';
+        sec-mem-ref-line = '499';
+        sec-mem-ref-name = 'mover_damas_O';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a672200678c32ba18e93a70cd710c0f8b';
+        sec-mem-ref-line = '357';
+        sec-mem-ref-name = 'mover_damas_X';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1a9c5da7d2b169691f4a55ad39df2770d6';
+        sec-mem-ref-line = '838';
+        sec-mem-ref-name = 'realizar_movimento_O';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aeccc6de22f3d24f9be32bbcf94192c23';
+        sec-mem-ref-line = '902';
+        sec-mem-ref-name = 'realizar_movimento_X';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'damas_8cpp_1aca35887389fe92f843426847998d7da5';
+        sec-mem-ref-line = '1360';
+        sec-mem-ref-name = 'resultado_final';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+  cp-fileline  = '9';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe responsável pelo damas.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'damas';
+        node-link = {
+          node-link-id = 'classdamas';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'damas';
+        node-link = {
+          node-link-id = 'classdamas';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+#management
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'playersManagement';
+        node-link = {
+          node-link-id = 'classplayers_management';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classgame';
+  cp-name   = 'game';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classdamas';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classjogo_da_velha';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classlig4';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classreversi';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_1a47d25ca94679fa6819eb892d402f03bd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'game';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_rows';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_cols';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_name';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construtor da game.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Inicializa a classe game.
+
+@param _rows
+@param _cols 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_1ae87abd20c4d8a7906fa48e690a5f1d07';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~game';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Destrutor da game.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Destrutor.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_1a9e24d74d5d1823c3d2cec6be415df6ed';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'changeElement';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'element';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Troca o elemento na posicao x,y para element.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Mude o elemento na posição x,y para o elemento;.
+
+@param x
+@param y
+@param element 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_1aa73e185d035361027c0df359d7a6c750';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'winAndLose';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'winner';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'loser';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Adicione uma vitória ao vencedor e uma derrota ao perdedor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param winner
+@param loser 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1a4f80e5e54d1cd2273b86af3345c3ece1';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'playersManagement::addLose';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1adbef5e6113980c06e9c88dec87a53747';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'playersManagement::addWin';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a770439b2e5ae4c9b8e00c282935410d0';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'jogoDaVelha::jogoDaVelha';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'lig4_8cpp_1a412d6bbcae4077e520282b295060abe1';
+        sec-mem-ref-line = '137';
+        sec-mem-ref-name = 'lig4::lig4';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'damas_8cpp_1aca35887389fe92f843426847998d7da5';
+        sec-mem-ref-line = '1360';
+        sec-mem-ref-name = 'damas::resultado_final';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1a9a0f4929be4418a70a84c29e71bd3103';
+        sec-mem-ref-line = '4';
+        sec-mem-ref-name = 'reversi::reversi';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_1a84f2f18c697121feb04178da8f53403a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'loadPlayers';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_1a252b06af5466a21270d4127a581e1546';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'name';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '11';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_1ad29d3aa89cbc096179a5ba0905e44f05';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'rows';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_1afc61f759b9e7fc58f5bc6bd42e32f909';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'cols';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_1af2629cfaf40a78d2041da5346be05e43';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< std::vector< char > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'tabuleiro';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_1a5a951c96fd9a243d5816c590e3a5fc4a';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+playersManagement
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'management';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_1a9cd2dbb9a3e44e8544f3c0b5abe49c2e';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogador1';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_1ad28aa6fcbcbab5bc21cdac06e1742162';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogador2';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+  cp-fileline  = '8';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Abstract class game.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'damas';
+        node-link = {
+          node-link-id = 'classdamas';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'jogoDaVelha';
+        node-link = {
+          node-link-id = 'classjogo_da_velha';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'lig4';
+        node-link = {
+          node-link-id = 'classlig4';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 5;
+        node-label = 'reversi';
+        node-link = {
+          node-link-id = 'classreversi';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+#management
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'playersManagement';
+        node-link = {
+          node-link-id = 'classplayers_management';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classgame_status';
+  cp-name   = 'gameStatus';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1a59cf593b2824c096cf3ab992438942fb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'gameStatus';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_name';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_wins';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_loses';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+game status construtor
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Comece a classe com o nome, ganha e perde.
+
+@param _name
+@param _wins
+@param _loses 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1ac61f661961fa77f2206effd70d74862c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~gameStatus';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+game status destructor
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Destructor.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1a26d2ca02ed54983d79afc345432e0226';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'winRate';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calcula a taxa de vitoria.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Taxa de vitórias neste jogo.
+
+@return A taxa de vitoria 
+
+@return Calcule a taxa de vitória do jogador neste jogo. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'game_status_8cpp_1a71623837b142fe48a567a2baad302cbf';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'gameStatics';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1aa2bd52310e99845ad5d720038dbdb986';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'loseRate';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calcula a taxa de derrota.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Taxa de perda neste jogo.
+
+@return A taxa de derrota 
+
+@return Calcule a taxa de perdas do jogador neste jogo. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'game_status_8cpp_1a71623837b142fe48a567a2baad302cbf';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'gameStatics';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1a71623837b142fe48a567a2baad302cbf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'gameStatics';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Printa as estatísticas do jogo.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Mostre no console a estática do jogador neste jogo.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_status_8cpp_1aa2bd52310e99845ad5d720038dbdb986';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'loseRate';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_status_8cpp_1a26d2ca02ed54983d79afc345432e0226';
+        sec-mem-ref-line = '17';
+        sec-mem-ref-name = 'winRate';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1a509defe5f914ecaa926ffeb326279df0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'winsAndLoses';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Cria uma string de vitorias e derrotas.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Vitorias e derrotas.
+
+@return Retorna uma string de vitorias e derrotas 
+
+@return Stringy as vitórias e as derrotas do jogador e separadas por um , . 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1a4ab21c8ec9f2dbe1f408dbdb553e5e52';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getName';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Pega o nome de jogo.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+get Name
+
+@return Retorna o nome do jogo 
+
+@return Nome do jogo. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1a4f80e5e54d1cd2273b86af3345c3ece1';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'playersManagement::addLose';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1adbef5e6113980c06e9c88dec87a53747';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'playersManagement::addWin';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1a8a3a06ec0e05e77736aa5994808c9311';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addWin';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Adiciona uma vitoria.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Adicione uma vitória para o jogador neste jogo.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1adbef5e6113980c06e9c88dec87a53747';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'playersManagement::addWin';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classgame_status_1a72e4abd5d73b95d8c5300b7e9c210579';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addLose';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Adiciona uma derrota.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Adicione uma perda para o jogador neste jogo.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1a4f80e5e54d1cd2273b86af3345c3ece1';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'playersManagement::addLose';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_status_1a07ced96b2bcc8e5d239cf4e87e1c3e7d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'name';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_status_1aa016cd3b4cb415d3f44b7b5a399e2f74';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'wins';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '11';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classgame_status_1a5a1baaf7718fa65eef1751f19928b924';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'loses';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+  cp-fileline  = '7';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+game status classe
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'gameStatus';
+        node-link = {
+          node-link-id = 'classgame_status';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classjogo_da_velha';
+  cp-name   = 'jogoDaVelha';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classgame';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classjogo_da_velha_1a770439b2e5ae4c9b8e00c282935410d0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogoDaVelha';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Utiliza as funções para rodar o jogo e faz checagem para jogadas válidas.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a1989b11cd96c64e9aba70a68e0249066';
+        sec-mem-ref-line = '6';
+        sec-mem-ref-name = 'drawTabuleiro';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a2bdd2cd41557b2e169a90861869a64c2';
+        sec-mem-ref-line = '72';
+        sec-mem-ref-name = 'escolherMarcador';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a26aabc44738b47b6d5830b41e5d40297';
+        sec-mem-ref-line = '18';
+        sec-mem-ref-name = 'marcador';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a66d7689317d0cc6f5d2db97b9f5ce6f2';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'mudaJogador';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_8cpp_1aa73e185d035361027c0df359d7a6c750';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'game::winAndLose';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1af94b4f9bc19009e25e5c37c71719a152';
+        sec-mem-ref-line = '34';
+        sec-mem-ref-name = 'winner';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classjogo_da_velha_1a1989b11cd96c64e9aba70a68e0249066';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'drawTabuleiro';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construtor do tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a770439b2e5ae4c9b8e00c282935410d0';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'jogoDaVelha';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classjogo_da_velha_1a26aabc44738b47b6d5830b41e5d40297';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'marcador';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'coord';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Marca o tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param coord int
+@return true se a jogada for possível e false se não for 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a770439b2e5ae4c9b8e00c282935410d0';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'jogoDaVelha';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classjogo_da_velha_1af94b4f9bc19009e25e5c37c71719a152';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'winner';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se houve um vencedor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return 1 ou 2 se houver vencedor e 0 se não houver 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a770439b2e5ae4c9b8e00c282935410d0';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'jogoDaVelha';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classjogo_da_velha_1a66d7689317d0cc6f5d2db97b9f5ce6f2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mudaJogador';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Alterna o jogador após a jogada.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a770439b2e5ae4c9b8e00c282935410d0';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'jogoDaVelha';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classjogo_da_velha_1a2bdd2cd41557b2e169a90861869a64c2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'escolherMarcador';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Função para garantir que o jogador 1 escolha entre X ou O.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'jogo_da_velha_8cpp_1a770439b2e5ae4c9b8e00c282935410d0';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'jogoDaVelha';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classjogo_da_velha_1a9f741b741d330d870ef60e82cdd3e55e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'marcadorAtual';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '9';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classjogo_da_velha_1a57f71550c00005ab6e55208103ea48c5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogadorAtual';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+  cp-fileline  = '6';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe responsável pelo jogo da velha.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'jogoDaVelha';
+        node-link = {
+          node-link-id = 'classjogo_da_velha';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+#management
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'jogoDaVelha';
+        node-link = {
+          node-link-id = 'classjogo_da_velha';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'playersManagement';
+        node-link = {
+          node-link-id = 'classplayers_management';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classlig4';
+  cp-name   = 'lig4';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classgame';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classlig4_1a412d6bbcae4077e520282b295060abe1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'lig4';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/lig4.hpp';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construtor e jogo do Lig4.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'lig4_8cpp_1ab8e01d7f05ab291245c204bf54b47938';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'jogada';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'lig4_8cpp_1a7dd147e1e5ad2a5f263d291ea60348b9';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'mostrarTabuleiro';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'lig4_8cpp_1a4585a1ae772b89f411210402f77335a0';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'verificarAdjacente';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_8cpp_1aa73e185d035361027c0df359d7a6c750';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'game::winAndLose';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classlig4_1a7dd147e1e5ad2a5f263d291ea60348b9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mostrarTabuleiro';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/lig4.hpp';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Mostra o tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'lig4_8cpp_1a412d6bbcae4077e520282b295060abe1';
+        sec-mem-ref-line = '137';
+        sec-mem-ref-name = 'lig4';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classlig4_1ab8e01d7f05ab291245c204bf54b47938';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'posicao';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/lig4.hpp';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Faz uma jogada valida no tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param posicao int
+@return linha que o jogador fez a jogada como INT 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'lig4_8cpp_1ab8e01d7f05ab291245c204bf54b47938';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'jogada';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'lig4_8cpp_1ab8e01d7f05ab291245c204bf54b47938';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'jogada';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'lig4_8cpp_1a412d6bbcae4077e520282b295060abe1';
+        sec-mem-ref-line = '137';
+        sec-mem-ref-name = 'lig4';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classlig4_1a4585a1ae772b89f411210402f77335a0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'verificarAdjacente';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'linha';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'coluna';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'time';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/lig4.hpp';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se um jogador venceu baseado em sua última jogada.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param linha int
+@param coluna int
+@param time char
+@return Retorna TRUE caso o jogador venceu e FALSE caso o jogo ainda não acabou 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'lig4_8cpp_1a412d6bbcae4077e520282b295060abe1';
+        sec-mem-ref-line = '137';
+        sec-mem-ref-name = 'lig4';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classlig4_1a097eb181da5b2193c585db4106853364';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'turno';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/lig4.hpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/lig4.hpp';
+  cp-fileline  = '11';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe responsável pelo jogo LIG4.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'lig4';
+        node-link = {
+          node-link-id = 'classlig4';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+#management
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'lig4';
+        node-link = {
+          node-link-id = 'classlig4';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'playersManagement';
+        node-link = {
+          node-link-id = 'classplayers_management';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classplayer';
+  cp-name   = 'player';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1a7b5b68288707fb11bbd304eb5117ac11';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'player';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'playerLine';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Crie a classe do jogador com base na linha do jogador.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param playerLine 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'string_utils_8cpp_1a13c1603c08fd6d8e43399d0fe90d7f86';
+        sec-mem-ref-line = '14';
+        sec-mem-ref-name = 'stringUtils::split';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'string_utils_8cpp_1a56360121f6f79af10301405900535ea2';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'stringUtils::splitInTwo';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1a0a8de520f7c1d2441ef82b1ef6afa9ee';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'player';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nickname';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Crie um jogador baseado no nome e apelido;.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param name
+@param nickname 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1aab5d2e47b80e0481f09ca0df8b823057';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~player';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Deconstructor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1a495c9993ab19f85cd90ae6da0de253cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'playerToString';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Player to string;.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return Stringify the player data. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1ae37de0e087c9feeee1fb062e6b04c145';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getName';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Get Name.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return Player name 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1af810226aae0c9da23b549ac2cdc505be';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getNick';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Get Nick.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return Player nickname. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1a5268c60f9a312555c2ab540184b2d44a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< gameStatus >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getGameStatics';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Get Game Statics.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return Getter of the player game statics. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayer_1aaf4bdf9df2a452855892215909bff7d6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setGameStatics';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::vector< gameStatus >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'newVector';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Setter game statics.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param newVector 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classplayer_1a228311699cffbec87e75d5f83a3d3309';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'name';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '11';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classplayer_1aa5e2382f0774fe8fdccdf0cab03e7f97';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'nickname';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classplayer_1a324e6783418dfc08811cd39d8ce42480';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< gameStatus >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'gameStatics';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+  cp-fileline  = '8';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe jogador.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'player';
+        node-link = {
+          node-link-id = 'classplayer';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classplayers_management';
+  cp-name   = 'playersManagement';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1ab5da98673e152322e5cc45c4d4720f72';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'playersManagement';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construtor e dados de carregamento.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1a204346c6cac88493bc66ebdebc4ca537';
+        sec-mem-ref-line = '15';
+        sec-mem-ref-name = 'loadData';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1a1adcaf2e97a925e65129b34a7065a016';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~playersManagement';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Destructor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1a204346c6cac88493bc66ebdebc4ca537';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'loadData';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Carregar dados.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Carregue os dados do jogador de playersStatics.txt.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1ab5da98673e152322e5cc45c4d4720f72';
+        sec-mem-ref-line = '6';
+        sec-mem-ref-name = 'playersManagement';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1ae11bf55369752a338e8084f18269517a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'saveData';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Salvar dados.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Salve os dados dos jogadores em playersStatics.txt.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1a4f80e5e54d1cd2273b86af3345c3ece1';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'addLose';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1a4811873370311ad6f3a50600d1fd9237';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'addPlayer';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1adbef5e6113980c06e9c88dec87a53747';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'addWin';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1af87e977506a2a553a91a4e047e9d713b';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'removePlayer';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1a4811873370311ad6f3a50600d1fd9237';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addPlayer';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nickname';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Adicionar jogador.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Adicione um jogador pelo nome ou apelido.
+
+@param name
+@param nickname
+@return Retorne 0 se for bem-sucedido e -1 se falhar. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1ae11bf55369752a338e8084f18269517a';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'saveData';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_management_8cpp_1a5fbc67ce627de58a27992f49814036d5';
+        sec-mem-ref-line = '181';
+        sec-mem-ref-name = 'existPlayer';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_menu_8cpp_1adebfb8ff936b89b3ff360585910dbd47';
+        sec-mem-ref-line = '6';
+        sec-mem-ref-name = 'playersMenu::playersMenu';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1af87e977506a2a553a91a4e047e9d713b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'removePlayer';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Remover jogador.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Remova um jogador pelo nome ou apelido.
+
+@param name
+@return Retorne 0 se for bem-sucedido e -1 se falhar. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1ae11bf55369752a338e8084f18269517a';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'saveData';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_menu_8cpp_1adebfb8ff936b89b3ff360585910dbd47';
+        sec-mem-ref-line = '6';
+        sec-mem-ref-name = 'playersMenu::playersMenu';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1aa3fde658085eafe54f35f8d862a2a30b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'listPlayers';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Listar todos os jogadores.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Liste todos os jogadores e suas estatísticas.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'players_menu_8cpp_1adebfb8ff936b89b3ff360585910dbd47';
+        sec-mem-ref-line = '6';
+        sec-mem-ref-name = 'playersMenu::playersMenu';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1a0c9072c2eb322a95b42bbd73b107bce2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'listPlayers';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Listar jogador a partir do nome.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Liste o jogador pelo nome ou apelido e suas estatísticas.
+
+@param name 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1a4f80e5e54d1cd2273b86af3345c3ece1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addLose';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'game';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nickname';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Adicionar derrota a um jogador.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Adicione uma perda no jogo para o jogador que o nick passou.
+
+@param game
+@param nickname
+@return Se o jogo já existir retorne 0, se não crie e retorne 1. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_status_8cpp_1a72e4abd5d73b95d8c5300b7e9c210579';
+        sec-mem-ref-line = '52';
+        sec-mem-ref-name = 'gameStatus::addLose';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_status_8cpp_1a4ab21c8ec9f2dbe1f408dbdb553e5e52';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'gameStatus::getName';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1ae11bf55369752a338e8084f18269517a';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'saveData';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'game_8cpp_1aa73e185d035361027c0df359d7a6c750';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'game::winAndLose';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1adbef5e6113980c06e9c88dec87a53747';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addWin';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'game';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nickname';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Adiciona vitoria a um jogador.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Adicione uma vitória no jogo para o jogador que o nick passou.
+
+@param game
+@param nickname
+@return Se o jogo já existir retorne 0, se não crie e retorne 1. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_status_8cpp_1a8a3a06ec0e05e77736aa5994808c9311';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'gameStatus::addWin';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_status_8cpp_1a4ab21c8ec9f2dbe1f408dbdb553e5e52';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'gameStatus::getName';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1ae11bf55369752a338e8084f18269517a';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'saveData';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'game_8cpp_1aa73e185d035361027c0df359d7a6c750';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'game::winAndLose';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_management_1a5fbc67ce627de58a27992f49814036d5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'existPlayer';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'nick';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se um jogador existe a partir.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Verifique se o nick do jogador existe nos jogadores.
+
+@param nick
+@return Se existir, retorne 1, se não, retorne -1 
+
+@param nick
+@return se existir, retorne 1, se não, retorne -1 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1a4811873370311ad6f3a50600d1fd9237';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'addPlayer';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classplayers_management_1a7ec96c5a10acf8be7e35d82c8c848f0c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< player >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'players';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+      sec-mem-desc-line = '9';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+  cp-fileline  = '6';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Gerenciamento de Jogadores.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'playersManagement';
+        node-link = {
+          node-link-id = 'classplayers_management';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classplayers_menu';
+  cp-name   = 'playersMenu';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_menu_1adebfb8ff936b89b3ff360585910dbd47';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'playersMenu';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersMenu.hpp';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Menu de jogadores.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1a4811873370311ad6f3a50600d1fd9237';
+        sec-mem-ref-line = '48';
+        sec-mem-ref-name = 'playersManagement::addPlayer';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1aa3fde658085eafe54f35f8d862a2a30b';
+        sec-mem-ref-line = '88';
+        sec-mem-ref-name = 'playersManagement::listPlayers';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'players_management_8cpp_1af87e977506a2a553a91a4e047e9d713b';
+        sec-mem-ref-line = '70';
+        sec-mem-ref-name = 'playersManagement::removePlayer';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classplayers_menu_1ab343dccbd98029b8b8f123c04ef8b0dc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~playersMenu';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersMenu.hpp';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classplayers_menu_1a2ad5131a9d09347240e2c11e7701e846';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+playersManagement
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'management';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersMenu.hpp';
+      sec-mem-desc-line = '9';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersMenu.hpp';
+  cp-fileline  = '6';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Menu de jogadores.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'playersMenu';
+        node-link = {
+          node-link-id = 'classplayers_menu';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classreversi';
+  cp-name   = 'reversi';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classgame';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classreversi_1a9a0f4929be4418a70a84c29e71bd3103';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'reversi';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1a69d1869b3291e69f2f1df21066169f2d';
+        sec-mem-ref-line = '256';
+        sec-mem-ref-name = 'contarPecas';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1a61a6bab1f7218ab59ddc558144708d2d';
+        sec-mem-ref-line = '159';
+        sec-mem-ref-name = 'jogada';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1aefb6d699ad96f2ffd06b72c1db4304b2';
+        sec-mem-ref-line = '109';
+        sec-mem-ref-name = 'mostrarTabuleiro';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1af1c50434d7b4dc562ebc42e9dae295e2';
+        sec-mem-ref-line = '238';
+        sec-mem-ref-name = 'temMovimentosValidos';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'game_8cpp_1aa73e185d035361027c0df359d7a6c750';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'game::winAndLose';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classreversi_1aefb6d699ad96f2ffd06b72c1db4304b2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mostrarTabuleiro';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Exibe o tabuleiro do jogo.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1a69d1869b3291e69f2f1df21066169f2d';
+        sec-mem-ref-line = '256';
+        sec-mem-ref-name = 'contarPecas';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1a51650b35f2466c62630eb1f667e0cb64';
+        sec-mem-ref-line = '146';
+        sec-mem-ref-name = 'movimentoValido';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1a9a0f4929be4418a70a84c29e71bd3103';
+        sec-mem-ref-line = '4';
+        sec-mem-ref-name = 'reversi';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classreversi_1a61a6bab1f7218ab59ddc558144708d2d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'jogada';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'player';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Executa um movimento no tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x Coordenada x (linha) do movimento.
+@param y Coordenada y (coluna) do movimento.
+@param player Jogador atual ('P' ou 'B').
+@return true se o movimento foi realizado, false caso contrário. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1a51650b35f2466c62630eb1f667e0cb64';
+        sec-mem-ref-line = '146';
+        sec-mem-ref-name = 'movimentoValido';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1a9a0f4929be4418a70a84c29e71bd3103';
+        sec-mem-ref-line = '4';
+        sec-mem-ref-name = 'reversi';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classreversi_1a15c02d74ff13d04be81340bf623ba5b7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'verificarAdjacente';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'player';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se há peças adjacentes que podem ser capturadas.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x Coordenada x (linha) da peça atual.
+@param y Coordenada y (coluna) da peça atual.
+@param player Jogador atual ('P' ou 'B').
+@return true se houver peças adjacentes a serem capturadas, false caso contrário. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1a51650b35f2466c62630eb1f667e0cb64';
+        sec-mem-ref-line = '146';
+        sec-mem-ref-name = 'movimentoValido';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classreversi_1a51650b35f2466c62630eb1f667e0cb64';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'movimentoValido';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'player';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se um movimento é válido para o jogador atual.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x Coordenada x (linha) do movimento.
+@param y Coordenada y (coluna) do movimento.
+@param player Jogador atual ('P' ou 'B').
+@return true se o movimento for válido, false caso contrário. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1a15c02d74ff13d04be81340bf623ba5b7';
+        sec-mem-ref-line = '205';
+        sec-mem-ref-name = 'verificarAdjacente';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1a61a6bab1f7218ab59ddc558144708d2d';
+        sec-mem-ref-line = '159';
+        sec-mem-ref-name = 'jogada';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1aefb6d699ad96f2ffd06b72c1db4304b2';
+        sec-mem-ref-line = '109';
+        sec-mem-ref-name = 'mostrarTabuleiro';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1af1c50434d7b4dc562ebc42e9dae295e2';
+        sec-mem-ref-line = '238';
+        sec-mem-ref-name = 'temMovimentosValidos';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classreversi_1af1c50434d7b4dc562ebc42e9dae295e2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'temMovimentosValidos';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'player';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Verifica se o jogador atual tem movimentos válidos disponíveis.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param player Jogador atual ('P' ou 'B').
+@return true se o jogador tiver movimentos válidos, false caso contrário. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'reversi_8cpp_1a51650b35f2466c62630eb1f667e0cb64';
+        sec-mem-ref-line = '146';
+        sec-mem-ref-name = 'movimentoValido';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1a9a0f4929be4418a70a84c29e71bd3103';
+        sec-mem-ref-line = '4';
+        sec-mem-ref-name = 'reversi';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classreversi_1a69d1869b3291e69f2f1df21066169f2d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'contarPecas';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'player';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Conta o número de peças de um jogador no tabuleiro.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param player Jogador ('P' ou 'B').
+@return Número de peças do jogador no tabuleiro. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1aefb6d699ad96f2ffd06b72c1db4304b2';
+        sec-mem-ref-line = '109';
+        sec-mem-ref-name = 'mostrarTabuleiro';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'reversi_8cpp_1a9a0f4929be4418a70a84c29e71bd3103';
+        sec-mem-ref-line = '4';
+        sec-mem-ref-name = 'reversi';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classreversi_1ad0dee86b686ee3ca0b93560fb2690176';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'turno';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+  cp-fileline  = '11';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe do jogo reverse.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'reversi';
+        node-link = {
+          node-link-id = 'classreversi';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'game';
+        node-link = {
+          node-link-id = 'classgame';
+        };
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+#management
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'playersManagement';
+        node-link = {
+          node-link-id = 'classplayers_management';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'reversi';
+        node-link = {
+          node-link-id = 'classreversi';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classstring_utils';
+  cp-name   = 'stringUtils';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classstring_utils_1acf7d0a2840200ae04af45a3d47bcb168';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'stringUtils';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/stringUtils.hpp';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construtor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classstring_utils_1acaadad65b5695be5ec9873c734c1d381';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~stringUtils';
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/stringUtils.hpp';
+      sec-mem-desc-line = '11';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Destrutor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classstring_utils_1a13c1603c08fd6d8e43399d0fe90d7f86';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::vector< std::string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'split';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'text';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'deliminator';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/stringUtils.hpp';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Dividir string em sub strings.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Dividir uma string com delimitador final.
+
+@param text
+@param deliminator
+@return Vetor de sub string 
+
+@param text
+@param deliminator
+@return Um vetor de todas as strings divididas. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'player_8cpp_1a7b5b68288707fb11bbd304eb5117ac11';
+        sec-mem-ref-line = '10';
+        sec-mem-ref-name = 'player::player';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classstring_utils_1a56360121f6f79af10301405900535ea2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::vector< std::string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'splitInTwo';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'text';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'deliminator';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/stringUtils.hpp';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Dividir uma string em duas.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Separa a string em duas a partir de um delimitador.
+
+@param text
+@param deliminator
+@return Vetor de sub string 
+
+@param text
+@param deliminator
+@return O vetor com as string separada 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = 'player_8cpp_1a7b5b68288707fb11bbd304eb5117ac11';
+        sec-mem-ref-line = '10';
+        sec-mem-ref-name = 'player::player';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/stringUtils.hpp';
+  cp-fileline  = '7';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe statica de utilidades de strings.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'stringUtils';
+        node-link = {
+          node-link-id = 'classstring_utils';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = 'damas_8hpp';
+  file-name = 'damas.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'game_8hpp';
+  file-name = 'game.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/game.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'game_status_8hpp';
+  file-name = 'gameStatus.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/gameStatus.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'jogo_da_velha_8hpp';
+  file-name = 'jogoDaVelha.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/jogoDaVelha.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'lig4_8hpp';
+  file-name = 'lig4.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/lig4.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'player_8hpp';
+  file-name = 'player.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/player.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'players_management_8hpp';
+  file-name = 'playersManagement.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersManagement.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'players_menu_8hpp';
+  file-name = 'playersMenu.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/playersMenu.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'reversi_8hpp';
+  file-name = 'reversi.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/reversi.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'string_utils_8hpp';
+  file-name = 'stringUtils.hpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/stringUtils.hpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_r_e_a_d_m_e_8md';
+  file-name = 'README.md';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/README.md';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'damas_8cpp';
+  file-name = 'damas.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/damas.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'game_8cpp';
+  file-name = 'game.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/game.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'game_status_8cpp';
+  file-name = 'gameStatus.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/gameStatus.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'jogo_da_velha_8cpp';
+  file-name = 'jogoDaVelha.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/jogoDaVelha.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'lig4_8cpp';
+  file-name = 'lig4.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/lig4.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'main_8cpp';
+  file-name = 'main.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-desc-file = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/main.cpp';
+      func-mem-desc-line = '10';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/main.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'player_8cpp';
+  file-name = 'player.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/player.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'players_management_8cpp';
+  file-name = 'playersManagement.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/playersManagement.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'players_menu_8cpp';
+  file-name = 'playersMenu.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/playersMenu.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'reversi_8cpp';
+  file-name = 'reversi.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/reversi.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'string_utils_8cpp';
+  file-name = 'stringUtils.cpp';
+  file-full-name  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/stringUtils.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+  namespace = {
+    ns-id   = 'namespacestd';
+    ns-name = 'std';
+  ns-filename  = 'C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/src/damas.cpp';
+  ns-fileline  = '4';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };

@@ -1,0 +1,7 @@
+<map id="player::player" name="player::player">
+<area shape="rect" id="Node000001" title="Crie a classe do jogador com base na linha do jogador." alt="" coords="5,31,105,57"/>
+<area shape="rect" id="Node000002" href="$classstring_utils.html#a13c1603c08fd6d8e43399d0fe90d7f86" title="Dividir string em sub strings." alt="" coords="169,5,281,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,34,154,27,155,32,106,39"/>
+<area shape="rect" id="Node000003" href="$classstring_utils.html#a56360121f6f79af10301405900535ea2" title="Dividir uma string em duas." alt="" coords="153,56,297,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,49,138,54,137,59,105,54"/>
+</map>

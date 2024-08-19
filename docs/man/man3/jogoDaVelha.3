@@ -1,0 +1,145 @@
+.TH "jogoDaVelha" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+jogoDaVelha \- Classe responsável pelo jogo da velha\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <jogoDaVelha\&.hpp>\fP
+.PP
+Subclasse de \fBgame\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBjogoDaVelha\fP ()"
+.br
+.RI "Utiliza as funções para rodar o jogo e faz checagem para jogadas válidas\&. "
+.ti -1c
+.RI "void \fBdrawTabuleiro\fP ()"
+.br
+.RI "Construtor do tabuleiro\&. "
+.ti -1c
+.RI "bool \fBmarcador\fP (int coord)"
+.br
+.RI "Marca o tabuleiro\&. "
+.ti -1c
+.RI "int \fBwinner\fP ()"
+.br
+.RI "Verifica se houve um vencedor\&. "
+.ti -1c
+.RI "void \fBmudaJogador\fP ()"
+.br
+.RI "Alterna o jogador após a jogada\&. "
+.ti -1c
+.RI "void \fBescolherMarcador\fP ()"
+.br
+.RI "Função para garantir que o jogador 1 escolha entre X ou O\&. "
+.in -1c
+
+Membros Públicos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP (int _rows, int _cols, std::string _name)"
+.br
+.RI "Construtor da game\&. "
+.ti -1c
+.RI "\fB~game\fP ()"
+.br
+.RI "Destrutor da game\&. "
+.ti -1c
+.RI "virtual void \fBchangeElement\fP (int x, int y, char element)"
+.br
+.RI "Troca o elemento na posicao x,y para element\&. "
+.ti -1c
+.RI "virtual void \fBwinAndLose\fP (std::string winner, std::string loser)"
+.br
+.RI "Adicione uma vitória ao vencedor e uma derrota ao perdedor\&. "
+.ti -1c
+.RI "void \fBloadPlayers\fP ()"
+.br
+.in -1c
+.SS "Outros membros herdados"
+
+
+Atributos Protegidos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBrows\fP"
+.br
+.ti -1c
+.RI "int \fBcols\fP"
+.br
+.ti -1c
+.RI "std::vector< std::vector< char > > \fBtabuleiro\fP"
+.br
+.ti -1c
+.RI "\fBplayersManagement\fP \fBmanagement\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador1\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador2\fP"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe responsável pelo jogo da velha\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "jogoDaVelha::jogoDaVelha ()"
+
+.PP
+Utiliza as funções para rodar o jogo e faz checagem para jogadas válidas\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "void jogoDaVelha::drawTabuleiro ()"
+
+.PP
+Construtor do tabuleiro\&. 
+.SS "void jogoDaVelha::escolherMarcador ()"
+
+.PP
+Função para garantir que o jogador 1 escolha entre X ou O\&. 
+.SS "bool jogoDaVelha::marcador (int coord)"
+
+.PP
+Marca o tabuleiro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIcoord\fP int 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true se a jogada for possível e false se não for 
+.RE
+.PP
+
+.SS "void jogoDaVelha::mudaJogador ()"
+
+.PP
+Alterna o jogador após a jogada\&. 
+.SS "int jogoDaVelha::winner ()"
+
+.PP
+Verifica se houve um vencedor\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+1 ou 2 se houver vencedor e 0 se não houver 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

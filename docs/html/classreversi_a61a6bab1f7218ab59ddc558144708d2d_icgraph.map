@@ -1,0 +1,5 @@
+<map id="reversi::jogada" name="reversi::jogada">
+<area shape="rect" id="Node000001" title="Executa um movimento no tabuleiro." alt="" coords="157,5,261,32"/>
+<area shape="rect" id="Node000002" href="$classreversi.html#a9a0f4929be4418a70a84c29e71bd3103" title="Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais." alt="" coords="5,5,109,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,21,109,21,109,16,141,16"/>
+</map>

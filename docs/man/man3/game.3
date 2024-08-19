@@ -1,0 +1,117 @@
+.TH "game" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+game \- Abstract class game\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <game\&.hpp>\fP
+.PP
+Superclasse de \fBdamas\fP, \fBjogoDaVelha\fP, \fBlig4\fP e \fBreversi\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBgame\fP (int _rows, int _cols, std::string _name)"
+.br
+.RI "Construtor da game\&. "
+.ti -1c
+.RI "\fB~game\fP ()"
+.br
+.RI "Destrutor da game\&. "
+.ti -1c
+.RI "virtual void \fBchangeElement\fP (int x, int y, char element)"
+.br
+.RI "Troca o elemento na posicao x,y para element\&. "
+.ti -1c
+.RI "virtual void \fBwinAndLose\fP (std::string winner, std::string loser)"
+.br
+.RI "Adicione uma vitória ao vencedor e uma derrota ao perdedor\&. "
+.ti -1c
+.RI "void \fBloadPlayers\fP ()"
+.br
+.in -1c
+.SS "Atributos Protegidos"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBrows\fP"
+.br
+.ti -1c
+.RI "int \fBcols\fP"
+.br
+.ti -1c
+.RI "std::vector< std::vector< char > > \fBtabuleiro\fP"
+.br
+.ti -1c
+.RI "\fBplayersManagement\fP \fBmanagement\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador1\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador2\fP"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Abstract class game\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "game::game (int _rows, int _cols, std::string _name)"
+
+.PP
+Construtor da game\&. Inicializa a classe game\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fI_rows\fP 
+.br
+\fI_cols\fP 
+.RE
+.PP
+
+.SS "game::~game ()"
+
+.PP
+Destrutor da game\&. Destrutor\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "void game::changeElement (int x, int y, char element)\fR [virtual]\fP"
+
+.PP
+Troca o elemento na posicao x,y para element\&. Mude o elemento na posição x,y para o elemento;\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIx\fP 
+.br
+\fIy\fP 
+.br
+\fIelement\fP 
+.RE
+.PP
+
+.SS "void game::winAndLose (std::string winner, std::string loser)\fR [virtual]\fP"
+
+.PP
+Adicione uma vitória ao vencedor e uma derrota ao perdedor\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIwinner\fP 
+.br
+\fIloser\fP 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

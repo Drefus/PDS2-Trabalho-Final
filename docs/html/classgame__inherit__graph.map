@@ -1,0 +1,11 @@
+<map id="game" name="game">
+<area shape="rect" id="Node000001" title="Abstract class game." alt="" coords="289,5,411,288"/>
+<area shape="rect" id="Node000002" href="$classdamas.html" title="Classe responsável pelo damas." alt="" coords="5,336,180,811"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,223,236,277,194,337,182,357,177,354,189,335,231,274,277,219"/>
+<area shape="rect" id="Node000003" href="$classjogo_da_velha.html" title="Classe responsável pelo jogo da velha." alt="" coords="204,485,339,661"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,303,290,486,285,485,319,302"/>
+<area shape="rect" id="Node000004" href="$classlig4.html" title="Classe responsável pelo jogo LIG4." alt="" coords="363,507,495,640"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="381,302,419,506,414,507,376,303"/>
+<area shape="rect" id="Node000005" href="$classreversi.html" title="Classe do jogo reverse." alt="" coords="519,475,685,672"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="423,220,468,274,510,335,545,404,573,474,569,476,540,406,505,337,464,277,419,223"/>
+</map>

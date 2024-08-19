@@ -1,0 +1,8 @@
+<map id="reversi::contarPecas" name="reversi::contarPecas">
+<area shape="rect" id="Node000001" title="Conta o número de peças de um jogador no tabuleiro." alt="" coords="367,31,506,57"/>
+<area shape="rect" id="Node000002" href="$classreversi.html#aefb6d699ad96f2ffd06b72c1db4304b2" title="Exibe o tabuleiro do jogo." alt="" coords="157,5,319,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,36,319,32,320,26,352,31"/>
+<area shape="rect" id="Node000003" href="$classreversi.html#a9a0f4929be4418a70a84c29e71bd3103" title="Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais." alt="" coords="5,31,109,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="351,47,109,47,109,41,351,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,35,109,39,109,34,141,30"/>
+</map>

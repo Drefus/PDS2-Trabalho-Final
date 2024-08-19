@@ -1,0 +1,12 @@
+<map id="damas::mover_damas_OO" name="damas::mover_damas_OO">
+<area shape="rect" id="Node000001" title="Função com o intuito de mover as damas das peças &#39;O&#39;, mas recebendo um inteiro como parâmetro." alt="" coords="5,64,181,91"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#a22a0b40217b48eef9cb049cbb77a8786" title="Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível,..." alt="" coords="229,56,392,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,84,213,84,213,89,181,89"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="228,71,196,71,196,66,228,66"/>
+<area shape="rect" id="Node000003" href="$classdamas.html#a6d56d7e30998efad287b3086189e238d" title="Imprime o tabuleiro." alt="" coords="440,5,610,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,53,459,34,460,39,391,58"/>
+<area shape="rect" id="Node000004" href="$classdamas.html#a760fa05bd41c9ba3b8bdee112316bacf" title="Função que analisa se a jogada das damas do jogador &#39;O&#39; é valida, mas recebendo um inteiro como parâm..." alt="" coords="453,56,598,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="392,75,437,75,437,80,392,80"/>
+<area shape="rect" id="Node000005" href="$classdamas.html#aa77e13e9f46fc2ace4f886430e014dff" title="Transcreve a jogada do jogador, para o índice correspondente do vetor." alt="" coords="460,123,591,165"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="382,97,446,117,444,122,380,102"/>
+</map>

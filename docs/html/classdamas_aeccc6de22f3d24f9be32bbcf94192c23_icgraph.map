@@ -1,0 +1,5 @@
+<map id="damas::realizar_movimento_X" name="damas::realizar_movimento_X">
+<area shape="rect" id="Node000001" title="Função com o intuito de movimentar as peças &#39;X&#39;." alt="" coords="150,5,343,32"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94" title="Função main do jogo damas." alt="" coords="5,5,102,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,21,102,21,102,16,134,16"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="damas::mover_damas_O" name="damas::mover_damas_O">
+<area shape="rect" id="Node000001" title="Função com o intuito de mover as damas das peças &#39;O&#39;." alt="" coords="5,152,171,179"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#a22a0b40217b48eef9cb049cbb77a8786" title="Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível,..." alt="" coords="219,115,382,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,151,203,147,204,152,171,157"/>
+<area shape="rect" id="Node000006" href="$classdamas.html#aa77e13e9f46fc2ace4f886430e014dff" title="Transcreve a jogada do jogador, para o índice correspondente do vetor." alt="" coords="452,173,583,216"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="171,168,437,187,436,192,171,174"/>
+<area shape="rect" id="Node000003" href="$classdamas.html#a6d56d7e30998efad287b3086189e238d" title="Imprime o tabuleiro." alt="" coords="433,5,603,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,112,371,76,429,42,443,35,446,40,431,46,374,81,328,116"/>
+<area shape="rect" id="Node000004" href="$classdamas.html#a760fa05bd41c9ba3b8bdee112316bacf" title="Função que analisa se a jogada das damas do jogador &#39;O&#39; é valida, mas recebendo um inteiro como parâm..." alt="" coords="445,56,590,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="381,112,429,98,431,103,382,117"/>
+<area shape="rect" id="Node000005" href="$classdamas.html#a0736c20c8cd903037cc6911f05c5b41f" title="Função com o intuito de mover as damas das peças &#39;O&#39;, mas recebendo um inteiro como parâmetro." alt="" coords="430,123,605,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="382,142,414,142,414,148,382,147"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="382,155,437,170,436,175,381,160"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="430,130,397,130,397,124,430,124"/>
+</map>

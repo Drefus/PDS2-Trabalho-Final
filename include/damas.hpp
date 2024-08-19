@@ -4,6 +4,8 @@
 #include <vector>
 #include <game.hpp>
 using namespace std;
+
+/// @brief Classe responsável pelo damas
 class damas : public game
 {
 public:

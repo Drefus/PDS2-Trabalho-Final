@@ -1,0 +1,7 @@
+<map id="reversi::temMovimentosValidos" name="reversi::temMovimentosValidos">
+<area shape="rect" id="Node000001" title="Verifica se o jogador atual tem movimentos válidos disponíveis." alt="" coords="5,5,206,32"/>
+<area shape="rect" id="Node000002" href="$classreversi.html#a51650b35f2466c62630eb1f667e0cb64" title="Verifica se um movimento é válido para o jogador atual." alt="" coords="254,5,418,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,16,238,16,238,21,206,21"/>
+<area shape="rect" id="Node000003" href="$classreversi.html#a15c02d74ff13d04be81340bf623ba5b7" title="Verifica se há peças adjacentes que podem ser capturadas." alt="" coords="466,5,633,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,16,450,16,450,21,418,21"/>
+</map>

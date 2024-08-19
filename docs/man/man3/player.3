@@ -1,0 +1,141 @@
+.TH "player" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+player \- Classe jogador\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <player\&.hpp>\fP
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBplayer\fP (std::string playerLine)"
+.br
+.RI "Crie a classe do jogador com base na linha do jogador\&. "
+.ti -1c
+.RI "\fBplayer\fP (std::string name, std::string nickname)"
+.br
+.RI "Crie um jogador baseado no nome e apelido;\&. "
+.ti -1c
+.RI "\fB~player\fP ()"
+.br
+.RI "Deconstructor\&. "
+.ti -1c
+.RI "std::string \fBplayerToString\fP ()"
+.br
+.RI "Player to string;\&. "
+.ti -1c
+.RI "std::string \fBgetName\fP ()"
+.br
+.RI "Get Name\&. "
+.ti -1c
+.RI "std::string \fBgetNick\fP ()"
+.br
+.RI "Get Nick\&. "
+.ti -1c
+.RI "std::vector< \fBgameStatus\fP > \fBgetGameStatics\fP ()"
+.br
+.RI "Get Game Statics\&. "
+.ti -1c
+.RI "void \fBsetGameStatics\fP (std::vector< \fBgameStatus\fP > newVector)"
+.br
+.RI "Setter game statics\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe jogador\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "player::player (std::string playerLine)"
+
+.PP
+Crie a classe do jogador com base na linha do jogador\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIplayerLine\fP 
+.RE
+.PP
+
+.SS "player::player (std::string name, std::string nickname)"
+
+.PP
+Crie um jogador baseado no nome e apelido;\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIname\fP 
+.br
+\fInickname\fP 
+.RE
+.PP
+
+.SS "player::~player ()"
+
+.PP
+Deconstructor\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "std::vector< \fBgameStatus\fP > player::getGameStatics ()"
+
+.PP
+Get Game Statics\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Getter of the player game statics\&. 
+.RE
+.PP
+
+.SS "std::string player::getName ()"
+
+.PP
+Get Name\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Player name 
+.RE
+.PP
+
+.SS "std::string player::getNick ()"
+
+.PP
+Get Nick\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Player nickname\&. 
+.RE
+.PP
+
+.SS "std::string player::playerToString ()"
+
+.PP
+Player to string;\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Stringify the player data\&. 
+.RE
+.PP
+
+.SS "void player::setGameStatics (std::vector< \fBgameStatus\fP > newVector)"
+
+.PP
+Setter game statics\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInewVector\fP 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

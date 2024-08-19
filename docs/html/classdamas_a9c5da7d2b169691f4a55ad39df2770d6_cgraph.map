@@ -1,0 +1,7 @@
+<map id="damas::realizar_movimento_O" name="damas::realizar_movimento_O">
+<area shape="rect" id="Node000001" title="função com intuito de movimentar as peças &#39;O&#39;." alt="" coords="5,35,202,61"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#ad7796adae0c2167711cd1be823a0681b" title="Função para comer o máximo de peças possíveis automaticamente." alt="" coords="250,5,413,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,33,234,28,235,34,203,38"/>
+<area shape="rect" id="Node000003" href="$classdamas.html#aa77e13e9f46fc2ace4f886430e014dff" title="Transcreve a jogada do jogador, para o índice correspondente do vetor." alt="" coords="266,56,397,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,58,251,64,250,70,202,63"/>
+</map>

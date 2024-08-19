@@ -1,0 +1,40 @@
+<map id="damas::transcrever_movimento" name="damas::transcrever_movimento">
+<area shape="rect" id="Node000001" title="Transcreve a jogada do jogador, para o índice correspondente do vetor." alt="" coords="605,263,737,305"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#a22a0b40217b48eef9cb049cbb77a8786" title="Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível,..." alt="" coords="394,61,557,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="650,250,611,187,585,154,556,125,529,107,532,102,559,121,589,151,615,184,654,247"/>
+<area shape="rect" id="Node000003" href="$classdamas.html#ad6846fcb7b71841a2126065d107ba126" title="Função com o intuito de mover as damas das peças &#39;O&#39;." alt="" coords="165,8,331,35"/>
+<area shape="poly" id="edge19_Node000001_Node000003" title=" " alt="" coords="661,248,649,201,629,147,599,94,579,71,556,52,530,37,503,25,444,12,385,8,331,11,331,5,385,3,445,6,504,20,533,32,559,47,583,67,603,91,634,145,654,199,666,247"/>
+<area shape="rect" id="Node000006" href="$classdamas.html#a672200678c32ba18e93a70cd710c0f8b" title="Função com o intuito de movimentar as damas das peças &#39;X&#39;." alt="" coords="167,160,329,187"/>
+<area shape="poly" id="edge20_Node000001_Node000006" title=" " alt="" coords="646,251,608,206,584,185,556,169,524,158,491,151,422,147,358,152,303,162,302,157,357,147,422,142,492,146,526,153,558,164,587,181,612,202,650,248"/>
+<area shape="rect" id="Node000008" href="$classdamas.html#a376a7a0704e6cc214cff1d8df5e3c794" title="Função que analisa se a peça selecionada é uma dama." alt="" coords="419,179,533,205"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="624,256,556,220,526,208,528,203,558,215,626,252"/>
+<area shape="rect" id="Node000009" href="$classdamas.html#a48b57b3508da26a8cc5cf7c3ff6faaa5" title="Função que analisa se a jogada das damas do jogador &#39;O&#39; é valida." alt="" coords="403,229,548,272"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="589,273,548,266,549,260,590,268"/>
+<area shape="rect" id="Node000010" href="$classdamas.html#a5a05d2bd54d0f5a9e5254c139f18d968" title="Função que analisa se a jogada das damas do jogador &#39;X&#39; é valida." alt="" coords="403,296,548,339"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="590,300,549,308,548,302,589,295"/>
+<area shape="rect" id="Node000011" href="$classdamas.html#af5db134b01135da2853b18b70e62f3bf" title="Verifica se a jogada a ser executada está dentro das regras do jogo." alt="" coords="395,363,557,389"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="626,316,558,353,528,365,526,360,556,348,624,312"/>
+<area shape="rect" id="Node000012" href="$classdamas.html#a5591a7422c98149f1411829e66ea5c16" title="Verifica se a jogada das peças &#39;X&#39; é válida." alt="" coords="396,413,555,440"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="647,320,608,363,559,404,535,415,533,410,556,399,605,359,643,316"/>
+<area shape="rect" id="Node000013" href="$classdamas.html#a9c5da7d2b169691f4a55ad39df2770d6" title="função com intuito de movimentar as peças &#39;O&#39;." alt="" coords="150,464,346,491"/>
+<area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="659,321,644,354,622,391,594,426,559,454,508,477,453,489,398,494,347,493,347,488,398,488,452,484,506,472,556,450,590,422,618,388,639,352,654,318"/>
+<area shape="rect" id="Node000014" href="$classdamas.html#aeccc6de22f3d24f9be32bbcf94192c23" title="Função com o intuito de movimentar as peças &#39;X&#39;." alt="" coords="151,515,345,541"/>
+<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="664,321,651,364,630,413,600,461,581,482,559,500,508,525,453,539,397,544,345,543,345,538,397,539,452,533,506,520,556,495,577,478,596,457,626,410,646,362,659,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,59,345,49,302,38,304,33,347,44,383,54"/>
+<area shape="rect" id="Node000005" href="$classdamas.html#a0736c20c8cd903037cc6911f05c5b41f" title="Função com o intuito de mover as damas das peças &#39;O&#39;, mas recebendo um inteiro como parâmetro." alt="" coords="160,59,336,85"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="378,90,336,88,336,82,379,84"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="418,114,395,125,372,139,347,150,312,162,310,157,345,146,369,134,393,120,415,109"/>
+<area shape="rect" id="Node000007" href="$classdamas.html#a09995f2400a7dae48900ffdab6bb130c" title="Função com intuito de movimentar as damas das peças &#39;X&#39;, mas recebendo um int como parâmetro." alt="" coords="163,109,333,136"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="379,102,328,111,327,106,378,97"/>
+<area shape="rect" id="Node000004" href="$classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94" title="Função main do jogo damas." alt="" coords="5,312,102,339"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,45,152,49,125,79,104,115,87,153,76,191,62,262,58,312,53,312,57,262,70,190,82,151,99,112,120,76,148,45,152,41"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="352,65,394,68,394,73,351,71"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="173,195,151,208,122,233,98,262,64,313,60,310,93,259,118,229,148,203,171,191"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="404,205,283,230,216,249,151,272,110,292,76,314,73,309,107,288,149,267,214,244,282,225,403,200"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="388,266,150,307,103,317,101,312,149,301,387,261"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="388,322,102,327,102,322,388,316"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="378,367,101,334,102,328,379,362"/>
+<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="380,417,269,397,149,368,82,342,84,337,150,363,270,392,381,412"/>
+<area shape="poly" id="edge22_Node000013_Node000004" title=" " alt="" coords="171,460,148,448,118,422,93,392,60,340,64,338,98,389,122,418,151,443,173,455"/>
+<area shape="poly" id="edge24_Node000014_Node000004" title=" " alt="" coords="154,509,148,505,128,486,111,465,84,418,66,373,56,340,61,338,71,371,89,416,115,462,132,483,151,501,158,505"/>
+</map>

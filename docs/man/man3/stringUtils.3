@@ -1,0 +1,114 @@
+.TH "stringUtils" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+stringUtils \- Classe statica de utilidades de strings\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <stringUtils\&.hpp>\fP
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBstringUtils\fP ()"
+.br
+.RI "Construtor\&. "
+.ti -1c
+.RI "\fB~stringUtils\fP ()"
+.br
+.RI "Destrutor\&. "
+.in -1c
+.SS "Membros públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "static std::vector< std::string > \fBsplit\fP (std::string text, char deliminator)"
+.br
+.RI "Dividir string em sub strings\&. "
+.ti -1c
+.RI "static std::vector< std::string > \fBsplitInTwo\fP (std::string text, char deliminator)"
+.br
+.RI "Dividir uma string em duas\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe statica de utilidades de strings\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "stringUtils::stringUtils ()"
+
+.PP
+Construtor\&. 
+.SS "stringUtils::~stringUtils ()"
+
+.PP
+Destrutor\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "std::vector< std::string > stringUtils::split (std::string text, char deliminator)\fR [static]\fP"
+
+.PP
+Dividir string em sub strings\&. Dividir uma string com delimitador final\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fItext\fP 
+.br
+\fIdeliminator\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Vetor de sub string
+.RE
+.PP
+\fBParâmetros\fP
+.RS 4
+\fItext\fP 
+.br
+\fIdeliminator\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Um vetor de todas as strings divididas\&. 
+.RE
+.PP
+
+.SS "std::vector< std::string > stringUtils::splitInTwo (std::string text, char deliminator)\fR [static]\fP"
+
+.PP
+Dividir uma string em duas\&. Separa a string em duas a partir de um delimitador\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fItext\fP 
+.br
+\fIdeliminator\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Vetor de sub string
+.RE
+.PP
+\fBParâmetros\fP
+.RS 4
+\fItext\fP 
+.br
+\fIdeliminator\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+O vetor com as string separada 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

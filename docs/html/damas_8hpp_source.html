@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho de Final de PDS2: Código-Fonte de C:/Users/henri/Desktop/UFMG/2 semestre/pds2/Trabalho Final/PDS2-Trabalho-Final/include/damas.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabalho de Final de PDS2<span id="projectnumber">&#160;2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">damas.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DAMA_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DAMA_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;game.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classdamas.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classdamas.html">damas</a> : <span class="keyword">public</span> <a class="code hl_class" href="classgame.html">game</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_function" href="classdamas.html#a94782cc083d9b3df1423c897c33cae03">damas</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#ad7796adae0c2167711cd1be823a0681b">comer_multiplas</a>(<span class="keywordtype">int</span> linha_final, <span class="keywordtype">int</span> coluna_final);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#a6d56d7e30998efad287b3086189e238d">imprimir_tabuleiro</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdamas.html#af5db134b01135da2853b18b70e62f3bf">jogada_valida_O</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdamas.html#a5591a7422c98149f1411829e66ea5c16">jogada_valida_X</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#a672200678c32ba18e93a70cd710c0f8b">mover_damas_X</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#a09995f2400a7dae48900ffdab6bb130c">mover_damas_XX</a>(<span class="keywordtype">int</span> jogada1, <span class="keywordtype">int</span> jogada2, <span class="keywordtype">int</span> jogada3, <span class="keywordtype">int</span> jogada4);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#ad6846fcb7b71841a2126065d107ba126">mover_damas_O</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#a0736c20c8cd903037cc6911f05c5b41f">mover_damas_OO</a>(<span class="keywordtype">int</span> jogada1, <span class="keywordtype">int</span> jogada2, <span class="keywordtype">int</span> jogada3, <span class="keywordtype">int</span> jogada4);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#a22a0b40217b48eef9cb049cbb77a8786">comer_multiplas_damas</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#a9c5da7d2b169691f4a55ad39df2770d6">realizar_movimento_O</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdamas.html#a376a7a0704e6cc214cff1d8df5e3c794">e_dama</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdamas.html#aeccc6de22f3d24f9be32bbcf94192c23">realizar_movimento_X</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdamas.html#a48b57b3508da26a8cc5cf7c3ff6faaa5">jogada_valida_dama_O</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdamas.html#a5a05d2bd54d0f5a9e5254c139f18d968">jogada_valida_dama_X</a>(<span class="keywordtype">char</span> jogada1, <span class="keywordtype">char</span> jogada2, <span class="keywordtype">char</span> jogada3, <span class="keywordtype">char</span> jogada4);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdamas.html#ad3fd40643456b29385015c9ea1f2931b">jogada_valida_dama_XX</a>(<span class="keywordtype">int</span> jogada1, <span class="keywordtype">int</span> jogada2, <span class="keywordtype">int</span> jogada3, <span class="keywordtype">int</span> jogada4);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdamas.html#a760fa05bd41c9ba3b8bdee112316bacf">jogada_valida_dama_OO</a>(<span class="keywordtype">int</span> jogada1, <span class="keywordtype">int</span> jogada2, <span class="keywordtype">int</span> jogada3, <span class="keywordtype">int</span> jogada4);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classdamas.html#aa77e13e9f46fc2ace4f886430e014dff">transcrever_movimento</a>(<span class="keywordtype">char</span> jogada1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">char</span> <a class="code hl_function" href="classdamas.html#aca35887389fe92f843426847998d7da5">resultado_final</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94">jogar</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassdamas_html"><div class="ttname"><a href="classdamas.html">damas</a></div><div class="ttdoc">Classe responsável pelo damas.</div><div class="ttdef"><b>Definição</b> damas.hpp:10</div></div>
+<div class="ttc" id="aclassdamas_html_a0736c20c8cd903037cc6911f05c5b41f"><div class="ttname"><a href="classdamas.html#a0736c20c8cd903037cc6911f05c5b41f">damas::mover_damas_OO</a></div><div class="ttdeci">void mover_damas_OO(int jogada1, int jogada2, int jogada3, int jogada4)</div><div class="ttdoc">Função com o intuito de mover as damas das peças 'O', mas recebendo um inteiro como parâmetro.</div><div class="ttdef"><b>Definição</b> damas.cpp:570</div></div>
+<div class="ttc" id="aclassdamas_html_a09995f2400a7dae48900ffdab6bb130c"><div class="ttname"><a href="classdamas.html#a09995f2400a7dae48900ffdab6bb130c">damas::mover_damas_XX</a></div><div class="ttdeci">void mover_damas_XX(int jogada1, int jogada2, int jogada3, int jogada4)</div><div class="ttdoc">Função com intuito de movimentar as damas das peças 'X', mas recebendo um int como parâmetro.</div><div class="ttdef"><b>Definição</b> damas.cpp:428</div></div>
+<div class="ttc" id="aclassdamas_html_a22a0b40217b48eef9cb049cbb77a8786"><div class="ttname"><a href="classdamas.html#a22a0b40217b48eef9cb049cbb77a8786">damas::comer_multiplas_damas</a></div><div class="ttdeci">void comer_multiplas_damas(int a, int b)</div><div class="ttdoc">Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível,...</div><div class="ttdef"><b>Definição</b> damas.cpp:639</div></div>
+<div class="ttc" id="aclassdamas_html_a376a7a0704e6cc214cff1d8df5e3c794"><div class="ttname"><a href="classdamas.html#a376a7a0704e6cc214cff1d8df5e3c794">damas::e_dama</a></div><div class="ttdeci">bool e_dama(char jogada1, char jogada2)</div><div class="ttdoc">Função que analisa se a peça selecionada é uma dama.</div><div class="ttdef"><b>Definição</b> damas.cpp:888</div></div>
+<div class="ttc" id="aclassdamas_html_a48b57b3508da26a8cc5cf7c3ff6faaa5"><div class="ttname"><a href="classdamas.html#a48b57b3508da26a8cc5cf7c3ff6faaa5">damas::jogada_valida_dama_O</a></div><div class="ttdeci">bool jogada_valida_dama_O(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">Função que analisa se a jogada das damas do jogador 'O' é valida.</div><div class="ttdef"><b>Definição</b> damas.cpp:952</div></div>
+<div class="ttc" id="aclassdamas_html_a5591a7422c98149f1411829e66ea5c16"><div class="ttname"><a href="classdamas.html#a5591a7422c98149f1411829e66ea5c16">damas::jogada_valida_X</a></div><div class="ttdeci">bool jogada_valida_X(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">Verifica se a jogada das peças 'X' é válida.</div><div class="ttdef"><b>Definição</b> damas.cpp:274</div></div>
+<div class="ttc" id="aclassdamas_html_a5a05d2bd54d0f5a9e5254c139f18d968"><div class="ttname"><a href="classdamas.html#a5a05d2bd54d0f5a9e5254c139f18d968">damas::jogada_valida_dama_X</a></div><div class="ttdeci">bool jogada_valida_dama_X(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">Função que analisa se a jogada das damas do jogador 'X' é valida.</div><div class="ttdef"><b>Definição</b> damas.cpp:1049</div></div>
+<div class="ttc" id="aclassdamas_html_a672200678c32ba18e93a70cd710c0f8b"><div class="ttname"><a href="classdamas.html#a672200678c32ba18e93a70cd710c0f8b">damas::mover_damas_X</a></div><div class="ttdeci">void mover_damas_X(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">Função com o intuito de movimentar as damas das peças 'X'.</div><div class="ttdef"><b>Definição</b> damas.cpp:357</div></div>
+<div class="ttc" id="aclassdamas_html_a6d56d7e30998efad287b3086189e238d"><div class="ttname"><a href="classdamas.html#a6d56d7e30998efad287b3086189e238d">damas::imprimir_tabuleiro</a></div><div class="ttdeci">void imprimir_tabuleiro()</div><div class="ttdoc">Imprime o tabuleiro.</div><div class="ttdef"><b>Definição</b> damas.cpp:179</div></div>
+<div class="ttc" id="aclassdamas_html_a760fa05bd41c9ba3b8bdee112316bacf"><div class="ttname"><a href="classdamas.html#a760fa05bd41c9ba3b8bdee112316bacf">damas::jogada_valida_dama_OO</a></div><div class="ttdeci">bool jogada_valida_dama_OO(int jogada1, int jogada2, int jogada3, int jogada4)</div><div class="ttdoc">Função que analisa se a jogada das damas do jogador 'O' é valida, mas recebendo um inteiro como parâm...</div><div class="ttdef"><b>Definição</b> damas.cpp:1243</div></div>
+<div class="ttc" id="aclassdamas_html_a94782cc083d9b3df1423c897c33cae03"><div class="ttname"><a href="classdamas.html#a94782cc083d9b3df1423c897c33cae03">damas::damas</a></div><div class="ttdeci">damas()</div><div class="ttdoc">Construtor do tabuleiro.</div><div class="ttdef"><b>Definição</b> damas.cpp:6</div></div>
+<div class="ttc" id="aclassdamas_html_a9c5da7d2b169691f4a55ad39df2770d6"><div class="ttname"><a href="classdamas.html#a9c5da7d2b169691f4a55ad39df2770d6">damas::realizar_movimento_O</a></div><div class="ttdeci">void realizar_movimento_O(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">função com intuito de movimentar as peças 'O'.</div><div class="ttdef"><b>Definição</b> damas.cpp:838</div></div>
+<div class="ttc" id="aclassdamas_html_aa77e13e9f46fc2ace4f886430e014dff"><div class="ttname"><a href="classdamas.html#aa77e13e9f46fc2ace4f886430e014dff">damas::transcrever_movimento</a></div><div class="ttdeci">int transcrever_movimento(char jogada1)</div><div class="ttdoc">Transcreve a jogada do jogador, para o índice correspondente do vetor.</div><div class="ttdef"><b>Definição</b> damas.cpp:1337</div></div>
+<div class="ttc" id="aclassdamas_html_ab5dbdc7d78b8c5700a32b0e821335a94"><div class="ttname"><a href="classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94">damas::jogar</a></div><div class="ttdeci">int jogar()</div><div class="ttdoc">Função main do jogo damas.</div><div class="ttdef"><b>Definição</b> damas.cpp:1393</div></div>
+<div class="ttc" id="aclassdamas_html_aca35887389fe92f843426847998d7da5"><div class="ttname"><a href="classdamas.html#aca35887389fe92f843426847998d7da5">damas::resultado_final</a></div><div class="ttdeci">char resultado_final()</div><div class="ttdoc">Analisa a cada final de turno se o jogo acabou, e quem venceu.</div><div class="ttdef"><b>Definição</b> damas.cpp:1360</div></div>
+<div class="ttc" id="aclassdamas_html_ad3fd40643456b29385015c9ea1f2931b"><div class="ttname"><a href="classdamas.html#ad3fd40643456b29385015c9ea1f2931b">damas::jogada_valida_dama_XX</a></div><div class="ttdeci">bool jogada_valida_dama_XX(int jogada1, int jogada2, int jogada3, int jogada4)</div><div class="ttdoc">Função que analisa se a jogada das damas do jogador 'X' é valida, mas recebendo um inteiro como parâm...</div><div class="ttdef"><b>Definição</b> damas.cpp:1146</div></div>
+<div class="ttc" id="aclassdamas_html_ad6846fcb7b71841a2126065d107ba126"><div class="ttname"><a href="classdamas.html#ad6846fcb7b71841a2126065d107ba126">damas::mover_damas_O</a></div><div class="ttdeci">void mover_damas_O(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">Função com o intuito de mover as damas das peças 'O'.</div><div class="ttdef"><b>Definição</b> damas.cpp:499</div></div>
+<div class="ttc" id="aclassdamas_html_ad7796adae0c2167711cd1be823a0681b"><div class="ttname"><a href="classdamas.html#ad7796adae0c2167711cd1be823a0681b">damas::comer_multiplas</a></div><div class="ttdeci">void comer_multiplas(int linha_final, int coluna_final)</div><div class="ttdoc">Função para comer o máximo de peças possíveis automaticamente.</div><div class="ttdef"><b>Definição</b> damas.cpp:88</div></div>
+<div class="ttc" id="aclassdamas_html_aeccc6de22f3d24f9be32bbcf94192c23"><div class="ttname"><a href="classdamas.html#aeccc6de22f3d24f9be32bbcf94192c23">damas::realizar_movimento_X</a></div><div class="ttdeci">void realizar_movimento_X(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">Função com o intuito de movimentar as peças 'X'.</div><div class="ttdef"><b>Definição</b> damas.cpp:902</div></div>
+<div class="ttc" id="aclassdamas_html_af5db134b01135da2853b18b70e62f3bf"><div class="ttname"><a href="classdamas.html#af5db134b01135da2853b18b70e62f3bf">damas::jogada_valida_O</a></div><div class="ttdeci">bool jogada_valida_O(char jogada1, char jogada2, char jogada3, char jogada4)</div><div class="ttdoc">Verifica se a jogada a ser executada está dentro das regras do jogo.</div><div class="ttdef"><b>Definição</b> damas.cpp:196</div></div>
+<div class="ttc" id="aclassgame_html"><div class="ttname"><a href="classgame.html">game</a></div><div class="ttdoc">Abstract class game.</div><div class="ttdef"><b>Definição</b> game.hpp:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

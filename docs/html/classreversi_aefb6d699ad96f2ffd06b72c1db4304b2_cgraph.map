@@ -1,0 +1,9 @@
+<map id="reversi::mostrarTabuleiro" name="reversi::mostrarTabuleiro">
+<area shape="rect" id="Node000001" title="Exibe o tabuleiro do jogo." alt="" coords="5,31,168,57"/>
+<area shape="rect" id="Node000002" href="$classreversi.html#a69d1869b3291e69f2f1df21066169f2d" title="Conta o número de peças de um jogador no tabuleiro." alt="" coords="228,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,32,212,26,213,32,168,37"/>
+<area shape="rect" id="Node000003" href="$classreversi.html#a51650b35f2466c62630eb1f667e0cb64" title="Verifica se um movimento é válido para o jogador atual." alt="" coords="216,56,380,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,51,200,55,200,60,168,56"/>
+<area shape="rect" id="Node000004" href="$classreversi.html#a15c02d74ff13d04be81340bf623ba5b7" title="Verifica se há peças adjacentes que podem ser capturadas." alt="" coords="428,56,595,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="380,67,412,67,412,72,380,72"/>
+</map>

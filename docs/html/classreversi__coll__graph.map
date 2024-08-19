@@ -1,0 +1,7 @@
+<map id="reversi" name="reversi">
+<area shape="rect" id="Node000001" title="Classe do jogo reverse." alt="" coords="5,661,171,859"/>
+<area shape="rect" id="Node000002" href="$classgame.html" title="Abstract class game." alt="" coords="27,352,149,613"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,629,91,662,85,662,85,629"/>
+<area shape="rect" id="Node000003" href="$classplayers_management.html" title="Gerenciamento de Jogadores." alt="" coords="10,5,166,288"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,288,91,335,85,335,85,288"/>
+</map>

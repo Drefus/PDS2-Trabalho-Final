@@ -7,6 +7,7 @@
 
 using namespace std;
 
+/// @brief Classe do jogo reverse
 class reversi : public game
 {
 private:
@@ -14,7 +15,7 @@ private:
 
 public:
     reversi();
-    
+
     void mostrarTabuleiro();
 
     bool jogada(int x, int y, char player);

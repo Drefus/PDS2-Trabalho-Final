@@ -1,0 +1,15 @@
+<map id="reversi::verificarAdjacente" name="reversi::verificarAdjacente">
+<area shape="rect" id="Node000001" title="Verifica se há peças adjacentes que podem ser capturadas." alt="" coords="617,56,785,83"/>
+<area shape="rect" id="Node000002" href="$classreversi.html#a51650b35f2466c62630eb1f667e0cb64" title="Verifica se um movimento é válido para o jogador atual." alt="" coords="405,56,569,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="602,72,570,72,570,67,602,67"/>
+<area shape="rect" id="Node000003" href="$classreversi.html#a61a6bab1f7218ab59ddc558144708d2d" title="Executa um movimento no tabuleiro." alt="" coords="205,5,309,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,55,309,33,310,28,409,49"/>
+<area shape="rect" id="Node000005" href="$classreversi.html#aefb6d699ad96f2ffd06b72c1db4304b2" title="Exibe o tabuleiro do jogo." alt="" coords="176,56,338,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="390,72,338,72,338,67,390,67"/>
+<area shape="rect" id="Node000006" href="$classreversi.html#af1c50434d7b4dc562ebc42e9dae295e2" title="Verifica se o jogador atual tem movimentos válidos disponíveis." alt="" coords="157,107,357,133"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="409,89,321,109,320,103,407,84"/>
+<area shape="rect" id="Node000004" href="$classreversi.html#a9a0f4929be4418a70a84c29e71bd3103" title="Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais." alt="" coords="5,56,109,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="190,38,157,47,110,59,108,54,156,41,189,33"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="160,72,109,72,109,67,160,67"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="186,105,156,97,108,85,110,80,157,92,187,100"/>
+</map>

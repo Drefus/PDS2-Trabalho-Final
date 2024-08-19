@@ -1,0 +1,5 @@
+<map id="damas::e_dama" name="damas::e_dama">
+<area shape="rect" id="Node000001" title="Função que analisa se a peça selecionada é uma dama." alt="" coords="5,13,120,40"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#aa77e13e9f46fc2ace4f886430e014dff" title="Transcreve a jogada do jogador, para o índice correspondente do vetor." alt="" coords="168,5,299,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,24,152,24,152,29,120,29"/>
+</map>

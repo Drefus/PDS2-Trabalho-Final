@@ -1,0 +1,5 @@
+<map id="gameStatus::loseRate" name="gameStatus::loseRate">
+<area shape="rect" id="Node000001" title="Calcula a taxa de derrota." alt="" coords="226,5,376,32"/>
+<area shape="rect" id="Node000002" href="$classgame_status.html#a71623837b142fe48a567a2baad302cbf" title="Printa as estatísticas do jogo." alt="" coords="5,5,178,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,178,21,178,16,210,16"/>
+</map>

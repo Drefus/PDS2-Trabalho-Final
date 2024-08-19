@@ -1,0 +1,5 @@
+<map id="damas::jogada_valida_dama_O" name="damas::jogada_valida_dama_O">
+<area shape="rect" id="Node000001" title="Função que analisa se a jogada das damas do jogador &#39;O&#39; é valida." alt="" coords="5,5,151,48"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#aa77e13e9f46fc2ace4f886430e014dff" title="Transcreve a jogada do jogador, para o índice correspondente do vetor." alt="" coords="199,5,330,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,24,183,24,183,29,151,29"/>
+</map>

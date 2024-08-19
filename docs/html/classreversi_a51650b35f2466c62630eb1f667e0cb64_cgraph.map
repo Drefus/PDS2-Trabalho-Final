@@ -1,0 +1,5 @@
+<map id="reversi::movimentoValido" name="reversi::movimentoValido">
+<area shape="rect" id="Node000001" title="Verifica se um movimento é válido para o jogador atual." alt="" coords="5,5,170,32"/>
+<area shape="rect" id="Node000002" href="$classreversi.html#a15c02d74ff13d04be81340bf623ba5b7" title="Verifica se há peças adjacentes que podem ser capturadas." alt="" coords="218,5,385,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,16,202,16,202,21,170,21"/>
+</map>

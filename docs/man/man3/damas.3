@@ -1,0 +1,482 @@
+.TH "damas" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+damas \- Classe responsável pelo damas\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <damas\&.hpp>\fP
+.PP
+Subclasse de \fBgame\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBdamas\fP ()"
+.br
+.RI "Construtor do tabuleiro\&. "
+.ti -1c
+.RI "void \fBcomer_multiplas\fP (int linha_final, int coluna_final)"
+.br
+.RI "Função para comer o máximo de peças possíveis automaticamente\&. "
+.ti -1c
+.RI "void \fBimprimir_tabuleiro\fP ()"
+.br
+.RI "Imprime o tabuleiro\&. "
+.ti -1c
+.RI "bool \fBjogada_valida_O\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "Verifica se a jogada a ser executada está dentro das regras do jogo\&. "
+.ti -1c
+.RI "bool \fBjogada_valida_X\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "Verifica se a jogada das peças 'X' é válida\&. "
+.ti -1c
+.RI "void \fBmover_damas_X\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "Função com o intuito de movimentar as damas das peças 'X'\&. "
+.ti -1c
+.RI "void \fBmover_damas_XX\fP (int jogada1, int jogada2, int jogada3, int jogada4)"
+.br
+.RI "Função com intuito de movimentar as damas das peças 'X', mas recebendo um int como parâmetro\&. "
+.ti -1c
+.RI "void \fBmover_damas_O\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "Função com o intuito de mover as damas das peças 'O'\&. "
+.ti -1c
+.RI "void \fBmover_damas_OO\fP (int jogada1, int jogada2, int jogada3, int jogada4)"
+.br
+.RI "Função com o intuito de mover as damas das peças 'O', mas recebendo um inteiro como parâmetro\&. "
+.ti -1c
+.RI "void \fBcomer_multiplas_damas\fP (int a, int b)"
+.br
+.RI "Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível, solicitar a jogada\&. "
+.ti -1c
+.RI "void \fBrealizar_movimento_O\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "função com intuito de movimentar as peças 'O'\&. "
+.ti -1c
+.RI "bool \fBe_dama\fP (char jogada1, char jogada2)"
+.br
+.RI "Função que analisa se a peça selecionada é uma dama\&. "
+.ti -1c
+.RI "void \fBrealizar_movimento_X\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "Função com o intuito de movimentar as peças 'X'\&. "
+.ti -1c
+.RI "bool \fBjogada_valida_dama_O\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "Função que analisa se a jogada das damas do jogador 'O' é valida\&. "
+.ti -1c
+.RI "bool \fBjogada_valida_dama_X\fP (char jogada1, char jogada2, char jogada3, char jogada4)"
+.br
+.RI "Função que analisa se a jogada das damas do jogador 'X' é valida\&. "
+.ti -1c
+.RI "bool \fBjogada_valida_dama_XX\fP (int jogada1, int jogada2, int jogada3, int jogada4)"
+.br
+.RI "Função que analisa se a jogada das damas do jogador 'X' é valida, mas recebendo um inteiro como parâmetro\&. "
+.ti -1c
+.RI "bool \fBjogada_valida_dama_OO\fP (int jogada1, int jogada2, int jogada3, int jogada4)"
+.br
+.RI "Função que analisa se a jogada das damas do jogador 'O' é valida, mas recebendo um inteiro como parâmetro\&. "
+.ti -1c
+.RI "int \fBtranscrever_movimento\fP (char jogada1)"
+.br
+.RI "Transcreve a jogada do jogador, para o índice correspondente do vetor\&. "
+.ti -1c
+.RI "char \fBresultado_final\fP ()"
+.br
+.RI "Analisa a cada final de turno se o jogo acabou, e quem venceu\&. "
+.ti -1c
+.RI "int \fBjogar\fP ()"
+.br
+.RI "Função main do jogo damas\&. "
+.in -1c
+
+Membros Públicos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP (int _rows, int _cols, std::string _name)"
+.br
+.RI "Construtor da game\&. "
+.ti -1c
+.RI "\fB~game\fP ()"
+.br
+.RI "Destrutor da game\&. "
+.ti -1c
+.RI "virtual void \fBchangeElement\fP (int x, int y, char element)"
+.br
+.RI "Troca o elemento na posicao x,y para element\&. "
+.ti -1c
+.RI "virtual void \fBwinAndLose\fP (std::string winner, std::string loser)"
+.br
+.RI "Adicione uma vitória ao vencedor e uma derrota ao perdedor\&. "
+.ti -1c
+.RI "void \fBloadPlayers\fP ()"
+.br
+.in -1c
+.SS "Outros membros herdados"
+
+
+Atributos Protegidos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBrows\fP"
+.br
+.ti -1c
+.RI "int \fBcols\fP"
+.br
+.ti -1c
+.RI "std::vector< std::vector< char > > \fBtabuleiro\fP"
+.br
+.ti -1c
+.RI "\fBplayersManagement\fP \fBmanagement\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador1\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador2\fP"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe responsável pelo damas\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "damas::damas ()"
+
+.PP
+Construtor do tabuleiro\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "void damas::comer_multiplas (int linha_final, int coluna_final)"
+
+.PP
+Função para comer o máximo de peças possíveis automaticamente\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIlinha_final\fP 
+.br
+\fIcoluna_final\fP 
+.RE
+.PP
+
+.SS "void damas::comer_multiplas_damas (int a, int b)"
+
+.PP
+Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível, solicitar a jogada\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIa\fP 
+.br
+\fIb\fP 
+.RE
+.PP
+
+.SS "bool damas::e_dama (char jogada1, char jogada2)"
+
+.PP
+Função que analisa se a peça selecionada é uma dama\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true = a peça é uma dama; False = a peça não é uma dama\&. 
+.RE
+.PP
+
+.SS "void damas::imprimir_tabuleiro ()"
+
+.PP
+Imprime o tabuleiro\&. 
+.SS "bool damas::jogada_valida_dama_O (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+Função que analisa se a jogada das damas do jogador 'O' é valida\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+True = jogada valida; False = jogada invalida\&. 
+.RE
+.PP
+
+.SS "bool damas::jogada_valida_dama_OO (int jogada1, int jogada2, int jogada3, int jogada4)"
+
+.PP
+Função que analisa se a jogada das damas do jogador 'O' é valida, mas recebendo um inteiro como parâmetro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+True = jogada valida; False = jogada invalida\&. 
+.RE
+.PP
+
+.SS "bool damas::jogada_valida_dama_X (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+Função que analisa se a jogada das damas do jogador 'X' é valida\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+True = jogada valida; False = jogada invalida\&. 
+.RE
+.PP
+
+.SS "bool damas::jogada_valida_dama_XX (int jogada1, int jogada2, int jogada3, int jogada4)"
+
+.PP
+Função que analisa se a jogada das damas do jogador 'X' é valida, mas recebendo um inteiro como parâmetro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+True = jogada valida; False = jogada invalida\&. 
+.RE
+.PP
+
+.SS "bool damas::jogada_valida_O (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+Verifica se a jogada a ser executada está dentro das regras do jogo\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna se a jogada foi válida ou não\&. 
+.RE
+.PP
+
+.SS "bool damas::jogada_valida_X (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+Verifica se a jogada das peças 'X' é válida\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+True = jogada valida; False = jogada invalida\&. 
+.RE
+.PP
+
+.SS "int damas::jogar ()"
+
+.PP
+Função main do jogo damas\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna '0' se deu tudo certo\&. 
+.RE
+.PP
+
+.SS "void damas::mover_damas_O (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+Função com o intuito de mover as damas das peças 'O'\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+
+.SS "void damas::mover_damas_OO (int jogada1, int jogada2, int jogada3, int jogada4)"
+
+.PP
+Função com o intuito de mover as damas das peças 'O', mas recebendo um inteiro como parâmetro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+
+.SS "void damas::mover_damas_X (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+Função com o intuito de movimentar as damas das peças 'X'\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+
+.SS "void damas::mover_damas_XX (int jogada1, int jogada2, int jogada3, int jogada4)"
+
+.PP
+Função com intuito de movimentar as damas das peças 'X', mas recebendo um int como parâmetro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+
+.SS "void damas::realizar_movimento_O (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+função com intuito de movimentar as peças 'O'\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+
+.SS "void damas::realizar_movimento_X (char jogada1, char jogada2, char jogada3, char jogada4)"
+
+.PP
+Função com o intuito de movimentar as peças 'X'\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.br
+\fIjogada2\fP 
+.br
+\fIjogada3\fP 
+.br
+\fIjogada4\fP 
+.RE
+.PP
+
+.SS "char damas::resultado_final ()"
+
+.PP
+Analisa a cada final de turno se o jogo acabou, e quem venceu\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna 'O' = vitória das peças 'O'; Retorna 'X' = vitoria das peças 'X'\&. 
+.RE
+.PP
+
+.SS "int damas::transcrever_movimento (char jogada1)"
+
+.PP
+Transcreve a jogada do jogador, para o índice correspondente do vetor\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIjogada1\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+retorna o índice de cada jogada 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

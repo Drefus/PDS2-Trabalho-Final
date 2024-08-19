@@ -1,0 +1,138 @@
+.TH "lig4" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lig4 \- Classe responsável pelo jogo LIG4\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <lig4\&.hpp>\fP
+.PP
+Subclasse de \fBgame\fP\&.
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBlig4\fP ()"
+.br
+.RI "Construtor e jogo do Lig4\&. "
+.ti -1c
+.RI "void \fBmostrarTabuleiro\fP ()"
+.br
+.RI "Mostra o tabuleiro\&. "
+.ti -1c
+.RI "int \fBjogada\fP (int &posicao)"
+.br
+.RI "Faz uma jogada valida no tabuleiro\&. "
+.ti -1c
+.RI "bool \fBverificarAdjacente\fP (int linha, int coluna, char time)"
+.br
+.RI "Verifica se um jogador venceu baseado em sua última jogada\&. "
+.in -1c
+
+Membros Públicos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "\fBgame\fP (int _rows, int _cols, std::string _name)"
+.br
+.RI "Construtor da game\&. "
+.ti -1c
+.RI "\fB~game\fP ()"
+.br
+.RI "Destrutor da game\&. "
+.ti -1c
+.RI "virtual void \fBchangeElement\fP (int x, int y, char element)"
+.br
+.RI "Troca o elemento na posicao x,y para element\&. "
+.ti -1c
+.RI "virtual void \fBwinAndLose\fP (std::string winner, std::string loser)"
+.br
+.RI "Adicione uma vitória ao vencedor e uma derrota ao perdedor\&. "
+.ti -1c
+.RI "void \fBloadPlayers\fP ()"
+.br
+.in -1c
+.SS "Outros membros herdados"
+
+
+Atributos Protegidos herdados de \fBgame\fP
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBrows\fP"
+.br
+.ti -1c
+.RI "int \fBcols\fP"
+.br
+.ti -1c
+.RI "std::vector< std::vector< char > > \fBtabuleiro\fP"
+.br
+.ti -1c
+.RI "\fBplayersManagement\fP \fBmanagement\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador1\fP"
+.br
+.ti -1c
+.RI "std::string \fBjogador2\fP"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Classe responsável pelo jogo LIG4\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "lig4::lig4 ()"
+
+.PP
+Construtor e jogo do Lig4\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "int lig4::jogada (int & posicao)"
+
+.PP
+Faz uma jogada valida no tabuleiro\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIposicao\fP int 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+linha que o jogador fez a jogada como INT 
+.RE
+.PP
+
+.SS "void lig4::mostrarTabuleiro ()"
+
+.PP
+Mostra o tabuleiro\&. 
+.SS "bool lig4::verificarAdjacente (int linha, int coluna, char time)"
+
+.PP
+Verifica se um jogador venceu baseado em sua última jogada\&. 
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIlinha\fP int 
+.br
+\fIcoluna\fP int 
+.br
+\fItime\fP char 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna TRUE caso o jogador venceu e FALSE caso o jogo ainda não acabou 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

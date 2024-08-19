@@ -1,0 +1,197 @@
+.TH "playersManagement" 3 "Version 2.0" "Trabalho de Final de PDS2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+playersManagement \- Gerenciamento de Jogadores\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <playersManagement\&.hpp>\fP
+.SS "Membros Públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBplayersManagement\fP ()"
+.br
+.RI "Construtor e dados de carregamento\&. "
+.ti -1c
+.RI "\fB~playersManagement\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "void \fBloadData\fP ()"
+.br
+.RI "Carregar dados\&. "
+.ti -1c
+.RI "void \fBsaveData\fP ()"
+.br
+.RI "Salvar dados\&. "
+.ti -1c
+.RI "int \fBaddPlayer\fP (std::string name, std::string nickname)"
+.br
+.RI "Adicionar jogador\&. "
+.ti -1c
+.RI "int \fBremovePlayer\fP (std::string name)"
+.br
+.RI "Remover jogador\&. "
+.ti -1c
+.RI "void \fBlistPlayers\fP ()"
+.br
+.RI "Listar todos os jogadores\&. "
+.ti -1c
+.RI "void \fBlistPlayers\fP (std::string name)"
+.br
+.RI "Listar jogador a partir do nome\&. "
+.ti -1c
+.RI "int \fBaddLose\fP (std::string \fBgame\fP, std::string nickname)"
+.br
+.RI "Adicionar derrota a um jogador\&. "
+.ti -1c
+.RI "int \fBaddWin\fP (std::string \fBgame\fP, std::string nickname)"
+.br
+.RI "Adiciona vitoria a um jogador\&. "
+.ti -1c
+.RI "int \fBexistPlayer\fP (std::string nick)"
+.br
+.RI "Verifica se um jogador existe a partir\&. "
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Gerenciamento de Jogadores\&. 
+.SH "Construtores e Destrutores"
+.PP 
+.SS "playersManagement::playersManagement ()"
+
+.PP
+Construtor e dados de carregamento\&. 
+.SS "playersManagement::~playersManagement ()"
+
+.PP
+Destructor\&. 
+.SH "Documentação das funções"
+.PP 
+.SS "int playersManagement::addLose (std::string game, std::string nickname)"
+
+.PP
+Adicionar derrota a um jogador\&. Adicione uma perda no jogo para o jogador que o nick passou\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIgame\fP 
+.br
+\fInickname\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Se o jogo já existir retorne 0, se não crie e retorne 1\&. 
+.RE
+.PP
+
+.SS "int playersManagement::addPlayer (std::string name, std::string nickname)"
+
+.PP
+Adicionar jogador\&. Adicione um jogador pelo nome ou apelido\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIname\fP 
+.br
+\fInickname\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorne 0 se for bem-sucedido e -1 se falhar\&. 
+.RE
+.PP
+
+.SS "int playersManagement::addWin (std::string game, std::string nickname)"
+
+.PP
+Adiciona vitoria a um jogador\&. Adicione uma vitória no jogo para o jogador que o nick passou\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIgame\fP 
+.br
+\fInickname\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Se o jogo já existir retorne 0, se não crie e retorne 1\&. 
+.RE
+.PP
+
+.SS "int playersManagement::existPlayer (std::string nick)"
+
+.PP
+Verifica se um jogador existe a partir\&. Verifique se o nick do jogador existe nos jogadores\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInick\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Se existir, retorne 1, se não, retorne -1
+.RE
+.PP
+\fBParâmetros\fP
+.RS 4
+\fInick\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+se existir, retorne 1, se não, retorne -1 
+.RE
+.PP
+
+.SS "void playersManagement::listPlayers ()"
+
+.PP
+Listar todos os jogadores\&. Liste todos os jogadores e suas estatísticas\&. 
+.SS "void playersManagement::listPlayers (std::string name)"
+
+.PP
+Listar jogador a partir do nome\&. Liste o jogador pelo nome ou apelido e suas estatísticas\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+
+.SS "void playersManagement::loadData ()"
+
+.PP
+Carregar dados\&. Carregue os dados do jogador de playersStatics\&.txt\&. 
+.SS "int playersManagement::removePlayer (std::string name)"
+
+.PP
+Remover jogador\&. Remova um jogador pelo nome ou apelido\&.
+.PP
+\fBParâmetros\fP
+.RS 4
+\fIname\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorne 0 se for bem-sucedido e -1 se falhar\&. 
+.RE
+.PP
+
+.SS "void playersManagement::saveData ()"
+
+.PP
+Salvar dados\&. Salve os dados dos jogadores em playersStatics\&.txt\&. 
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Trabalho de Final de PDS2 a partir do código fonte\&.

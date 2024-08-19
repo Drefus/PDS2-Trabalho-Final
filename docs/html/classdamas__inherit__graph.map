@@ -1,0 +1,5 @@
+<map id="damas" name="damas">
+<area shape="rect" id="Node000001" title="Classe responsável pelo damas." alt="" coords="5,336,180,811"/>
+<area shape="rect" id="Node000002" href="$classgame.html" title="Abstract class game." alt="" coords="32,5,153,288"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,302,95,336,90,336,90,302"/>
+</map>

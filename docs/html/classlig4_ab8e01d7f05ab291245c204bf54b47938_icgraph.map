@@ -1,0 +1,6 @@
+<map id="lig4::jogada" name="lig4::jogada">
+<area shape="rect" id="Node000001" title="Faz uma jogada valida no tabuleiro." alt="" coords="123,29,210,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="187,16,180,10,166,8,154,10,147,14,145,20,149,28,144,30,140,21,143,11,152,5,166,3,182,5,190,12"/>
+<area shape="rect" id="Node000002" href="$classlig4.html#a412d6bbcae4077e520282b295060abe1" title="Construtor e jogo do Lig4." alt="" coords="5,29,75,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="107,45,75,45,75,40,107,40"/>
+</map>

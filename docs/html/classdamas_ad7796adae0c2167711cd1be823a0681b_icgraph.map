@@ -1,0 +1,10 @@
+<map id="damas::comer_multiplas" name="damas::comer_multiplas">
+<area shape="rect" id="Node000001" title="Função para comer o máximo de peças possíveis automaticamente." alt="" coords="394,31,557,57"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#a9c5da7d2b169691f4a55ad39df2770d6" title="função com intuito de movimentar as peças &#39;O&#39;." alt="" coords="150,5,346,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,36,346,32,347,27,379,31"/>
+<area shape="rect" id="Node000004" href="$classdamas.html#aeccc6de22f3d24f9be32bbcf94192c23" title="Função com o intuito de movimentar as peças &#39;X&#39;." alt="" coords="151,56,345,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="379,57,345,61,345,56,378,52"/>
+<area shape="rect" id="Node000003" href="$classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94" title="Função main do jogo damas." alt="" coords="5,31,102,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,36,102,40,102,35,134,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="135,57,102,53,103,48,136,52"/>
+</map>

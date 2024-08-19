@@ -1,0 +1,5 @@
+<map id="damas::jogada_valida_dama_O" name="damas::jogada_valida_dama_O">
+<area shape="rect" id="Node000001" title="Função que analisa se a jogada das damas do jogador &#39;O&#39; é valida." alt="" coords="150,5,295,48"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94" title="Função main do jogo damas." alt="" coords="5,13,102,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,29,102,29,102,24,134,24"/>
+</map>

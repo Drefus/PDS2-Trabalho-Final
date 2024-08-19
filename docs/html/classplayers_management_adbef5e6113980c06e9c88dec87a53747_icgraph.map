@@ -1,0 +1,15 @@
+<map id="playersManagement::addWin" name="playersManagement::addWin">
+<area shape="rect" id="Node000001" title="Adiciona vitoria a um jogador." alt="" coords="552,73,699,116"/>
+<area shape="rect" id="Node000002" href="$classgame.html#aa73e185d035361027c0df359d7a6c750" title="Adicione uma vitória ao vencedor e uma derrota ao perdedor." alt="" coords="373,81,504,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="537,97,505,97,505,92,537,92"/>
+<area shape="rect" id="Node000003" href="$classjogo_da_velha.html#a770439b2e5ae4c9b8e00c282935410d0" title="Utiliza as funções para rodar o jogo e faz checagem para jogadas válidas." alt="" coords="150,5,325,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="395,77,324,46,290,35,291,30,326,42,397,72"/>
+<area shape="rect" id="Node000004" href="$classlig4.html#a412d6bbcae4077e520282b295060abe1" title="Construtor e jogo do Lig4." alt="" coords="203,56,272,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="358,87,272,76,273,71,358,82"/>
+<area shape="rect" id="Node000005" href="$classdamas.html#aca35887389fe92f843426847998d7da5" title="Analisa a cada final de turno se o jogo acabou, e quem venceu." alt="" coords="162,107,313,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="358,107,314,113,313,108,358,102"/>
+<area shape="rect" id="Node000007" href="$classreversi.html#a9a0f4929be4418a70a84c29e71bd3103" title="Construtor da classe reversi, inicializa o tabuleiro e define as peças iniciais." alt="" coords="186,157,289,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="397,117,326,148,290,160,288,155,324,143,395,113"/>
+<area shape="rect" id="Node000006" href="$classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94" title="Função main do jogo damas." alt="" coords="5,107,102,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="146,123,102,123,102,117,146,117"/>
+</map>

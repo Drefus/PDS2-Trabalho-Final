@@ -1,0 +1,15 @@
+<map id="damas::comer_multiplas_damas" name="damas::comer_multiplas_damas">
+<area shape="rect" id="Node000001" title="Função com o intuito de analisar se as damas podem comer mais de uma peça, caso possível,..." alt="" coords="373,48,536,91"/>
+<area shape="rect" id="Node000002" href="$classdamas.html#ad6846fcb7b71841a2126065d107ba126" title="Função com o intuito de mover as damas das peças &#39;O&#39;." alt="" coords="155,5,320,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,49,297,35,298,30,359,44"/>
+<area shape="rect" id="Node000004" href="$classdamas.html#a0736c20c8cd903037cc6911f05c5b41f" title="Função com o intuito de mover as damas das peças &#39;O&#39;, mas recebendo um inteiro como parâmetro." alt="" coords="150,56,325,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="358,81,325,81,325,76,358,76"/>
+<area shape="rect" id="Node000005" href="$classdamas.html#a672200678c32ba18e93a70cd710c0f8b" title="Função com o intuito de movimentar as damas das peças &#39;X&#39;." alt="" coords="156,107,319,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="359,94,298,109,297,104,357,89"/>
+<area shape="rect" id="Node000006" href="$classdamas.html#a09995f2400a7dae48900ffdab6bb130c" title="Função com intuito de movimentar as damas das peças &#39;X&#39;, mas recebendo um int como parâmetro." alt="" coords="153,157,322,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="411,101,370,126,326,148,295,159,293,154,324,143,368,121,408,97"/>
+<area shape="rect" id="Node000003" href="$classdamas.html#ab5dbdc7d78b8c5700a32b0e821335a94" title="Função main do jogo damas." alt="" coords="5,56,102,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,39,103,59,101,54,171,34"/>
+<area shape="poly" id="edge4_Node000004_Node000001" title=" " alt="" coords="341,58,373,58,373,63,341,63"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="171,105,101,85,103,80,172,99"/>
+</map>
